@@ -27,14 +27,7 @@ const Hero = () => {
                     
                     {/* Elucis Logo Box */}
                     <div className="w-fit p-4 rounded-[20px] bg-[#67a7b8] shadow-lg flex items-center gap-3">
-                        <div className="relative w-12 h-12">
-                            <Image
-                                src="/images/elucis/logo.png"
-                                alt="Elucis Icon"
-                                fill
-                                className="object-contain invert brightness-0"
-                            />
-                        </div>
+                
                         <span className="text-4xl font-semibold text-white tracking-tight">elucis</span>
                     </div>
 
