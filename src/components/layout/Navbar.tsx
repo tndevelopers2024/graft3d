@@ -194,7 +194,7 @@ const Navbar = () => {
                                         </div>
                                         {activeSubDropdown === 'tech' && (
                                             <div className="pl-4 flex flex-col gap-2 pt-2 border-l border-gray-200">
-                                                <Link href="/elucis" className="text-sm text-gray-500 hover:text-primary transition-colors italic" onClick={() => setIsMobileMenuOpen(false)}>Elucis</Link>
+                                                {/* <Link href="/elucis" className="text-sm text-gray-500 hover:text-primary transition-colors italic" onClick={() => setIsMobileMenuOpen(false)}>Elucis</Link> */}
                                                 <Link href="/einscan-medixa" className="text-sm text-gray-500 hover:text-primary transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Einscan-medixa</Link>
                                                 <Link href="/funmat-pro-410" className="text-sm text-gray-500 hover:text-primary transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Funmat pro 410</Link>
                                                 <Link href="/geomagic-freeform" className="text-sm text-gray-500 hover:text-primary transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Geomagic Freeform</Link>
@@ -370,7 +370,7 @@ const Navbar = () => {
                                     </Link>
                                     <div className="hidden group-hover/sub:block absolute left-full top-0 bg-white shadow-xl border-l border-gray-800 min-w-[200px] animate-fade-in-right">
                                         <div className="py-2 flex flex-col">
-                                            <Link href="/elucis" className="px-6 py-3  text-[14px] transition-colors border-b border-gray-800 last:border-0 italic font-bold">Elucis</Link>
+                                            {/* <Link href="/elucis" className="px-6 py-3  text-[14px] transition-colors border-b border-gray-800 last:border-0 italic font-bold">Elucis</Link> */}
                                             <Link href="/einscan-medixa" className="px-6 py-3  text-[14px] transition-colors border-b border-gray-800 last:border-0">Einscan-medixa</Link>
                                             <Link href="/funmat-pro-410" className="px-6 py-3 text-[14px] transition-colors border-b border-gray-800 last:border-0">Funmat pro 410</Link>
                                             <Link href="/geomagic-freeform" className="px-6 py-3 text-[14px] transition-colors border-b border-gray-800 last:border-0">Geomagic Freeform</Link>

@@ -6,7 +6,7 @@ import { Scan, Bone, Brain, Activity, Heart, Users, GraduationCap } from "lucide
  */
 const Applications = () => {
     const apps = [
-        { title: "Standalone VR visualization & collaboration", icon: <Scan className="w-8 h-8" /> },
+        { title: "Cardiovasccular procedure", icon: <Scan className="w-8 h-8" /> },
         { title: "Orthopedic reconstruction", icon: <Bone className="w-8 h-8" /> },
         { title: "Neurosurgery", icon: <Brain className="w-8 h-8" /> },
         { title: "Maxillofacial surgery", icon: <Activity className="w-8 h-8" /> },
@@ -23,7 +23,7 @@ const Applications = () => {
                 <div className="bg-[#f0f9ff]/80 rounded-[3rem] p-12 md:p-20 border border-blue-50 shadow-sm relative overflow-hidden">
                     {/* Header */}
                     <div className="text-center mb-20">
-                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#166AAF] tracking-tight">
+                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#166AAF] tracking-tight">
                             Applications
                         </h2>
                     </div>
