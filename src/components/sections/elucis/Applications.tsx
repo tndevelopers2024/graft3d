@@ -6,7 +6,7 @@ import { Scan, Bone, Brain, Activity, Heart, Users, GraduationCap } from "lucide
  */
 const Applications = () => {
     const apps = [
-        { title: "Cardiovasccular procedure", icon: <Scan className="w-8 h-8" /> },
+        { title: "Cardiovascular procedure", icon: <Scan className="w-8 h-8" /> },
         { title: "Orthopedic reconstruction", icon: <Bone className="w-8 h-8" /> },
         { title: "Neurosurgery", icon: <Brain className="w-8 h-8" /> },
         { title: "Maxillofacial surgery", icon: <Activity className="w-8 h-8" /> },
