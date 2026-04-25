@@ -55,7 +55,7 @@ const DigitalImageConversionHeroSection = () => {
 
                 <div className="flex justify-center">
                     <Link
-                        href="/contact-us"
+                        href="/upload-dicom-data"
                         className="bg-[#1e73be] hover:bg-[#165b9a] text-white font-bold py-3 px-8 rounded-md transition-all duration-300 shadow-[0_0_20px_rgba(30,115,190,0.5)] hover:shadow-[0_0_30px_rgba(30,115,190,0.7)] transform hover:-translate-y-1"
                     >
                         Try Us Now
