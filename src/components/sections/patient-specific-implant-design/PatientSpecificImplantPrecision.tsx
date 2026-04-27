@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const PatientSpecificImplantPrecision = () => {
     return (
@@ -21,10 +22,15 @@ const PatientSpecificImplantPrecision = () => {
                         </p>
                     </div>
                     
-                    {/* Right Content Area (Placeholder) */}
+                    {/* Right Content Area (Image) */}
                     <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
-                        <div className="w-full max-w-[600px] aspect-[4/3] bg-[#c4c4c4] rounded-2xl">
-                            {/* Placeholder for video or image */}
+                        <div className="w-full max-w-[600px] aspect-square rounded-2xl overflow-hidden relative ">
+                            <Image 
+                                src="/images/patient-specific-implant-design/image-1.jpeg" 
+                                alt="Patient Specific Implant Precision" 
+                                fill 
+                                className="object-cover"
+                            />
                         </div>
                     </div>
                     
