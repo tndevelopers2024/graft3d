@@ -9,8 +9,8 @@ const NavTopBar = () => {
             <div className='hidden lg:flex max-w-[1400px] mx-auto justify-center items-center gap-6'>
 
                 {/* Contact */}
-                <a href="tel:+919840478347" className='flex items-center gap-2 text-[14px] font-bold hover:underline'>
-                    <span>Contact : +91-98404 78347</span>
+                <a href="tel:+919380814247" className='flex items-center gap-2 text-[14px] font-bold hover:underline'>
+                    <span>Contact : +91 93808 14247</span>
                 </a>
 
                 <div className='h-5 w-[1px] bg-white/100'></div>
@@ -55,10 +55,10 @@ const NavTopBar = () => {
                 <div className='flex-1 overflow-hidden whitespace-nowrap relative mask-linear-gradient'>
                     <div className='animate-marquee inline-block'>
                         <span className='mx-4 text-[12px]'>
-                            Contact : +91-98404 78347 &nbsp;|&nbsp; Email: sales@graft3d.com &nbsp;|&nbsp; Work Hours : Mon to Sat : 09:30- 18:30 &nbsp;|&nbsp; Meet us Live Online
+                            Contact : +91 93808 14247 &nbsp;|&nbsp; Email: sales@graft3d.com &nbsp;|&nbsp; Work Hours : Mon to Sat : 09:30- 18:30 &nbsp;|&nbsp; Meet us Live Online
                         </span>
                         <span className='mx-4 text-[12px]'>
-                            Contact : +91-98404 78347 &nbsp;|&nbsp; Email: sales@graft3d.com &nbsp;|&nbsp; Work Hours : Mon to Sat : 09:30- 18:30 &nbsp;|&nbsp; Meet us Live Online
+                            Contact : +91 93808 14247 &nbsp;|&nbsp; Email: sales@graft3d.com &nbsp;|&nbsp; Work Hours : Mon to Sat : 09:30- 18:30 &nbsp;|&nbsp; Meet us Live Online
                         </span>
                     </div>
                 </div>

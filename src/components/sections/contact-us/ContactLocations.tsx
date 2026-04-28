@@ -11,7 +11,7 @@ const locations = [
     {
         city: "Mumbai",
         type: "Branch Office",
-        address: "410, 4th Floor, Tex Centre Park, East Wing, Chandivali, Andheri East, Mumbai, Maharashtra 400072.",
+        address: "Shiv Sagar Society, Pestom Sagar, Chembur - West, Mumbai - 400089",
         mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.000000000000!2d72.88000000000001!3d19.110000000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c87700000001%3A0x0000000000000000!2sTex%20Centre%20Park!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
     },
     {

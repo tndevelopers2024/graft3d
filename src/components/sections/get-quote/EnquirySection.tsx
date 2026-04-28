@@ -12,12 +12,12 @@ const EnquirySection = () => {
           </div>
           <p className="mt-4 text-[#345C7E] font-black">
             <span className="hidden md:inline">
-              For any information please Call us at +91-9840478347 | +91 6374 410 703
+              For any information please Call us at +91 93808 14247
             </span>
             <span className="md:hidden">
               For any information please Call us at
               <br />
-              +91-9840478347 | +91-7395972777
+              +91 93808 14247
             </span>
           </p>
         </div>

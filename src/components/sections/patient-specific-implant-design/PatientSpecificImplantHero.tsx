@@ -39,12 +39,16 @@ const PatientSpecificImplantHero = () => {
                             >
                                 Enquire Now
                             </Link>
-                            <Link
+                            <a
                                 href="#workflow"
-                                className="bg-white hover:bg-gray-50 text-[#155a96] border border-[#155a96] font-medium py-3 px-8 rounded transition-all duration-300"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    document.getElementById('workflow')?.scrollIntoView({ behavior: 'smooth' });
+                                }}
+                                className="bg-white hover:bg-gray-50 text-[#155a96] border border-[#155a96] font-medium py-3 px-8 rounded transition-all duration-300 inline-block text-center cursor-pointer"
                             >
                                 View Sample Workflow
-                            </Link>
+                            </a>
                         </div>
 
                         {/* Contact Info */}
@@ -57,9 +61,7 @@ const PatientSpecificImplantHero = () => {
                                 <div>
                                     <p className="text-[#155a96] font-bold text-sm">Call us now</p>
                                     <p className="text-xs text-[#475569]">
-                                        <a href="tel:+916374410703" className="hover:text-[#155a96] transition-colors">+91 6374410703</a>
-                                        {' | '}
-                                        <a href="tel:+919840478347" className="hover:text-[#155a96] transition-colors">+91 98404 78347</a>
+                                        <a href="tel:+919380814247" className="hover:text-[#155a96] transition-colors">+91 93808 14247</a>
                                     </p>
                                 </div>
                             </div>
@@ -93,6 +95,7 @@ const PatientSpecificImplantHero = () => {
 
                 </div>
             </div>
+            
         </section>
     );
 };

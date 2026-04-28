@@ -97,11 +97,11 @@ const ContactFormDetails = () => {
                             <div className="space-y-4 font-medium text-gray-600">
                                 <div>
                                     <div className="text-xs uppercase tracking-wider text-gray-400 mb-1">Phone Number</div>
-                                    <div className="text-gray-800">+91 98404 78347</div>
+                                    <a href="tel:+919840478347" className="text-gray-800 hover:underline hover:text-[#166AAF] transition-colors inline-block">+91 98404 78347</a>
                                 </div>
                                 <div>
                                     <div className="text-xs uppercase tracking-wider text-gray-400 mb-1">Phone Number</div>
-                                    <div className="text-gray-800">+91 63833 72177</div>
+                                    <a href="tel:+916374410703" className="text-gray-800 hover:underline hover:text-[#166AAF] transition-colors inline-block">+91 6374410703</a>
                                 </div>
                             </div>
                         </div>
@@ -110,9 +110,9 @@ const ContactFormDetails = () => {
                             <h4 className="text-lg font-bold text-gray-800 mb-4 flex items-center gap-2">
                                 <Mail className="w-5 h-5 text-[#166AAF]" /> Email Us
                             </h4>
-                            <div className="font-medium text-[#166AAF] hover:underline cursor-pointer">
+                            <a href="mailto:sales@graft3d.com" className="font-medium text-[#166AAF] hover:underline cursor-pointer block">
                                 sales@graft3d.com
-                            </div>
+                            </a>
                         </div>
 
                         <div>
