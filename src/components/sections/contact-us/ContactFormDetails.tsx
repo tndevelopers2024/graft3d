@@ -101,7 +101,7 @@ const ContactFormDetails = () => {
                                 </div>
                                 <div>
                                     <div className="text-xs uppercase tracking-wider text-gray-400 mb-1">Phone Number</div>
-                                    <a href="tel:+916374410703" className="text-gray-800 hover:underline hover:text-[#166AAF] transition-colors inline-block">+91 6374410703</a>
+                                    <a href="tel:+916374410703" className="text-gray-800 hover:underline hover:text-[#166AAF] transition-colors inline-block">+91 63744 10703</a>
                                 </div>
                             </div>
                         </div>

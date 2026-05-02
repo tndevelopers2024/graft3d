@@ -69,7 +69,7 @@ const Hero = () => {
                                     Call us now
                                 </span>
                                 <div className="text-gray-900 font-medium text-base md:text-lg">
-                                    <a href="tel:+916374410703" className="hover:underline">+91 6374410703</a>
+                                    <a href="tel:+916374410703" className="hover:underline">+91 63744 10703</a>
                                     <span className="mx-2">|</span>
                                     <a href="tel:+919840478347" className="hover:underline">+91 98404 78347</a>
                                 </div>

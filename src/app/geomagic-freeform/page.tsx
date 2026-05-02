@@ -276,7 +276,7 @@ export default function GeomagicFreeformPage() {
                                     </svg>
                                 </button>
                                 <a
-                                    href="https://calendly.com"
+                                    href="https://calendly.com/graft3dh"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 rounded-sm bg-[#005696] px-5 py-2 text-sm font-semibold text-white transition-all hover:bg-[#004274] hover:shadow-md"
