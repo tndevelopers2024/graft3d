@@ -64,7 +64,7 @@ const DigiprunHero = () => {
                                 <div className="flex flex-col">
                                     <p className="text-[#1e73be] font-bold text-lg">Call us now</p>
                                     <div className="flex flex-wrap gap-x-2">
-                                        <a href="tel:+916374410703" className="text-gray-700 text-sm font-semibold hover:text-[#1e73be] transition-colors">+91 6374410703</a>
+                                        <a href="tel:+916374410703" className="text-gray-700 text-sm font-semibold hover:text-[#1e73be] transition-colors">+91 63744 10703</a>
                                         <span className="text-gray-400">|</span>
                                         <a href="tel:+919840478347" className="text-gray-700 text-sm font-semibold hover:text-[#1e73be] transition-colors">+91 98404 78347</a>
                                     </div>

@@ -62,7 +62,7 @@ const Hero = () => {
                                 <div>
                                     <div className="font-bold text-[#1a1a1a] text-lg">Call us now</div>
                                     <div className="text-[16px] text-[#555] font-semibold space-y-1">
-                                        <a href="tel:+916374410703" className="block hover:text-[#166AAF] transition-colors">+91 6374410703</a>
+                                        <a href="tel:+916374410703" className="block hover:text-[#166AAF] transition-colors">+91 63744 10703</a>
                                         <a href="tel:+919840478347" className="block hover:text-[#166AAF] transition-colors">+91 98404 78347</a>
                                     </div>
                                 </div>

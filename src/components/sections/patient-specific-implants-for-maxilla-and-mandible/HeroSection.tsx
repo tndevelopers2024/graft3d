@@ -52,7 +52,7 @@ const HeroSection = () => {
                   </p>
                   <p className="text-sm md:text-base font-medium text-gray-700">
                     <a href="tel:+916374410703" className="hover:text-[#005696]">
-                      +91 6374410703
+                      +91 63744 10703
                     </a>{" "}
                     |{" "}
                     <a href="tel:+919840478347" className="hover:text-[#005696]">

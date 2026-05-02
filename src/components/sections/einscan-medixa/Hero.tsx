@@ -51,7 +51,7 @@ const Hero = () => {
                                 <div className="flex flex-col">
                                     <p className="text-[#0066b2] font-bold text-[17px]">Call us now</p>
                                     <div className="flex flex-wrap gap-x-2 mt-0.5">
-                                        <a href="tel:+916374410703" className="text-gray-800 text-[15px] hover:text-[#0066b2] transition-colors">+91 6374410703</a>
+                                        <a href="tel:+916374410703" className="text-gray-800 text-[15px] hover:text-[#0066b2] transition-colors">+91 63744 10703</a>
                                         <span className="text-gray-400">|</span>
                                         <a href="tel:+919840478347" className="text-gray-800 text-[15px] hover:text-[#0066b2] transition-colors">+91 98404 78347</a>
                                     </div>

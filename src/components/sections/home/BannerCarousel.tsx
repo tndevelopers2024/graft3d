@@ -202,7 +202,7 @@ const BannerContactInfo = () => (
       <div className="text-left">
         <p className="text-primary font-bold text-lg">Call us now</p>
         <p className="text-gray-700 text-sm font-medium">
-          <a href="tel:+916374410703" className="hover:text-primary transition-colors">+91 6374410703</a>
+          <a href="tel:+916374410703" className="hover:text-primary transition-colors">+91 63744 10703</a>
           {" | "}
           <a href="tel:+919840478347" className="hover:text-primary transition-colors">+91 98404 78347</a>
         </p>

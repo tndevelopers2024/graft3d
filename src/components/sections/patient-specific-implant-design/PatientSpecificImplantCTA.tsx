@@ -55,7 +55,9 @@ const PatientSpecificImplantCTA = () => {
                         <div>
                             <p className="text-[#155a96] font-bold text-sm">Call us now</p>
                             <div className="text-sm text-gray-700 font-medium">
-                                <a href="tel:+919380814247" className="hover:text-[#155a96] transition-colors">+91 93808 14247</a>
+                                <a href="tel:+919840478347" className="hover:text-[#155a96] transition-colors">+91 98404 78347</a>
+                                <span className="mx-1">|</span>
+                                <a href="tel:+916374410703" className="hover:text-[#155a96] transition-colors">+91 63744 10703</a>
                             </div>
                         </div>
                     </div>

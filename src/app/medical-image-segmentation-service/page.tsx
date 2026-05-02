@@ -62,7 +62,7 @@ export default function MedicalImageSegmentationServicePage() {
                                 <span className="text-[#1e73be] font-medium">Email your scans to <a href="mailto:sales@graft3d.com" className="underline">sales@graft3d.com</a></span>
                             </div>
                             <div className="flex-1 bg-white p-4 rounded-lg shadow-md border border-gray-100 flex items-center justify-center text-center">
-                                <span className="text-[#1e73be] font-medium">Talk to us now at <a href="tel:+919840478347" className="underline">+91 9840478347</a></span>
+                                <span className="text-[#1e73be] font-medium">Talk to us now at <a href="tel:+919840478347" className="underline">+91 98404 78347</a> | <a href="tel:+916374410703" className="underline">+91 63744 10703</a></span>
                             </div>
                         </div>
                     </div>

@@ -50,7 +50,7 @@ const MaxillaHeroSection = () => {
                                 </div>
                                 <div>
                                     <div className="font-bold">Call us now</div>
-                                    <a href="tel:+916374410703" className="hover:underline opacity-90">+91 6374410703 | +91 98404 78347</a>
+                                    <a href="tel:+919840478347" className="hover:underline opacity-90">+91 98404 78347</a> | <a href="tel:+916374410703" className="hover:underline opacity-90">+91 63744 10703</a>
                                 </div>
                             </div>
 

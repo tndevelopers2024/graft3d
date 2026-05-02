@@ -53,7 +53,7 @@ const FacialBoneHeroSection = () => {
                                 <div>
                                     <div className="font-bold text-[18px]">Call us now</div>
                                     <div className="text-[17px] font-semibold">
-                                        <a href="tel:+916374410703" className="hover:underline">+91 6374410703</a>
+                                        <a href="tel:+916374410703" className="hover:underline">+91 63744 10703</a>
                                         <span className="mx-2 text-gray-400">|</span>
                                         <a href="tel:+919840478347" className="hover:underline">+91 98404 78347</a>
                                     </div>

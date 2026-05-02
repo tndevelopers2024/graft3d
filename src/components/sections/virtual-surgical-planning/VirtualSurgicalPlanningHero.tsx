@@ -58,7 +58,7 @@ export default function VirtualSurgicalPlanningHero() {
                                 </div>
                                 <div>
                                     <h3 className="text-[#1f5f99] font-bold text-lg mb-1">Call us now</h3>
-                                    <p className="text-gray-600 font-medium">+91 6374410703 | +91 98404 78347</p>
+                                    <p className="text-gray-600 font-medium"><a href="tel:+919840478347" className="hover:underline">+91 98404 78347</a> | <a href="tel:+916374410703" className="hover:underline">+91 63744 10703</a></p>
                                 </div>
                             </div>
 

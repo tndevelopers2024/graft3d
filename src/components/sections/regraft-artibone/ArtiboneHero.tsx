@@ -56,7 +56,7 @@ const ArtiboneHero = () => {
                                 <div>
                                     <p className="font-bold text-gray-900 text-lg">Call us now</p>
                                     <div className="flex flex-col">
-                                        <a href="tel:+916374410703" className="text-[#005696] font-medium hover:underline transition-all">+91 6374410703</a>
+                                        <a href="tel:+916374410703" className="text-[#005696] font-medium hover:underline transition-all">+91 63744 10703</a>
                                         <a href="tel:+919840478347" className="text-[#005696] font-medium hover:underline transition-all">+91 98404 78347</a>
                                     </div>
                                 </div>
