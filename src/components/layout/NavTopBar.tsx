@@ -16,7 +16,7 @@ const NavTopBar = () => {
                 <div className='h-5 w-[1px] bg-white/100'></div>
 
                 <a href="tel:+916374410703" className='flex items-center gap-2 text-[14px] font-bold hover:underline'>
-                    <span>Sales : +91 63744 10703</span>
+                    <span>+91 63744 10703</span>
                 </a>
 
                 <div className='h-5 w-[1px] bg-white/100'></div>
