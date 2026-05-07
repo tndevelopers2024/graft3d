@@ -51,7 +51,7 @@ const FacialBoneMaterials = () => {
                     <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
                         <div className="relative w-full max-w-[500px] aspect-square lg:scale-110">
                             <Image
-                                src="/images/acial-bone-augmentation-using-3d-printing/Frame-1618872641-1.png"
+                                src="/images/facial-bone-augmentation-using-3d-printing/Frame-1618872641-1.png"
                                 alt="Materials Used in 3D Printing"
                                 fill
                                 className="object-contain drop-shadow-2xl"
@@ -65,7 +65,7 @@ const FacialBoneMaterials = () => {
                     <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
                         <div className="relative w-full max-w-[500px] aspect-[4/3] lg:scale-110">
                             <Image
-                                src="/images/acial-bone-augmentation-using-3d-printing/Frameret.png"
+                                src="/images/facial-bone-augmentation-using-3d-printing/Frameret.png"
                                 alt="Advantages of 3D printed facial implants"
                                 fill
                                 className="object-contain drop-shadow-2xl"
@@ -164,7 +164,7 @@ const FacialBoneMaterials = () => {
                     <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
                         <div className="relative w-full max-w-[500px] aspect-square">
                             <Image
-                                src="/images/acial-bone-augmentation-using-3d-printing/Frame8872643.png"
+                                src="/images/facial-bone-augmentation-using-3d-printing/Frame8872643.png"
                                 alt="Clinical Applications of 3D Printed Facial Bone Augmentation"
                                 fill
                                 className="object-contain drop-shadow-2xl translate-y-12 shrink-0 scale-110 lg:scale-[1.2]"

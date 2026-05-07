@@ -13,7 +13,7 @@ export const metadata = {
     openGraph: {
         title: 'Facial Bone Augmentation Using 3D Printed Implants',
         description: 'Facial bone augmentation with 3D-printed implants and precise planning to restore structure and aesthetics. Get Quote Now and improve surgical results.',
-        images: [{ url: '/images/acial-bone-augmentation-using-3d-printing/Frame9.png' }],
+        images: [{ url: '/images/facial-bone-augmentation-using-3d-printing/Frame9.png' }],
     }
 };
 

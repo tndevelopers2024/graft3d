@@ -77,7 +77,7 @@ const FacialBoneHeroSection = () => {
                     <div className="w-full lg:w-1/2 flex justify-center lg:justify-end mt-12 lg:mt-0">
                         <div className="relative w-full max-w-[650px] aspect-[4/3]">
                             <Image
-                                src="/images/acial-bone-augmentation-using-3d-printing/Group-1171275183-1.png"
+                                src="/images/facial-bone-augmentation-using-3d-printing/Group-1171275183-1.png"
                                 alt="Facial Bone Augmentation 3D Model"
                                 fill
                                 className="object-contain drop-shadow-2xl"

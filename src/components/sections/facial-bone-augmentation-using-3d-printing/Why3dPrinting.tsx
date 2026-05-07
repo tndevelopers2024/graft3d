@@ -9,7 +9,7 @@ const Why3dPrinting = () => {
                 <div className="w-full lg:w-[45%] bg-[#1c6bb5] flex justify-center items-center py-16 relative">
                     <div className="relative w-full max-w-[500px] aspect-[4/3]">
                         <Image
-                            src="/images/acial-bone-augmentation-using-3d-printing/Group-1171275185.png"
+                            src="/images/facial-bone-augmentation-using-3d-printing/Group-1171275185.png"
                             alt="Mandible with Implant"
                             fill
                             className="object-contain drop-shadow-2xl translate-x-4 lg:translate-x-10 scale-110"

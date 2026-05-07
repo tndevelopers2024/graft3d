@@ -23,7 +23,7 @@ const FacialBoneOverview = () => {
                     <div className="w-full lg:w-[45%] flex justify-center">
                         <div className="relative w-full max-w-[450px] aspect-[4/3] rounded-2xl overflow-hidden">
                             <Image
-                                src="/images/acial-bone-augmentation-using-3d-printing/Group-1171275184-1.png"
+                                src="/images/facial-bone-augmentation-using-3d-printing/Group-1171275184-1.png"
                                 alt="Facial Bone Overview"
                                 fill
                                 className="object-contain"

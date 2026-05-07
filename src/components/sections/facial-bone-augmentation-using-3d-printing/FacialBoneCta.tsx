@@ -14,7 +14,7 @@ const FacialBoneCta = () => {
                     {/* Left: Blue Image Block */}
                     <div className="w-full lg:w-1/2 relative min-h-[350px] lg:min-h-[450px]">
                         <Image
-                            src="/images/acial-bone-augmentation-using-3d-printing/Group-1171275184-1.png"
+                            src="/images/facial-bone-augmentation-using-3d-printing/Group-1171275184-1.png"
                             alt="3D Facial Implant Detail on blue background"
                             fill
                             className="object-cover"
