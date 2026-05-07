@@ -68,7 +68,7 @@ const Footer = () => {
                         <h3 className="text-primary font-bold text-lg">Important Links</h3>
                         <ul className="flex flex-col gap-3 font-medium text-gray-600 text-[15px]">
                             <li><Link href="/about-us" className="hover:text-primary transition-colors">About us</Link></li>
-                            <li><Link href="/healthcare-3d-products" className="hover:text-primary transition-colors">Shop</Link></li>
+                            <li><Link href="https://shop.graft3d.com/" className="hover:text-primary transition-colors">Shop</Link></li>
                             <li><Link href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link></li>
                             <li><Link href="/shipping-policy" className="hover:text-primary transition-colors">Shipping policy</Link></li>
                             <li><Link href="/terms-conditions" className="hover:text-primary transition-colors">Terms & Conditions</Link></li>

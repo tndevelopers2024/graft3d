@@ -132,7 +132,7 @@ const BookDemoContent = () => {
             {/* Right Side: Calendly */}
             <div className="h-[600px] border border-gray-100 rounded-lg overflow-hidden shadow-sm">
               <InlineWidget
-                url="https://calendly.com/sales-graft3d/30min"
+                url="https://calendly.com/graft3dh"
                 styles={{ height: '100%' }}
               />
             </div>
