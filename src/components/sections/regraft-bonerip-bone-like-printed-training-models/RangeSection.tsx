@@ -124,7 +124,7 @@ const RangeSection = () => {
           className="text-center text-[30px] font-semibold text-[#1B6DB1]"
           style={{ fontFamily: "Arial, sans-serif" }}
         >
-          ReGraft Bonerip&apos;s Range of Standard 3D-Printed training Bone
+          ReGraft Bonerip&apos;s Range of Bone-Like 3D-Printed Training Models
         </h2>
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
           {rangeItems.map((item) => {
