@@ -49,7 +49,7 @@ const rangeItems = [
     description: "The upper arm bone",
     image:
       "/images/regraft-bonerip-transparent-3d-printed-training-models/fgvf-1-q5h1x2bb3oa0ed4r25q81m42fjujwks9kpot8s1ex0.png",
-      href: "https://shop.graft3d.com/product/humerus/",
+      href: "https://shop.graft3d.com/product/humerous/",
   },
   {
     title: "Radius and ulna",
