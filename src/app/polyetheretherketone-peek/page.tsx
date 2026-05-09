@@ -12,11 +12,8 @@ import Sterilisation from "@/components/sections/polyetheretherketone-peek/Steri
 import FaqSection from "@/components/sections/polyetheretherketone-peek/FaqSection";
 import CtaSection from "@/components/sections/polyetheretherketone-peek/CtaSection";
 
-export const metadata = {
-  title: "Polyetheretherketone PEEK for Advanced Medical Use",
-  description:
-    "Polyetheretherketone PEEK is a high-performance medical-grade material used for implants and healthcare applications. Meet Us Live Online or Get a Quote Now!",
-};
+import { PAGE_METADATA } from '@/lib/metadata';
+export const metadata = PAGE_METADATA.peek;
 
 export default function PolyetheretherketonePeekPage() {
   return (

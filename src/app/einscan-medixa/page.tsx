@@ -11,10 +11,8 @@ import Advantages from '@/components/sections/einscan-medixa/Advantages';
 import ComplianceSafety from '@/components/sections/einscan-medixa/ComplianceSafety';
 import EinscanMedixaFaq from '@/components/sections/einscan-medixa/EinscanMedixaFaq';
 
-export const metadata = {
-    title: 'EinScan Medixa 3D Scanner | High Accuracy Medical 3D Scanning',
-    description: 'EinScan Medixa is a next generation, all in one handheld medical 3D scanner developed for highly accurate and efficient analysis of patient anatomy.',
-};
+import { PAGE_METADATA } from '@/lib/metadata';
+export const metadata = PAGE_METADATA.einscanMedixa;
 
 export default function EinscanMedixaPage() {
     return (

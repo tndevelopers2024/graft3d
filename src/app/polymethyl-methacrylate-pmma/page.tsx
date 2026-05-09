@@ -8,11 +8,9 @@ import Certifications from "@/components/sections/polymethyl-methacrylate-pmma/C
 import CtaSection from "@/components/sections/polymethyl-methacrylate-pmma/CtaSection";
 import FaqSection from "@/components/sections/polymethyl-methacrylate-pmma/FaqSection";
 
-export const metadata = {
-  title: "Polymethyl Methacrylate PMMA 3D Print Material",
-  description:
-    "Polymethyl methacrylate PMMA 3D print material used for transparent, durable, and precise parts in medical, dental, and industrial 3D printing applications.",
-};
+import { PAGE_METADATA } from '@/lib/metadata';
+
+export const metadata = PAGE_METADATA.pmma;
 
 export default function PolymethylMethacrylatePmmaPage() {
   return (

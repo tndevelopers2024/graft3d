@@ -5,10 +5,8 @@ import BoneripHealthcareBranches from '@/components/sections/regraft/BoneripHeal
 import BoneripBlogs from '@/components/sections/regraft/BoneripBlogs';
 import BoneripFAQ from '@/components/sections/regraft/BoneripFAQ';
 
-export const metadata = {
-    title: 'ReGraft Bonerip | 3D-Printed Anatomical Models | Graft3D',
-    description: 'High-quality custom and standard 3D-printed anatomical models designed for training, simulation, and mock-up surgeries.',
-};
+import { PAGE_METADATA } from '@/lib/metadata';
+export const metadata = PAGE_METADATA.regraftBonerip;
 
 export default function RegraftBoneripPage() {
     return (

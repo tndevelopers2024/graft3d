@@ -9,10 +9,9 @@ import BaSection from "@/components/sections/regraft-artibone/BaSection";
 import FdSection from "@/components/sections/regraft-artibone/FdSection";
 import MaterialsSection from "@/components/sections/regraft-artibone/MaterialsSection";
 
-export const metadata = {
-    title: "Regraft Artibone - Graft 3D",
-    description: "Artibone represents the next generation of digitally planned, patient-specific bone regrafts designed to restore anatomy, function, and aesthetics.",
-};
+import { PAGE_METADATA } from '@/lib/metadata';
+
+export const metadata = PAGE_METADATA.regraftArtibone;
 
 export default function RegraftArtibonePage() {
     return (

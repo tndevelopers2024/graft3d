@@ -9,10 +9,8 @@ import BookDemo from '@/components/sections/3d-printing-package-for-facial-prost
 import BlogsSection from '@/components/sections/3d-printing-package-for-facial-prosthesis/BlogsSection';
 import GallerySection from '@/components/sections/3d-printing-package-for-facial-prosthesis/GallerySection';
 
-export const metadata = {
-    title: '3D Printing Package for Facial Prosthesis | Graft3D Healthcare',
-    description: 'Explore the 3D printing package for facial prosthesis by Graft3D Healthcare, including scanners, printers, and software for precise customized medical applications.',
-};
+import { PAGE_METADATA } from '@/lib/metadata';
+export const metadata = PAGE_METADATA.facialProsthesisPackage;
 
 export default function FacialProsthesisPackagePage() {
     return (

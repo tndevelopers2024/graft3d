@@ -7,15 +7,9 @@ import FacialBoneCta from '@/components/sections/facial-bone-augmentation-using-
 import FacialBoneFaqs from '@/components/sections/facial-bone-augmentation-using-3d-printing/FacialBoneFaqs';
 import Why3dPrinting from '@/components/sections/facial-bone-augmentation-using-3d-printing/Why3dPrinting';
 
-export const metadata = {
-    title: 'Facial Bone Augmentation Using 3D Printed Implants',
-    description: 'Facial bone augmentation with 3D-printed implants and precise planning to restore structure and aesthetics. Get Quote Now and improve surgical results.',
-    openGraph: {
-        title: 'Facial Bone Augmentation Using 3D Printed Implants',
-        description: 'Facial bone augmentation with 3D-printed implants and precise planning to restore structure and aesthetics. Get Quote Now and improve surgical results.',
-        images: [{ url: '/images/facial-bone-augmentation-using-3d-printing/Frame9.png' }],
-    }
-};
+import { PAGE_METADATA } from '@/lib/metadata';
+
+export const metadata = PAGE_METADATA.facialBoneAugmentation;
 
 export default function FacialBoneAugmentationPage() {
     return (
