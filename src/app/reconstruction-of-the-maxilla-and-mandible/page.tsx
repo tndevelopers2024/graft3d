@@ -9,10 +9,9 @@ import BenefitsAndImpact from "@/components/sections/reconstruction-of-the-maxil
 import FaqSection from "@/components/sections/reconstruction-of-the-maxilla-and-mandible/FaqSection";
 import BottomCta from "@/components/sections/reconstruction-of-the-maxilla-and-mandible/BottomCta";
 
-export const metadata = {
-    title: "Maxilla and Mandible Reconstruction with 3D Planning | Graft3D",
-    description: "Reconstruct the maxilla and mandible with custom 3D‑printed implants for precise fit and surgical accuracy. Get Quote or Book a Demo for more details.",
-};
+import { PAGE_METADATA } from '@/lib/metadata';
+
+export const metadata = PAGE_METADATA.maxillaMandibleReconstruction;
 
 export default function ReconstructionPage() {
     return (

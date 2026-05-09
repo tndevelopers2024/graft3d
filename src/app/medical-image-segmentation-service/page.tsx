@@ -1,5 +1,4 @@
-"use client";
-
+import { PAGE_METADATA } from '@/lib/metadata';
 import React from 'react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/Button';
@@ -12,6 +11,8 @@ import TestimonialsSection from '@/components/sections/medical-segmentation/Test
 import SegmentationFaqSection from '@/components/sections/medical-segmentation/SegmentationFaqSection';
 import BookDemoSection from '@/components/sections/medical-segmentation/BookDemoSection';
 import Footer from '@/components/layout/Footer';
+
+export const metadata = PAGE_METADATA.medicalImageSegmentation;
 
 export default function MedicalImageSegmentationServicePage() {
     return (

@@ -9,11 +9,9 @@ import Certifications from "@/components/sections/polycarbonate-pc/Certification
 import CtaSection from "@/components/sections/polycarbonate-pc/CtaSection";
 import FaqSection from "@/components/sections/polycarbonate-pc/FaqSection";
 
-export const metadata = {
-  title: "Advanced Polycarbonate PC Material for 3D Printing",
-  description:
-    "Polycarbonate PC 3D print material with high impact resistance, transparency, and strength for medical 3D printing. Meet Us Live Online or Get a Quote Now.",
-};
+import { PAGE_METADATA } from '@/lib/metadata';
+
+export const metadata = PAGE_METADATA.polycarbonate;
 
 export default function PolycarbonatePcPage() {
   return (

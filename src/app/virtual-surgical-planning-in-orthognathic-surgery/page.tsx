@@ -6,15 +6,9 @@ import VspBenefits from '@/components/sections/virtual-surgical-planning-in-orth
 import VspCta from '@/components/sections/virtual-surgical-planning-in-orthognathic-surgery/VspCta';
 import VspFaqs from '@/components/sections/virtual-surgical-planning-in-orthognathic-surgery/VspFaqs';
 
-export const metadata = {
-    title: 'Virtual Surgical Planning (VSP) Plates in Orthognathic Surgery',
-    description: 'Virtual surgical planning with VSP plates for orthognathic surgery improves accuracy and outcomes. Get precise surgical guides and planning support.',
-    openGraph: {
-        title: 'Virtual Surgical Planning (VSP) Plates in Orthognathic Surgery',
-        description: 'Virtual surgical planning with VSP plates for orthognathic surgery improves accuracy and outcomes. Get precise surgical guides and planning support.',
-        images: [{ url: '/images/virtual-surgical-planning-in-orthognathic-surgery/1-e1759564300946.png' }],
-    }
-};
+import { PAGE_METADATA } from '@/lib/metadata';
+
+export const metadata = PAGE_METADATA.vspOrthognathic;
 
 export default function VirtualSurgicalPlanningPage() {
     return (

@@ -7,11 +7,9 @@ import PossibleComplicationsSection from "@/components/sections/patient-specific
 import FaqSection from "@/components/sections/reconstruction-of-the-maxilla-and-mandible/FaqSection";
 import BottomCta from "@/components/sections/reconstruction-of-the-maxilla-and-mandible/BottomCta";
 
-export const metadata = {
-  title: "Patient Specific Implants for Maxilla and Mandible | Graft3D",
-  description:
-    "Patient-specific 3D‑printed implants for atrophic maxilla and mandible using digital planning, CAD/CAM and advanced manufacturing for accurate, stable reconstruction.",
-};
+import { PAGE_METADATA } from '@/lib/metadata';
+
+export const metadata = PAGE_METADATA.maxillaMandibleImplants;
 
 export default function PatientSpecificImplantsForMaxillaAndMandiblePage() {
   return (

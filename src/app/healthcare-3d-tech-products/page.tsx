@@ -1,5 +1,4 @@
-"use client";
-
+import { PAGE_METADATA } from '@/lib/metadata';
 import React from 'react';
 import { Button } from '@/components/ui/Button';
 import Image from 'next/image';
@@ -7,6 +6,8 @@ import Link from 'next/link';
 
 import TechProductsTabs from '@/components/sections/healthcare-3d-tech-products/TechProductsTabs';
 import TechProductsFaqSection from '@/components/sections/healthcare-3d-tech-products/TechProductsFaqSection';
+
+export const metadata = PAGE_METADATA.healthcareTechProducts;
 
 export default function Healthcare3DTechProductsPage() {
     return (

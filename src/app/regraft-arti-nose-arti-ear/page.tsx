@@ -1,5 +1,5 @@
 import React from 'react';
-import { Metadata } from 'next';
+import { PAGE_METADATA } from '@/lib/metadata';
 
 import ArtiNoseHero from '@/components/sections/regraft-arti-nose-arti-ear/ArtiNoseHero';
 import ArtiNoseOverview from '@/components/sections/regraft-arti-nose-arti-ear/ArtiNoseOverview';
@@ -12,10 +12,7 @@ import ArtiNoseTestimonials from '@/components/sections/regraft-arti-nose-arti-e
 import ArtiNoseBlogs from '@/components/sections/regraft-arti-nose-arti-ear/ArtiNoseBlogs';
 import ArtiNoseCTA from '@/components/sections/regraft-arti-nose-arti-ear/ArtiNoseCTA';
 
-export const metadata: Metadata = {
-    title: 'Facial prosthesis in India | Artificial eyes, ears and nose | Proface',
-    description: 'Lost Facial features like Eyes, Nose or Ears? Proface is a Facial prosthesis that replaces your lost Facial feature with Artificial Eyes, Nose or Ears.',
-};
+export const metadata = PAGE_METADATA.regraftProface;
 
 export default function ArtiNosePage() {
     return (

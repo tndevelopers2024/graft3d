@@ -6,10 +6,9 @@ import Testimonials from '@/components/sections/regraft-digilumin/Testimonials';
 import OurBlogs from '@/components/sections/regraft-digilumin/OurBlogs';
 import DigiluminFaq from '@/components/sections/regraft-digilumin/DigiluminFaq';
 
-export const metadata = {
-    title: 'Regraft Digilumin – Surgical Guide Implant | Graft3D',
-    description: 'Regraft Digilumin surgical guides are custom-made, 3D-printed computer-guided tools for accurate dental implant placement and oral restorations.',
-};
+import { PAGE_METADATA } from '@/lib/metadata';
+
+export const metadata = PAGE_METADATA.regraftDigilumin;
 
 export default function RegraftDigiluminPage() {
     return (

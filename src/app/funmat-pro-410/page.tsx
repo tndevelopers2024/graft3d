@@ -10,11 +10,8 @@ import WhyChoose from "@/components/sections/funmat-pro-410/WhyChoose";
 import CtaSection from "@/components/sections/funmat-pro-410/CtaSection";
 import FunmatFaq from "@/components/sections/funmat-pro-410/FunmatFaq";
 
-export const metadata = {
-  title: "Funmat Pro 410 High Temperature Industrial 3D Printer",
-  description:
-    "Funmat Pro 410 industrial 3D printer by Graft3D delivers high-temperature, precision printing for advanced engineering and manufacturing applications.",
-};
+import { PAGE_METADATA } from '@/lib/metadata';
+export const metadata = PAGE_METADATA.funmatPro410;
 
 export default function FunmatPro410Page() {
   return (

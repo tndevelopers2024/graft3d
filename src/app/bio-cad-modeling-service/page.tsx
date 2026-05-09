@@ -2,10 +2,9 @@ import React from 'react';
 import BioCadPageContent from '@/components/sections/bio-cad/BioCadPageContent';
 import BioCadFaq from '@/components/sections/bio-cad/BioCadFaq';
 
-export const metadata = {
-    title: 'Bio CAD Modeling Service | Graft3D',
-    description: 'Custom medical device design and bio CAD modeling services based on patient 3D models and medical scans.',
-};
+import { PAGE_METADATA } from '@/lib/metadata';
+
+export const metadata = PAGE_METADATA.bioCadModeling;
 
 export default function BioCadModelingServicePage() {
     return (

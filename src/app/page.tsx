@@ -1,3 +1,4 @@
+import { PAGE_METADATA } from '@/lib/metadata';
 import BannerCarousel from "../components/sections/home/BannerCarousel";
 import AboutSection from "../components/sections/home/AboutSection";
 import StatsSection from "../components/sections/home/StatsSection";
@@ -10,6 +11,8 @@ import CustomersSection from "../components/sections/home/CustomersSection";
 import TestimonialsSection from "../components/sections/home/TestimonialsSection";
 import BlogsSection from "../components/sections/home/BlogsSection";
 import HomeFaqSection from "../components/sections/home/HomeFaqSection";
+
+export const metadata = PAGE_METADATA.home;
 
 export default function Home() {
   return (

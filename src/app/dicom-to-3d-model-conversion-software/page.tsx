@@ -10,10 +10,8 @@ import TrialForm from '@/components/sections/dicom-to-3d-model-conversion-softwa
 import RelatedProducts from '@/components/sections/dicom-to-3d-model-conversion-software/RelatedProducts';
 import FaqSection from '@/components/sections/dicom-to-3d-model-conversion-software/FaqSection';
 
-export const metadata = {
-    title: 'Request A Free Trial for DICOM to 3D Model Software | Graft3D',
-    description: 'DICOM to 3d model conversion software by GRAFT3D helps convert medical scans into accurate 3D files for 3D printing and surgical planning using 3D Systems tools.',
-};
+import { PAGE_METADATA } from '@/lib/metadata';
+export const metadata = PAGE_METADATA.dicomSoftware;
 
 export default function DicomSoftwarePage() {
     return (
