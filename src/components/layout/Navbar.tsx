@@ -64,7 +64,7 @@ const Navbar = () => {
         isActive('/virtual-surgical-planning-mandibular-reconstruction');
 
     return (
-        <div className="w-full bg-gray-50 shadow-sm sticky top-0 z-50">
+        <div className="w-full bg-white shadow-sm sticky top-0 z-50">
             <div className="max-w-[1400px] mx-auto px-4 py-1 flex flex-col lg:flex-row items-center justify-between gap-4 relative">
 
                 <div className="w-full lg:w-auto flex items-center justify-between">
