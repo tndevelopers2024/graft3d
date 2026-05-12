@@ -181,8 +181,25 @@ export default function GeomagicTouchXPage() {
     "/images/gio-touch/gio4.png"
   ];
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqItems.map(item => ({
+      "@type": "Question",
+      "name": item.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.answer
+      }
+    }))
+  };
+
   return (
     <div className="relative min-h-screen bg-white font-poppins">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {/* Hero Section */}
       <section
         className="relative w-full overflow-hidden py-24 md:py-32"

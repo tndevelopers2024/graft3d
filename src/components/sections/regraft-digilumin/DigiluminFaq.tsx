@@ -2,36 +2,59 @@ import FaqAccordion from '@/components/common/FaqAccordion';
 
 const faqs = [
     {
-        question: 'What is a dental guide?',
-        answer: (
-            <div className="flex flex-col gap-3 text-gray-700 text-[15px]">
-                <p>For designing and manufacturing patient-specific implants we require the following information from surgeon&apos;s side:</p>
-                <p>1. Patient&apos;s radiological data (Usually CT)</p>
-                <p>2. Filled order form, including specifications for implant design, delivery, etc. After contacting us, the surgeon will get an order form that has to be filled, and CT scanning protocols with recommendations for scanning parameters.</p>
-            </div>
-        ),
+        question: "What is Regraft Digilumin?",
+        answer: "Regraft Digilumin is a patient-specific 3D printed surgical guide system designed to enable high-precision drilling, cutting, and implant placement across multiple specialties, including dental, cranio-maxillofacial, neurosurgical, and orthopaedic procedures."
     },
     {
-        question: 'What is the process of Patient Specific Implants ?',
-        answer: 'Conversion of DICOM To STL > Virtually Planning and Designing Using Geomagic Freeform >3D Printing the Titanium implant > Post Operative OPG',
+        question: "Which clinical domains can Digilumin be used in?",
+        answer: "Digilumin is designed for multi-specialty surgical applications, including: Dental implantology, Cranio-maxillofacial surgery, Cranial flap and neurosurgical procedures, Orthopaedic drilling and fixation, Trauma and reconstructive surgeries."
     },
     {
-        question: 'What technology and materials are you using to produce patient-specific medical devices?',
-        answer: 'Patient-specific implants are manufactured using the following technologies and materials: Additive manufacturing (3D printing) technology DMLS (Direct Metal Laser Sintering), material: medical titanium alloy Ti6Al4V ,FDM ( Fused Deposition Modeling) , Material : PEEK ( Poly-Ether-Ether-Ketone).',
+        question: "Does Digilumin help in immediate implant placement?",
+        answer: "Yes. Its precision allows same-day implant placement protocols, ensuring efficient and predictable results."
     },
     {
-        question: 'What is the average lead time for a patient-specific medical device?',
-        answer: 'The lead time to design and manufacture a patient-specific implant or surgical guide depends on the complexity of a clinical case and the surgeon\'s requirements for the device. Typically, the delivery terms (after the surgeon approves the final design) are approximately 2 weeks for implants, and 1-2 weeks for surgical guides.',
+        question: "How does Digilumin improve surgical accuracy across specialties?",
+        answer: "Using CBCT/CT-based virtual surgical planning (VSP), Digilumin translates digital plans into physical surgical guides, ensuring: Accurate drilling trajectory, Controlled depth and angulation, Reproducible surgical outcomes."
     },
     {
-        question: 'How can I send a patient\'s radiological data?',
-        answer: 'There is a provision in our Web Page, where you can fill the Details of the patient and upload their DICOM files. ( Please Give the Link Of < Get Quote > )',
+        question: "What data is required to design a Digilumin guide?",
+        answer: "The system requires: CT or CBCT imaging (DICOM), Optional surface scans (STL). These are merged to create a patient-specific 3D surgical plan and guide."
     },
+    {
+        question: "Can Digilumin be integrated with other Regraft solutions?",
+        answer: "Yes. It integrates seamlessly with: Virtual Surgical Planning (VSP), Customised plates, Patient-specific implants. Creating a fully guided surgical ecosystem."
+    },
+    {
+        question: "Who should adopt Digilumin in their practice?",
+        answer: "Oral & maxillofacial surgeons, Neurosurgeons, Orthopaedic surgeons, Implantologists, Surgical planning labs and hospitals."
+    },
+    {
+        question: "How do I get started with Regraft Digilumin?",
+        answer: "Upload CBCT and scan data, Collaborate on virtual planning, Approve the design, Receive your custom surgical guide."
+    }
 ];
 
 const DigiluminFaq = () => {
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(item => ({
+            "@type": "Question",
+            "name": item.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": item.answer
+            }
+        }))
+    };
+
     return (
         <section className="py-20 bg-white">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />
             <div className="container mx-auto px-4 max-w-4xl">
                 <FaqAccordion items={faqs} />
             </div>

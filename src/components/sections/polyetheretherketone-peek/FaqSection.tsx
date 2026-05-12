@@ -34,8 +34,25 @@ const faqItems = [
 ];
 
 const FaqSection = () => {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqItems.map(item => ({
+      "@type": "Question",
+      "name": item.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.answer
+      }
+    }))
+  };
+
   return (
     <section className="w-full py-16 bg-[#f5f9ff]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <div className="max-w-[1400px] mx-auto px-4">
         <h2 className="text-3xl font-bold text-black mb-6">FAQs</h2>
         <FaqAccordion items={faqItems} />

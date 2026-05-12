@@ -35,16 +35,30 @@ const faqs = [
 ];
 
 const VspFaqs = () => {
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(item => ({
+            "@type": "Question",
+            "name": item.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": item.answer
+            }
+        }))
+    };
+
     return (
         <section className="w-full py-16 bg-white">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />
             <div className="container mx-auto px-4 max-w-[900px]">
-
                 <h2 className="text-center text-3xl lg:text-[34px] font-bold text-[#1a5b9e] mb-12">
                     FAQs
                 </h2>
-
                 <FaqAccordion items={faqs} />
-
             </div>
         </section>
     );

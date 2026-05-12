@@ -8,6 +8,7 @@ import RrmmSection from "@/components/sections/regraft-artibone/RrmmSection";
 import BaSection from "@/components/sections/regraft-artibone/BaSection";
 import FdSection from "@/components/sections/regraft-artibone/FdSection";
 import MaterialsSection from "@/components/sections/regraft-artibone/MaterialsSection";
+import ArtiboneFAQ from "@/components/sections/regraft-artibone/ArtiboneFAQ";
 
 import { PAGE_METADATA } from '@/lib/metadata';
 
@@ -25,6 +26,7 @@ export default function RegraftArtibonePage() {
             <BaSection />
             <FdSection />
             <MaterialsSection />
+            <ArtiboneFAQ />
         </main>
     );
 }

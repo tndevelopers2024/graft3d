@@ -5,44 +5,61 @@ import { Plus, Minus } from 'lucide-react';
 
 const faqs = [
     {
-        question: 'What is D2P ( DICOM TO PRINT ) Modelling Software?',
-        answer: 'It is an Advanced Visualization Software that allows surgeons, radiologists, lab technicians, and device designers to create diagnostic-quality digital 3D models and physical 3D prints easily and quickly. Virtual reality (VR) visualization allows clinicians and point-of-care (POC) staff to minimize the effort and time associated with the creation of patient-specific anatomic models.'
+        question: "What is D2P ( DICOM TO PRINT ) Modelling Software ?",
+        answer: "It is an Advanced Visualization Software, allows surgeons, radiologists, lab technicians, and device designers to create diagnostic-quality digital 3D models and physical 3D prints easily and quickly. Virtual reality (VR) visualization allows clinicians and point-of-care (POC) staff to minimize the effort and time associated with the creation of patient-specific anatomic models."
     },
     {
-        question: 'What all things can we segment using D2P?',
-        answer: 'D2P software has three modules: 1. Bone, 2. Teeth, 3. Vascular. It has an auto segmentation feature where you can directly segment the part in one click.'
+        question: "What all things can we segment using D2P ?",
+        answer: "D2P software has three modules. 1. Bone 2. Teeth 3.Vascular. It has an auto segmentation feature in which we can directly segment the part in one Click."
     },
     {
-        question: 'Can we directly print from D2P?',
-        answer: 'Yes, we can directly print the segmented part from any 3D Systems verified printer.'
+        question: "Can we directly print from D2P ?",
+        answer: "Yes We Can Directly Print the Segmented Part from any 3D System Verified Printer."
     },
     {
-        question: 'What is the use of Virtual Reality in D2P Software?',
-        answer: 'Virtual Reality is used to perform preoperative surgical planning, improve patient education, help patients manage stress, provide more detailed medical imaging, and achieve faster rehabilitation.'
+        question: "What is the use of Virtual Reality in D2P Software ?",
+        answer: "Virtual Reality is used to perform Preoperative Surgical Planning, Improve Patient Education, Helps Patient Manage Stress, More Detailed Medical Imaging and Faster Rehabilitation."
     },
     {
-        question: 'What Different Scanned Data can be imported to Create 3D Models?',
-        answer: 'D2P uses DICOM images created by CT scans, CBCT scans, and MRI scans for creating 3D models.'
+        question: "What Different Scanned Data can be imported to Create 3D Models ?",
+        answer: "D2P uses DICOM Images Created by CT Scan, CBCT Scan And MRI Scans for Creating 3D Models."
     },
     {
-        question: 'What Outputs can be obtained using D2P Software?',
-        answer: 'We can obtain PLY, OBJ, STL, IGES, and PDF files using D2P software. These files can be used directly in Geomagic Freeform or sent directly for 3D printing.'
+        question: "What Outputs can be obtained using D2P Software ?",
+        answer: "We Can obtain PLY, OBJ, STL, IGES, PDF files using D2P Software. We can Directly use the given file in Geomagic Freeform and make changes or Directly Print it."
     },
     {
-        question: 'Is D2P Software A Perpetual Or Yearly Subscription?',
-        answer: 'D2P is a one-time purchase perpetual license application; it is not available as a rental or yearly subscription.'
+        question: "Is D2P Software A Perpetual Or Yearly Subscription?",
+        answer: "D2P is a one-time purchase perpetual license application, it’s not possible to rent or yearly subscribe software."
     },
     {
-        question: 'Where can I buy D2P Software in India?',
-        answer: 'You can buy D2P Software from 3D Systems authorized resellers in India. Graft3D Healthcare is one of the authorized distributors and resellers in India.'
+        question: "Where can I buy D2P Software in India?",
+        answer: "You can buy D2P Software from 3dsystems authorized resellers in India.We are Graft3D Healthcare, one of the authorized distributors, a reseller of Haptic Device in India."
     }
 ];
 
 const FaqSection = () => {
     const [openIndex, setOpenIndex] = useState<number | null>(0);
 
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(item => ({
+            "@type": "Question",
+            "name": item.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": item.answer
+            }
+        }))
+    };
+
     return (
         <section className="py-20 bg-[#f8fbff]">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />
             <div className="max-w-4xl mx-auto px-4">
                 <h2 className="text-3xl font-extrabold text-[#1a365d] text-center mb-12 uppercase tracking-tightLine">
                     Frequently Asked Questions

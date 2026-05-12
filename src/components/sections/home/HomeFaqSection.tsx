@@ -3,38 +3,51 @@ import FaqAccordion from '@/components/common/FaqAccordion';
 
 const faqItems = [
     {
-        question: "What is the EinScan Medixa 3D Scanner used for?",
-        answer: "The EinScan Medixa is a medical-grade 3D scanner specifically designed for prosthetics, orthotics, and facial prosthesis applications. It enables accurate digital capture of patient anatomy, supporting the design and fabrication of customized medical devices such as limb prostheses, orthoses, craniofacial prosthetics, and rehabilitation solutions."
+        question: "What does Graft3D specialize in?",
+        answer: "Graft3D specializes in patient-specific medical solutions, including CT/MRI/CBCT to 3D model conversion, surgical planning, and custom-designed implants and guides for clinical use."
     },
     {
-        question: "How accurate is the EinScan Medixa for medical applications?",
-        answer: "The scanner delivers high-resolution and clinically reliable accuracy of 0.3 mm, essential for medical-grade applications. This level of precision ensures better-fitting prostheses and orthoses, improved patient comfort, and reduced need for remakes or manual adjustments."
+        question: "Who can benefit from Graft3D services?",
+        answer: "Our services are designed for surgeons, hospitals, clinics, and patients who require accurate anatomical models, customized implants, or procedure-specific surgical guides."
     },
     {
-        question: "Can this scanner be used in private clinics and hospitals?",
-        answer: "Absolutely. The EinScan Medixa is well-suited for private clinics, rehabilitation centers, and hospitals, offering fast scanning, reliable accuracy, and hygienic non-contact operation. It integrates smoothly into clinical workflows, helping practitioners reduce patient turnaround time while improving fitting precision."
+        question: "Which medical applications does Graft3D support?",
+        answer: "We support applications across cranio-maxillofacial, orthopaedics, dental, spinal, and trauma cases, including pre-surgical planning, implant design, and cutting or drilling guides."
     },
     {
-        question: "Is the scanning process safe and comfortable for patients?",
-        answer: "Yes. The EinScan Medixa uses non-invasive, non-contact optical scanning, making it completely safe and comfortable for patients. It is especially beneficial for scanning sensitive areas such as the face, residual limbs, or post-operative regions without causing discomfort."
+        question: "What imaging data is required to get started?",
+        answer: "We work with CT, MRI, and CBCT DICOM data. Once the scan is shared, our team handles segmentation, 3D modeling, and design based on the clinical requirement."
     },
     {
-        question: "What types of applications can be supported with this scanner?",
-        answer: "The EinScan Medixa supports a wide range of applications, including upper and lower limb prosthetics, enabling precise digital capture for customized fittings. It is widely used for designing orthotic devices such as AFOs, KAFOs, and spinal orthoses with high accuracy and consistency. Additionally, it is suitable for facial prostheses, medical research, and training, making it a versatile solution for clinical and educational environments."
+        question: "How long does it take to deliver a solution?",
+        answer: "Turnaround time depends on case complexity, but most models, guides, or implant designs are delivered within a few working days, with urgent cases prioritized when required."
     },
     {
-        question: "Is the scanner compatible with CAD/CAM and 3D printing workflows?",
-        answer: "Yes. The EinScan Medixa seamlessly integrates with CAD/CAM software and 3D printing systems, enabling a complete digital workflow—from scanning to design and fabrication. This makes it ideal for labs and institutions adopting digital manufacturing in healthcare."
-    },
-    {
-        question: "What support and training options are available?",
-        answer: "Graft3D provides installation support, user training, and technical assistance for the EinScan Medixa. Hands-on training is provided for students, clinicians, and technicians using real-time patient cases, ensuring practical understanding of the scanning process. This approach helps users gain confidence in actual clinical scenarios, allowing them to fully utilize the scanner’s capabilities in day-to-day clinical practice."
+        question: "How can surgeons or clinics collaborate with Graft3D?",
+        answer: "Simply contact us with your case details or imaging data. Our team works closely with surgeons and clinics to ensure accuracy, customization, and clinical confidence at every step."
     }
 ];
 
 const HomeFaqSection = () => {
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqItems.map(item => ({
+            "@type": "Question",
+            "name": item.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": item.answer
+            }
+        }))
+    };
+
     return (
         <section className="w-full py-16 bg-white">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />
             <div className="max-w-[1400px] mx-auto px-4 max-w-4xl">
                 <h2 className="text-3xl lg:text-4xl font-bold text-center text-primary mb-12">
                     FAQ
@@ -46,3 +59,4 @@ const HomeFaqSection = () => {
 };
 
 export default HomeFaqSection;
+

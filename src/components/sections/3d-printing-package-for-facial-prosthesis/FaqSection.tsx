@@ -3,50 +3,55 @@ import FaqAccordion from '@/components/common/FaqAccordion';
 
 const faqs = [
   {
-    question: "What is a 3D printing lab for prosthetic and orthotic devices?",
-    answer:
-      "A 3D printing lab for prosthetic and orthotic devices is a specialized facility for hospitals and educational institutions that utilizes 3D scans, medical 3D design and 3D printing technology to create customized and personalized prosthetics and orthotics for patients with specific needs.",
+    question: "What is included in the 3D printing package for facial prosthesis?",
+    answer: "The facial prosthesis package includes a facial 3D scanner Einscan Medixa for capturing patient anatomy, dedicated design software Geomagic Freeform for prosthesis modeling, and a 3D printer(MJP 2500)  capable of printing wax patterns. Together, these components enable a complete digital workflow from facial scanning to prosthesis fabrication."
   },
   {
-    question:
-      "How can setting up a 3D printing lab for P&O devices benefit hospitals?",
-    answer:
-      "Hospitals can have the ability to design P&O devices that are custom-made for each patient, perfectly suiting their individual needs. This not only reduces the time but also ensures faster and more efficient service for our valued patients. Moreover, by adopting advanced 3D printing technology, we can cut down on expenses linked to traditional manufacturing techniques like casting, moulding, and manual fabrication, making it cost-effective and accessible to all.",
+    question: "How does a 3D scanner help in facial prosthesis fabrication?",
+    answer: "Einscan Medixa captures the external facial anatomy accurately and non-invasively. This digital facial data serves as a precise reference for designing patient-specific prostheses such as ears, noses, or orbital prostheses, improving symmetry, fit, and aesthetics."
   },
   {
-    question:
-      "What types of prosthetic and orthotic devices can be 3D printed in the lab?",
-    answer:
-      "Our 3D printing lab can produce a wide range of prosthetic and orthotic devices, such as prosthetic sockets for amputees, custom orthotic insoles for foot support and correction, ankle-foot orthoses (AFOs) for gait improvement, knee orthoses for stability and support, and upper limb prosthetics for arm amputees.",
+    question: "What role does the Geomagic freeform play in this workflow?",
+    answer: "Geomagic Freeform allows clinicians or technicians to digitally sculpt and refine facial prostheses using the scanned facial data with a haptic device. It supports anatomical mirroring, margin control, and shape adjustments before fabrication, reducing manual trial-and-error and improving predictability."
   },
   {
-    question: "What 3D printing technologies are used in the lab?",
-    answer:
-      "Our 3D printing lab utilizes advanced pellet extrusion 3D printing to enable fast printing of P&O devices.",
+    question: "Why is wax 3D printing used for facial prosthesis fabrication?",
+    answer: "Wax 3D printing is commonly used to produce accurate prosthesis patterns that can be tried on the patient or used for mold making. Printing in wax allows easy modification, smooth surface finishing, and seamless integration into conventional silicone prosthesis workflows."
   },
   {
-    question:
-      "How accurate are the 3D-printed prosthetic and orthotic devices?",
-    answer:
-      "3D printed devices that are printed in our lab are designed and printed based on the patient’s 3D scan so we ensure the highest level of accuracy that fits the patient’s body parts.",
+    question: "Is this package suitable for private prosthodontic clinics?",
+    answer: "Yes. The package is designed for clinics and private prosthodontic practices that handle facial prosthesis cases. It supports in-house digitization, design, and prototyping, helping clinicians reduce dependency on external labs and shorten turnaround times."
   },
   {
-    question:
-      "Are the 3D-printed prosthetic and orthotic devices durable and long-lasting?",
-    answer:
-      "Yes, our 3D-printed prosthetic and orthotic devices are designed to be durable and long-lasting. We use high-quality materials and follow industry best practices to ensure that the devices can withstand daily wear and tear, providing lasting support and comfort to patients.",
+    question: "Do I need advanced CAD or engineering knowledge to use this system?",
+    answer: "No advanced engineering background is required. The workflow is optimized for clinical use, and the design software is intended to be intuitive for dental and prosthodontic professionals. Training and workflow guidance can further simplify adoption. We provide a 5 Day intensive training program for 3D Scanner and Software training."
   },
   {
-    question:
-      "How can hospitals get started with setting up a 3D printing lab?",
-    answer:
-      "To get started with setting up a 3D printing lab for prosthetic and orthotic devices, hospitals can reach out to our team at sales@graft3d.com. We offer comprehensive consulting and support services, guiding hospitals through the entire process, from selecting the right 3D printing technologies to training staff and implementing the lab.",
-  },
+    question: "What types of facial prostheses can be fabricated using this package?",
+    answer: "This package can be used to design and fabricate wax patterns for auricular (ear), nasal, orbital, and other facial prostheses. The digital workflow supports customization based on patient anatomy and clinical requirements."
+  }
 ];
 
 const FaqSection = () => {
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(item => ({
+            "@type": "Question",
+            "name": item.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": item.answer
+            }
+        }))
+    };
+
     return (
         <section className="py-14 bg-white">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />
             <div className="max-w-[900px] mx-auto px-4">
                 <h2 className="text-[32px] font-bold text-gray-900 text-center mb-10">
                     FAQs
@@ -58,3 +63,4 @@ const FaqSection = () => {
 };
 
 export default FaqSection;
+

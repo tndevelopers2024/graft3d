@@ -6,38 +6,54 @@ import FaqAccordion from '@/components/common/FaqAccordion';
 const faqItems = [
     {
         question: "What healthcare 3D tech products are used by hospitals and surgeons?",
-        answer: "Healthcare 3D Tech Products Integrate Scanning, Medical Image Conversion, And Bio-CAD Tools That Help Hospitals Plan Complex Surgeries And Produce Accurate Anatomical References. Graft3D’s Portfolio Includes Medical Scanners, CT/MRI Conversion Solutions, And Advanced Modeling Software That Streamline Digital Workflows From Imaging To Clinical Application."
+        answer: "Healthcare 3D Tech products integrate scanning, medical image conversion, and bio-CAD tools that help hospitals plan complex surgeries and produce accurate anatomical references. Graft3D’s portfolio includes medical scanners, CT/MRI conversion solutions, and advanced modeling software that streamline digital workflows from imaging to clinical application."
     },
     {
-        question: "Which 3D printing materials for medical applications are commonly used?",
-        answer: "Common 3D Printing Materials For Medical Use Include PEEK, PMMA, And PC Filaments Used For Specialized Healthcare Workflows. Material Choice Depends On Strength, Sterilization Needs, And Intended Use Of Training Models, Guides, Or Device Components."
+        question: "How do Graft3D tech products support Patient-Specific Implant (PSI) design and manufacturing?",
+        answer: "Using Elucis, Geomagic Freeform, and haptic devices, clinicians can design highly accurate patient-specific implants. This enables a seamless workflow from CT data to precision-engineered implant manufacturing."
     },
     {
-        question: "How does a healthcare 3D printing workflow begin from medical scans?",
-        answer: "In Healthcare 3D Printing, Teams Capture Anatomy With A Human Body 3D Scanner Or CT/MRI Data, Convert Scan Data Into Usable 3D Files, Then Refine Designs In Bio-CAD Before Printing. Graft3D Highlights D2P For Conversion And Geomagic Freeform For Modeling."
+        question: "How do Graft3D tech products enable facial prosthesis design?",
+        answer: "With EinScan Medica and Geomagic Freeform, clinicians can create lifelike digital prosthetic models. This allows restoration of facial symmetry, aesthetics, and patient confidence."
     },
     {
-        question: "What is a human body 3D scanner and what is its clinical use?",
-        answer: "A Human Body Scanner Captures The Geometry Of Patient Body Parts Quickly To Create Accurate Digital References For Orthotics, Prosthetics, And Surgical Planning. Graft3D Offers Einscan Medixa With A Footstation As A Healthcare 3D Scanner Option."
+        question: "What makes digital facial prosthesis workflows more effective?",
+        answer: "Combining EinScan H2 with haptic sculpting tools enables precise and repeatable prosthesis design. It reduces manual errors and delivers faster, more predictable aesthetic outcomes."
     },
     {
-        question: "Do you offer a 3D Human body scanner for clinical use?",
-        answer: "If you need a 3d Human body scanner, start by defining whether you’re scanning whole posture or specific limbs for O&P. Graft3D’s products focus on human body scanning and medical workflows, so suitability depends on use case."
+        question: "How are prosthetic (P&O) sockets designed using Graft3D tech products?",
+        answer: "3D scanning with EinScan Medica and processing via Elucis allows accurate limb geometry capture. This results in custom-fit sockets with improved comfort and biomechanical performance."
     },
     {
-        question: "How is a human body 3D scanner and printer setup used in hospitals?",
-        answer: "A 3d full body scanner and printer setup is used to digitize patient anatomy, build printable models or device designs, and support faster customization. Typical hospital uses include prosthetics/orthotics fitting, pre-op visualization, and education models."
+        question: "Which technologies support brace and orthotic manufacturing?",
+        answer: "The workflow combines EinScan H2, Geomagic Freeform, and Funmat Pro 410. This enables production of lightweight, ventilated, and patient-specific orthotic & Prosthetic devices."
     },
     {
-        question: "How do clinicians choose the right 3D body scanner for their application?",
-        answer: "Choose a 3d body scanner machine based on required accuracy, scanning speed, and how easily data flows into medical image conversion and bio-CAD tools. Graft3D showcases scanners alongside D2P conversion, Freeform modeling, and haptic devices. "
+        question: "How do haptic devices enhance design accuracy across these applications?",
+        answer: "Devices like Geomagic Touch and Phantom Premium provide real-time tactile feedback during design. This allows clinicians to feel anatomy digitally and achieve superior precision in complex cases."
     }
-
 ];
 
 const TechProductsFaqSection = () => {
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqItems.map(item => ({
+            "@type": "Question",
+            "name": item.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": item.answer
+            }
+        }))
+    };
+
     return (
         <section className="w-full py-16 bg-white">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />
             <div className="max-w-[1400px] mx-auto px-4 max-w-4xl">
                 <h2 className="text-3xl lg:text-4xl font-bold text-center text-primary mb-12">
                     FAQ
@@ -49,3 +65,4 @@ const TechProductsFaqSection = () => {
 };
 
 export default TechProductsFaqSection;
+

@@ -3,50 +3,55 @@ import FaqAccordion from '@/components/common/FaqAccordion';
 
 const faqs = [
     {
-        question: 'What is the einscan medixa 3d scanner used for in clinics?',
-        answer: 'The einscan medixa 3d scanner is a next-generation, all-in-one handheld system built for comfortable patient anatomy capture. It integrates scanning, processing, and export in a standalone unit, so clinics don\'t need an external computer.',
+        question: "What is the EinScan Medixa 3D Scanner used for?",
+        answer: "The EinScan Medixa is a medical-grade 3D scanner specifically designed for prosthetics, orthotics, and facial prosthesis applications. It enables accurate digital capture of patient anatomy, supporting the design and fabrication of customized medical devices such as limb prostheses, orthoses, craniofacial prosthetics, and rehabilitation solutions."
     },
     {
-        question: 'How does a 3D medical scanner help create outputs for care teams?',
-        answer: 'As a 3D medical scanner, it captures patient anatomy quickly and generates optimized meshes using built-in processing. The device supports clinical documentation with detailed textures, helping clinicians track fit, evaluate outcomes, and share accurate 3D records.',
+        question: "How accurate is the EinScan Medixa for medical applications?",
+        answer: "The scanner delivers high-resolution and clinically reliable accuracy of 0.3 mm, essential for medical-grade applications. This level of precision ensures better-fitting prostheses and orthoses, improved patient comfort, and reduced need for remakes or manual adjustments."
     },
     {
-        question: 'Why choose a 3D scanner for medical 3D printing workflows?',
-        answer: 'A 3D scanner for medical 3D printing should export common formats and fit hospital speed needs. EinScan Medixa outputs STL/OBJ/PLY and can capture an area in under two minutes, supporting faster move-to-design in clinical workflows.',
+        question: "Can this scanner be used in private clinics and hospitals?",
+        answer: "Absolutely. The EinScan Medixa is well-suited for private clinics, rehabilitation centers, and hospitals, offering fast scanning, reliable accuracy, and hygienic non-contact operation. It integrates smoothly into clinical workflows, helping practitioners reduce patient turnaround time while improving fitting precision."
     },
     {
-        question: 'What makes it a 3D scan device for anatomical modelling across skin tones?',
-        answer: 'As a 3D scan device for anatomical modelling, it uses dual light sources (white light and infrared VCSEL) to handle different skin tones and surfaces. High-resolution texture capture supports visualization, simulation, and accurate clinical documentation.',
+        question: "Is the scanning process safe and comfortable for patients?",
+        answer: "Yes. The EinScan Medixa uses non-invasive, non-contact optical scanning, making it completely safe and comfortable for patients. It is especially beneficial for scanning sensitive areas such as the face, residual limbs, or post-operative regions without causing discomfort."
     },
     {
-        question: 'Is medical 3D scan India feasible with a portable, clinic-ready system?',
-        answer: 'Yes—medical 3D scan India becomes easier when the scanner is compact and portable. This device is designed for use in clinics, wards, or on-site environments, with contact-free scanning that supports hygienic, non-invasive patient capture.',
+        question: "What types of applications can be supported with this scanner?",
+        answer: "The EinScan Medixa supports a wide range of applications, including upper and lower limb prosthetics, enabling precise digital capture for customized fittings. It is widely used for designing orthotic devices such as AFOs, KAFOs, and spinal orthoses with high accuracy and consistency. Additionally, it is suitable for facial prostheses, medical research, and training, making it a versatile solution for clinical and educational environments."
     },
     {
-        question: 'What qualifies it as a high-accuracy 3D scanner for medical models?',
-        answer: "It's positioned as a high-accuracy 3D scanner for medical models through adjustable point distance (0.2 mm to 3.0 mm) and motion compensation that reduces movement artifacts. Automatic alignment modes improve reliable data registration for repeatable results.",
+        question: "Is the scanner compatible with CAD/CAM and 3D printing workflows?",
+        answer: "Yes. The EinScan Medixa seamlessly integrates with CAD/CAM software and 3D printing systems, enabling a complete digital workflow—from scanning to design and fabrication. This makes it ideal for labs and institutions adopting digital manufacturing in healthcare."
     },
     {
-        question: 'How does 3D scanning for hospitals and clinics improve patient comfort?',
-        answer: '3D scanning for hospitals and clinics benefits from contact-free capture, which is more hygienic and non-invasive—useful for pediatric and sensitive cases. Lightweight portability also supports scanning outside dedicated labs, reducing patient handling and wait time.',
-    },
-    {
-        question: 'What is the patient scan to STL 3D printing workflow with this scanner?',
-        answer: 'In a patient scan to STL 3D printing workflow, you scan anatomy, let the built-in processor generate and smooth meshes with hole filling, then export STL. Files transfer via USB or local network into CAD/CAM or O&P design software.',
-    },
-    {
-        question: 'Can it convert CT/MRI scan to 3D model directly?',
-        answer: 'To convert CT/MRI scan to 3D model, you typically need medical image segmentation software. EinScan Medixa focuses on external anatomy scanning and exports STL/OBJ/PLY, so it complements imaging workflows rather than replacing CT/MRI conversion tools.',
-    },
-    {
-        question: 'Is it a 3D scan solution for prosthetics & implants and anatomical replicas?',
-        answer: "Yes, it's tailored for orthotics and prosthetics—capturing sockets, limbs, feet, and more using preset clinical modes. Fast acquisition and accurate alignment support creating 3D scanner for anatomical replicas used in design, fitting evaluation, and fabrication.",
-    },
+        question: "What support and training options are available?",
+        answer: "Graft3D provides installation support, user training, and technical assistance for the EinScan Medixa. Hands-on training is provided for students, clinicians, and technicians using real-time patient cases, ensuring practical understanding of the scanning process. This approach helps users gain confidence in actual clinical scenarios, allowing them to fully utilize the scanner’s capabilities in day-to-day clinical practice."
+    }
 ];
 
 const EinscanMedixaFaq = () => {
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(item => ({
+            "@type": "Question",
+            "name": item.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": item.answer
+            }
+        }))
+    };
+
     return (
         <section className="py-20 bg-white">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />
             <div className="container mx-auto px-4 max-w-4xl">
                 <div className="text-center mb-12">
                     <h2 className="text-[40px] font-bold text-[#0066b2]">Frequently Asked Questions</h2>
@@ -58,3 +63,4 @@ const EinscanMedixaFaq = () => {
 };
 
 export default EinscanMedixaFaq;
+

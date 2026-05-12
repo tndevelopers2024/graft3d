@@ -29,13 +29,30 @@ const faqItems = [
   {
     question: "Is polycarbonate compatible with sterilization protocols?",
     answer:
-      "For PC filament for industrial and medical 3D prints, the page suggests extrusion around 260–310°C and bed temperature around 90–110°C, with moderate print speeds (30–60 mm/s) and enclosure/adhesion methods to reduce warping.",
+      "Yes. Polycarbonate is compatible with low-temperature sterilization methods such as EtO, maintaining strength and accuracy after sterilization.",
   },
 ];
 
 const FaqSection = () => {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqItems.map((item) => ({
+      "@type": "Question",
+      "name": item.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.answer,
+      },
+    })),
+  };
+
   return (
     <section className="w-full py-16 bg-[#f5f9ff]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <div className="max-w-[1400px] mx-auto px-4">
         <h2 className="text-3xl font-bold text-black mb-6 text-center">FAQs</h2>
         <FaqAccordion items={faqItems} />
