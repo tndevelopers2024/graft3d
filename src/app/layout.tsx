@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import NavTopBar from "../components/layout/NavTopBar";
 import Navbar from "../components/layout/Navbar";
@@ -7,14 +7,31 @@ import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import FloatingButtons from "../components/common/FloatingButtons";
 
-const poppins = Poppins({
+const poppins = localFont({
+  src: [
+    {
+      path: "../../public/fonts/poppins/poppins-400.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/poppins/poppins-500.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/poppins/poppins-600.ttf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/poppins/poppins-700.ttf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
   variable: "--font-poppins",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  style: "normal",
   display: "swap",
-  preload: true,
-
 });
 
 
