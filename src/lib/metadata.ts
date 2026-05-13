@@ -280,6 +280,20 @@ export const PAGE_METADATA = {
         ]
     ),
 
+    regraftArtileg: meta(
+        'Regraft ArtiLeg | Custom Artificial Leg & Socket Prosthetics',
+        'Custom artificial legs and socket prosthetics designed to restore mobility, independence, comfort, and long-term confidence for lower-limb amputees.',
+        '/regraft-artileg/',
+        [
+            'Regraft ArtiLeg',
+            'custom artificial leg',
+            'socket prosthetics',
+            'lower limb prosthetics',
+            '3D printed prosthetic socket',
+            'custom prosthetic leg'
+        ]
+    ),
+
     regraftDigilumin: meta(
         'Regraft Digilumin | Custom Surgical Drill Guides',
         'Regraft Digilumin 3D-printed custom surgical guides for accurate dental implant placement and oral restorations.',
