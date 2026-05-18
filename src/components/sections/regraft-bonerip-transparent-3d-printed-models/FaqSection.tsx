@@ -4,43 +4,45 @@ import { useState } from "react";
 
 const faqItems = [
   {
-    question: "Are training 3D printed models expensive?",
-    answer: (
-      <span>
-        The cost of training 3D-printed models varies depending on the no of the bone model, types
-        of bone etc ..you can email{" "}
-        <a href="mailto:sales@graft3d.com" className="text-primary underline">
-          sales@graft3d.com
-        </a>
-      </span>
-    ),
+    question: "What are Transparent 3D Printed Models in surgical planning?",
+    answer: "Transparent 3D printed models are anatomically accurate replicas created from CT or CBCT data using clear, medical-grade resins, allowing clinicians to visualize both external morphology and internal structures such as canals, lesions, or vascular pathways."
   },
   {
-    question: "Where can I purchase training 3D printed models?",
-    answer: (
-      <span>
-        You can buy them directly by placing an order with us at{" "}
-        <a href="mailto:sales@graft3d.com" className="text-primary underline">
-          sales@graft3d.com
-        </a>{" "}
-        or buy them online from our website.
-      </span>
-    ),
+    question: "How are these transparent models different from conventional opaque models?",
+    answer: "Unlike opaque models, transparent models enable simultaneous visualization of internal anatomy without sectioning, making them highly valuable for understanding complex pathologies, fracture patterns, or tumor margins."
   },
   {
-    question: "How long does it take to receive a ReGraft Bonerip 3D Printed Anatomical Model?",
-    answer: "It typically takes 2-3 weeks to receive your custom-made model.",
+    question: "What imaging data is required to fabricate these models?",
+    answer: "High-resolution CT/CBCT DICOM data is used to segment anatomical structures, which are then digitally processed and 3D printed to achieve precise transparency and anatomical fidelity."
   },
   {
-    question: "Are ReGraft Bonerip models reusable?",
-    answer:
-      "ReGraft Bonerip models are not intended to be reused as they are used through models made for drilling and cutting the bone, which will not make the anatomical model reusable..",
+    question: "How accurate are Transparent 3D Printed Models?",
+    answer: "These models offer high dimensional accuracy (often within ±0.1–0.3 mm depending on printer and workflow), ensuring reliable representation of both external contours and internal anatomical details."
   },
   {
-    question: "What are Graft3D ReGraft Bonerip 3D printed Training models?",
-    answer:
-      "ReGraft Bonerip's 3D Printed Anatomical Model is a game-changing product that offers unparalleled benefits to medical colleges and professionals. With its advanced technology, customisable design, and affordability, ReGraft Bonerip is the ideal solution for surgical practice and medical training. Invest in ReGraft Bonerip today and elevate your institution to the next level.",
+    question: "What are the key clinical applications of transparent models?",
+    answer: "They are widely used in maxillofacial surgery, orthopedics, neurosurgery, and oncology for visualizing internal defects, tumor boundaries, nerve canals, and vascular structures prior to surgery."
   },
+  {
+    question: "Can these models be used for surgical simulation and planning?",
+    answer: "Yes, clinicians can perform visual planning, spatial orientation, and guided decision-making, especially in cases where internal anatomy plays a critical role in surgical outcomes."
+  },
+  {
+    question: "Do Transparent Models help in patient communication?",
+    answer: "Absolutely. The ability to see through the model helps patients clearly understand their condition, improving treatment acceptance and informed consent."
+  },
+  {
+    question: "Can multiple anatomical structures be highlighted in one transparent model?",
+    answer: "Yes, advanced workflows allow multi-color or tinted segmentation within transparent models, helping differentiate structures like tumors, nerves, or implants for better clinical interpretation."
+  },
+  {
+    question: "How do Transparent Models improve surgical outcomes?",
+    answer: "By providing a clear understanding of internal anatomy, these models reduce intraoperative guesswork, enhance precision, and contribute to shorter surgical time and improved safety."
+  },
+  {
+    question: "Why choose Graft3D Transparent 3D Printed Models?",
+    answer: "Graft3D combines advanced segmentation, high-resolution printing, and clinical expertise to deliver models that enhance visualization, improve surgical confidence, and support superior patient outcomes."
+  }
 ];
 
 const FaqSection = () => {
@@ -50,8 +52,25 @@ const FaqSection = () => {
     setActiveIndex((prev) => (prev === index ? null : index));
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqItems.map(item => ({
+      "@type": "Question",
+      "name": item.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.answer
+      }
+    }))
+  };
+
   return (
     <section className="w-full py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <div className="max-w-[1200px] mx-auto px-4">
         <h2
           className="text-center text-[30px] font-bold text-[#1B6DB1] mb-6"

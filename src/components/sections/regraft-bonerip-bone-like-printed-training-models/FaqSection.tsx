@@ -4,43 +4,60 @@ import { useState } from "react";
 
 const faqItems = [
   {
-    question: "Are training 3D printed models expensive?",
+    question: "What is ReGraft Bonerip Bone-Like Training Model?",
+    answer: "ReGraft Bonerip is a high-precision 3D printed anatomical bone model designed for surgical training, simulation, and preoperative planning, replicating real human bone structure using advanced medical 3D printing and imaging workflows."
+  },
+  {
+    question: "How realistic are these bone-like models compared to real human bone?",
+    answer: "Bonerip models are fabricated using bone-mimicking materials that replicate the density, tactile feedback, drilling resistance, and cutting feel of natural bone, enabling surgeons to practice procedures in a near-clinical environment."
+  },
+  {
+    question: "What are the clinical applications of Bonerip models?",
     answer: (
-      <span>
-        The cost of training 3D-printed models varies depending on the no of the bone model, types
-        of bone etc ..you can email{" "}
-        <a href="mailto:sales@graft3d.com" className="text-primary underline">
-          sales@graft3d.com
-        </a>
-      </span>
-    ),
+      <div>
+        <p className="mb-2">Bonerip models are widely used in:</p>
+        <ul className="list-disc pl-5 mb-2 space-y-1">
+          <li>Orthopedic and trauma surgery planning</li>
+          <li>Maxillofacial and craniofacial reconstruction</li>
+          <li>Tumor resection planning (oncology)</li>
+          <li>Implant positioning and fixation practice</li>
+          <li>Resident and surgical training programs</li>
+        </ul>
+        <p>They allow surgeons to simulate procedures before entering the OT, improving precision and reducing intraoperative uncertainty.</p>
+      </div>
+    )
   },
   {
-    question: "Where can I purchase training 3D printed models?",
+    question: "Why is bone-like material important in surgical training?",
     answer: (
-      <span>
-        You can buy them directly by placing an order with us at{" "}
-        <a href="mailto:sales@graft3d.com" className="text-primary underline">
-          sales@graft3d.com
-        </a>{" "}
-        or buy them online from our website.
-      </span>
-    ),
+      <div>
+        <p className="mb-2">Unlike standard plastic models, bone-like materials provide:</p>
+        <ul className="list-disc pl-5 space-y-1">
+          <li>Realistic drilling and cutting resistance</li>
+          <li>Accurate screw fixation feedback</li>
+          <li>Better instrument handling simulation</li>
+        </ul>
+      </div>
+    )
   },
   {
-    question: "How long does it take to receive a ReGraft Bonerip 3D Printed Anatomical Model?",
-    answer: "It typically takes 2-3 weeks to receive your custom-made model.",
+    question: "How does Bonerip improve surgical outcomes?",
+    answer: (
+      <div>
+        <p className="mb-2">Studies show that 3D printed anatomical models significantly enhance surgical planning and execution by improving visualization and decision-making. By enabling preoperative rehearsal, Bonerip helps:</p>
+        <ul className="list-disc pl-5 space-y-1">
+          <li>Reduce surgical time</li>
+          <li>Minimize intraoperative errors</li>
+          <li>Improve implant placement accuracy</li>
+          <li>Enhance understanding of complex anatomy</li>
+        </ul>
+      </div>
+    )
   },
   {
-    question: "Are ReGraft Bonerip models reusable?",
-    answer:
-      "ReGraft Bonerip models are not intended to be reused as they are used through models made for drilling and cutting the bone, which will not make the anatomical model reusable..",
-  },
-  {
-    question: "What are Graft3D ReGraft Bonerip 3D printed Training models?",
-    answer:
-      "ReGraft Bonerip's 3D Printed Anatomical Model is a game-changing product that offers unparalleled benefits to medical colleges and professionals. With its advanced technology, customisable design, and affordability, ReGraft Bonerip is the ideal solution for surgical practice and medical training. Invest in ReGraft Bonerip today and elevate your institution to the next level.",
-  },
+    question: "Why is Bonerip important in modern surgical education?",
+    answer: "Because it allows surgeons to practice without risk, understand complex anatomy, and gain confidence, ultimately leading to safer surgeries and better patient outcomes."
+  }
 ];
 
 const FaqSection = () => {
@@ -50,8 +67,67 @@ const FaqSection = () => {
     setActiveIndex((prev) => (prev === index ? null : index));
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is ReGraft Bonerip Bone-Like Training Model?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ReGraft Bonerip is a high-precision 3D printed anatomical bone model designed for surgical training, simulation, and preoperative planning, replicating real human bone structure using advanced medical 3D printing and imaging workflows."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How realistic are these bone-like models compared to real human bone?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bonerip models are fabricated using bone-mimicking materials that replicate the density, tactile feedback, drilling resistance, and cutting feel of natural bone, enabling surgeons to practice procedures in a near-clinical environment."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the clinical applications of Bonerip models?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bonerip models are widely used in: Orthopedic and trauma surgery planning, Maxillofacial and craniofacial reconstruction, Tumor resection planning (oncology), Implant positioning and fixation practice, Resident and surgical training programs. They allow surgeons to simulate procedures before entering the OT, improving precision and reducing intraoperative uncertainty."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is bone-like material important in surgical training?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Unlike standard plastic models, bone-like materials provide: Realistic drilling and cutting resistance, Accurate screw fixation feedback, Better instrument handling simulation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does Bonerip improve surgical outcomes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Studies show that 3D printed anatomical models significantly enhance surgical planning and execution by improving visualization and decision-making. By enabling preoperative rehearsal, Bonerip helps: Reduce surgical time, Minimize intraoperative errors, Improve implant placement accuracy, Enhance understanding of complex anatomy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is Bonerip important in modern surgical education?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Because it allows surgeons to practice without risk, understand complex anatomy, and gain confidence, ultimately leading to safer surgeries and better patient outcomes."
+        }
+      }
+    ]
+  };
+
   return (
     <section className="w-full py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <div className="max-w-[1200px] mx-auto px-4">
         <h2
           className="text-center text-[30px] font-bold text-[#1B6DB1] mb-6"

@@ -4,43 +4,41 @@ import { useState } from "react";
 
 const faqItems = [
   {
-    question: "Are training 3D printed models expensive?",
-    answer: (
-      <span>
-        The cost of training 3D-printed models varies depending on the no of the bone model, types
-        of bone etc ..you can email{" "}
-        <a href="mailto:sales@graft3d.com" className="text-primary underline">
-          sales@graft3d.com
-        </a>
-      </span>
-    ),
+    question: "What is the Graft3D Regraft Bonerip coloured 3D printed model?",
+    answer: "The Graft3D Regraft Bonerip is a patient-specific, coloured 3D printed anatomical model designed using CT/CBCT imaging data. It accurately replicates bone morphology with color-coded anatomical differentiation, enabling enhanced visualization for diagnosis, surgical planning, and education."
   },
   {
-    question: "Where can I purchase training 3D printed models?",
-    answer: (
-      <span>
-        You can buy them directly by placing an order with us at{" "}
-        <a href="mailto:sales@graft3d.com" className="text-primary underline">
-          sales@graft3d.com
-        </a>{" "}
-        or buy them online from our website.
-      </span>
-    ),
+    question: "How is a coloured 3D printed bone model different from a standard (monochrome) model?",
+    answer: "Unlike conventional single-color models, coloured 3D prints provide segmented anatomical clarity, distinguishing structures such as cortical bone, cancellous bone, defects, lesions, and critical landmarks. This significantly improves clinical interpretation, communication, and surgical precision."
   },
   {
-    question: "How long does it take to receive a ReGraft Bonerip 3D Printed Anatomical Model?",
-    answer: "It typically takes 2-3 weeks to receive your custom-made model.",
+    question: "Can the coloured model be used for surgical simulation or drilling?",
+    answer: "These models are primarily designed for visualization, planning, and patient communication. While they provide structural accuracy, they are not always suitable for drilling or load-bearing simulation unless specifically requested with reinforced materials."
   },
   {
-    question: "Are ReGraft Bonerip models reusable?",
-    answer:
-      "ReGraft Bonerip models are not intended to be reused as they are used through models made for drilling and cutting the bone, which will not make the anatomical model reusable..",
+    question: "How does this model improve surgical planning outcomes?",
+    answer: "Color-coded models help clinicians clearly identify defect margins and anatomical boundaries while enabling precise pre-planning of osteotomies and implant positioning. They reduce intraoperative guesswork, improving surgical predictability, efficiency, and overall clinical outcomes."
   },
   {
-    question: "What are Graft3D ReGraft Bonerip 3D printed Training models?",
-    answer:
-      "ReGraft Bonerip's 3D Printed Anatomical Model is a game-changing product that offers unparalleled benefits to medical colleges and professionals. With its advanced technology, customisable design, and affordability, ReGraft Bonerip is the ideal solution for surgical practice and medical training. Invest in ReGraft Bonerip today and elevate your institution to the next level.",
+    question: "Is the model useful for patient education and case acceptance?",
+    answer: "Absolutely. The coloured model helps patients visually understand their condition, increasing trust and significantly improving treatment acceptance rates."
   },
+  {
+    question: "Can multiple anatomical structures be highlighted in different colours?",
+    answer: "Yes. Custom segmentation allows for multi-structure color mapping, including nerves, sinuses, defects, tumors, or graft regions—tailored to the clinical requirement."
+  },
+  {
+    question: "What specialties benefit most from coloured 3D printed bone models?",
+    answer: "Coloured 3D printed bone models are highly beneficial in specialties such as maxillofacial surgery, implant dentistry, orthopedics, neurosurgery, and plastic & reconstructive surgery. They enhance visualization, enabling better diagnosis, surgical planning, and precision in complex cases."
+  },
+  {
+    question: "What makes Graft3D Regraft Bonerip unique in the market?",
+    answer: "Graft3D models combine true patient-specific customization with high-fidelity color segmentation for precise anatomical representation. Built on clinically driven workflows, they support accurate surgical planning and informed decision-making."
+  },
+  {
+    question: "How do I order a coloured 3D printed Bonerip model from Graft3D?",
+    answer: "Simply upload your DICOM dataset and clinical requirements via Graft3D. The team will handle segmentation, design, and production, delivering a ready-to-use model."
+  }
 ];
 
 const FaqSection = () => {
@@ -50,8 +48,25 @@ const FaqSection = () => {
     setActiveIndex((prev) => (prev === index ? null : index));
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqItems.map(item => ({
+      "@type": "Question",
+      "name": item.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.answer
+      }
+    }))
+  };
+
   return (
     <section className="w-full py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <div className="max-w-[1200px] mx-auto px-4">
         <h2
           className="text-center text-[30px] font-bold text-[#1B6DB1] mb-6"

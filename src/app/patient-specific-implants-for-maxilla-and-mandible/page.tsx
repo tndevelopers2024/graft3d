@@ -4,7 +4,7 @@ import Overview from "@/components/sections/patient-specific-implants-for-maxill
 import AdvantagesSection from "@/components/sections/patient-specific-implants-for-maxilla-and-mandible/AdvantagesSection";
 import TechnologiesSection from "@/components/sections/patient-specific-implants-for-maxilla-and-mandible/TechnologiesSection";
 import PossibleComplicationsSection from "@/components/sections/patient-specific-implants-for-maxilla-and-mandible/PossibleComplicationsSection";
-import FaqSection from "@/components/sections/reconstruction-of-the-maxilla-and-mandible/FaqSection";
+import FaqSection from "@/components/sections/patient-specific-implants-for-maxilla-and-mandible/FaqSection";
 import BottomCta from "@/components/sections/reconstruction-of-the-maxilla-and-mandible/BottomCta";
 
 import { PAGE_METADATA } from '@/lib/metadata';
