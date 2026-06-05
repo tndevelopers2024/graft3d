@@ -1,5 +1,5 @@
 import { PAGE_METADATA } from '@/lib/metadata';
-import BannerCarousel from "../components/sections/home/BannerCarousel";
+import HomeHero from "../components/sections/home/HomeHero";
 import AboutSection from "../components/sections/home/AboutSection";
 import StatsSection from "../components/sections/home/StatsSection";
 import ProductsSection from "../components/sections/home/ProductsSection";
@@ -51,7 +51,7 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <BannerCarousel  />
+      <HomeHero />
       <AboutSection />
       <StatsSection />
       <DemoSection />
