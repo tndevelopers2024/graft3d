@@ -77,30 +77,38 @@ const Pricing = () => {
                     <div className="relative grid grid-cols-1 md:grid-cols-3 gap-6">
                         {PLANS.map((p) => (
                             <div key={p.title} className="flex flex-col rounded-2xl bg-white p-7 shadow-lg">
-                                <h3 className="text-2xl lg:text-[28px] font-bold text-[#2A2A2A] leading-tight">{p.title}</h3>
-                                <p className="mt-1 text-[#2A2A2A]/70 text-[15px]">{p.subtitle}</p>
-
-                                {p.price ? (
-                                    <div className="mt-6 flex items-baseline gap-3">
-                                        {p.oldPrice && (
-                                            <span className="text-lg text-[#9aa3ad] line-through">{p.oldPrice}</span>
-                                        )}
-                                        <span className="text-4xl lg:text-[44px] font-bold text-[#1B6DB1] leading-none">
-                                            {p.price}
-                                        </span>
+                                <div className="flex-1 flex flex-col justify-between">
+                                    <div>
+                                        <h3 className="text-2xl lg:text-[28px] font-bold text-[#2A2A2A] leading-tight">{p.title}</h3>
+                                        <p className="mt-1 text-[#2A2A2A]/70 text-[15px]">{p.subtitle}</p>
                                     </div>
-                                ) : (
-                                    <Link
-                                        href="/get-quote"
-                                        className="mt-6 inline-flex items-center justify-center rounded-lg border-2 border-[#1B6DB1] px-5 py-3 text-[#1B6DB1] font-bold hover:bg-[#1B6DB1] hover:text-white transition-colors"
-                                    >
-                                        {p.cta}
-                                    </Link>
-                                )}
 
-                                {p.badge && (
-                                    <p className="mt-5 text-center font-bold text-[#2A2A2A]">{p.badge}</p>
-                                )}
+                                    <div>
+                                        {p.price ? (
+                                            <div className="mt-6 flex items-baseline gap-3">
+                                                {p.oldPrice && (
+                                                    <span className="text-lg text-[#9aa3ad] line-through">{p.oldPrice}</span>
+                                                )}
+                                                <span className="text-4xl lg:text-[44px] font-bold text-[#1B6DB1] leading-none">
+                                                    {p.price}
+                                                </span>
+                                            </div>
+                                        ) : (
+                                            <Link
+                                                href="/get-quote"
+                                                className="mt-6 inline-flex items-center justify-center rounded-lg border-2 border-[#1B6DB1] px-5 py-3 text-[#1B6DB1] font-bold hover:bg-[#1B6DB1] hover:text-white transition-colors w-full"
+                                            >
+                                                {p.cta}
+                                            </Link>
+                                        )}
+
+                                        {p.badge ? (
+                                            <p className="mt-5 text-center font-bold text-[#2A2A2A]">{p.badge}</p>
+                                        ) : (
+                                            <div className="mt-5 h-[24px] hidden md:block" aria-hidden="true" />
+                                        )}
+                                    </div>
+                                </div>
 
                                 <ul className="mt-5 space-y-3 list-none">
                                     {p.features.map((f) => (

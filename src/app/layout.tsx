@@ -6,6 +6,7 @@ import Navbar from "../components/layout/Navbar";
 
 import Footer from "../components/layout/Footer";
 import FloatingButtons from "../components/common/FloatingButtons";
+import Script from "next/script";
 
 const poppins = localFont({
   src: [
@@ -63,6 +64,20 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} antialiased`}
       >
+        {/* Google tag (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-L6MBPSRTBR"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-L6MBPSRTBR');
+          `}
+        </Script>
         <NavTopBar />
         <Navbar />
         {children}

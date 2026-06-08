@@ -174,6 +174,7 @@ const Navbar = () => {
                                                         <Link href="/regraft-customised-plates" className="text-sm text-gray-500 hover:text-primary transition-colors italic" onClick={() => setIsMobileMenuOpen(false)}>Regraft Customised Plates</Link>
                                                         <Link href="/regraft-artileg" className="text-sm text-gray-500 hover:text-primary transition-colors italic" onClick={() => setIsMobileMenuOpen(false)}>Regraft ArtiLeg</Link>
                                                         <Link href="/regraft-arti-nose-arti-ear" className="text-sm text-gray-500 hover:text-primary transition-colors italic" onClick={() => setIsMobileMenuOpen(false)}>Regraft Arti nose & Arti ear</Link>
+                                                        <Link href="/regraft-custom-implants" className="text-sm text-gray-500 hover:text-primary transition-colors italic" onClick={() => setIsMobileMenuOpen(false)}>Regraft Custom Implants</Link>
                                                         <Link href="/regraft-digilumin" className="text-sm text-gray-500 hover:text-primary transition-colors italic" onClick={() => setIsMobileMenuOpen(false)}>Regraft Digilumin</Link>
                                                         <Link href="/regraft-digiprun" className="text-sm text-gray-500 hover:text-primary transition-colors italic" onClick={() => setIsMobileMenuOpen(false)}>Regraft Digiprun</Link>
                                                     </div>
@@ -201,8 +202,12 @@ const Navbar = () => {
                                                 <Link href="/geomagic-freeform" className="text-sm text-gray-500 hover:text-primary transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Geomagic Freeform</Link>
                                                 <Link href="/dicom-to-3d-model-conversion-software" className="text-sm text-gray-500 hover:text-primary transition-colors" onClick={() => setIsMobileMenuOpen(false)}>D2P</Link>
                                                 <Link href="/geomagic-touch-x-haptic-device" className="text-sm text-gray-500 hover:text-primary transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Geomagic Touch & Touch X</Link>
+                                                <Link href="/inverse3" className="text-sm text-gray-500 hover:text-primary transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Inverse3</Link>
+                                                <Link href="/minverse" className="text-sm text-gray-500 hover:text-primary transition-colors" onClick={() => setIsMobileMenuOpen(false)}>MinVerse</Link>
                                                 <Link href="/einscan-h2-human-body-bodyparts-3d-scanner" className="text-sm text-gray-500 hover:text-primary transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Einscan H2</Link>
                                                 <Link href="/phantom-premium-haptic-device" className="text-sm text-gray-500 hover:text-primary transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Phantom Premium</Link>
+                                                <Link href="/medical-image-segmentation" className="text-sm text-gray-500 hover:text-primary transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Medical Image Segmentation</Link>
+                                                <Link href="/regraft-custom-implants" className="text-sm text-gray-500 hover:text-primary transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Regraft Custom Implants</Link>
                                             </div>
                                         )}
                                     </div>
@@ -288,14 +293,14 @@ const Navbar = () => {
                         <div className="flex items-center justify-between w-full font-bold">
                             <Link
                                 href="/medical-3d-printing-service"
-                                className={`flex-grow ${isActive('/medical-3d-printing-service') || isActive('/medical-image-segmentation-service') || isActive('/bio-cad-modeling-service') ? 'text-primary' : 'text-black'}`}
+                                className={`flex-grow ${isActive('/medical-3d-printing-service') || isActive('/medical-image-segmentation') || isActive('/bio-cad-modeling-service') ? 'text-primary' : 'text-black'}`}
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
                                 3D Service
                             </Link>
                             <button
                                 onClick={() => toggleDropdown('services')}
-                                className={`p-2 ${isActive('/medical-3d-printing-service') || isActive('/medical-image-segmentation-service') || isActive('/bio-cad-modeling-service') ? 'text-primary' : 'text-black'}`}
+                                className={`p-2 ${isActive('/medical-3d-printing-service') || isActive('/medical-image-segmentation') || isActive('/bio-cad-modeling-service') ? 'text-primary' : 'text-black'}`}
                             >
                                 <svg className={`w-4 h-4 transition-transform ${activeDropdown === 'services' ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
@@ -304,7 +309,7 @@ const Navbar = () => {
                         </div>
                         {activeDropdown === 'services' && (
                             <div className="pl-4 mt-2 flex flex-col gap-2 border-l-2 border-primary/20">
-                                <Link href="/medical-image-segmentation-service" className="text-sm text-gray-600 hover:text-primary" onClick={() => setIsMobileMenuOpen(false)}>Medical Image Segmentation </Link>
+                                <Link href="/medical-image-segmentation" className="text-sm text-gray-600 hover:text-primary" onClick={() => setIsMobileMenuOpen(false)}>Medical Image Segmentation</Link>
                                 <Link href="/bio-cad-modeling-service" className="text-sm text-gray-600 hover:text-primary" onClick={() => setIsMobileMenuOpen(false)}>Graft3D Bio CAD Modeling</Link>
                             </div>
                         )}
@@ -352,6 +357,7 @@ const Navbar = () => {
                                                         <Link href="/regraft-customised-plates" className="px-6 py-3  text-[13px]   transition-colors border-b border-gray-800">Regraft Customised Plates</Link>
                                                         <Link href="/regraft-artileg" className="px-6 py-3 text-[13px] transition-colors border-b border-gray-800">Regraft ArtiLeg</Link>
                                                         <Link href="/regraft-arti-nose-arti-ear" className="px-6 py-3 text-[13px]  transition-colors border-b border-gray-800">Regraft Arti nose & Arti ear</Link>
+                                                        <Link href="/regraft-custom-implants" className="px-6 py-3 text-[13px]  transition-colors border-b border-gray-800">Regraft Custom Implants</Link>
                                                         <Link href="/regraft-digilumin" className="px-6 py-3  text-[13px]   transition-colors border-b border-gray-800">Regraft Digilumin</Link>
                                                         <Link href="/regraft-digiprun" className="px-6 py-3  text-[13px]   transition-colors border-b border-gray-800">Regraft Digiprun</Link>
                                                     </div>
@@ -378,8 +384,12 @@ const Navbar = () => {
                                             <Link href="/geomagic-freeform" className="px-6 py-3 text-[14px] transition-colors border-b border-gray-800 last:border-0">Geomagic Freeform</Link>
                                             <Link href="/dicom-to-3d-model-conversion-software" className="px-6 py-3 text-[14px] transition-colors border-b border-gray-800 last:border-0">D2P</Link>
                                             <Link href="/geomagic-touch-x-haptic-device" className="px-6 py-3 text-[14px] transition-colors border-b border-gray-800 last:border-0">Geomagic Touch & Touch X</Link>
+                                            <Link href="/inverse3" className="px-6 py-3 text-[14px] transition-colors border-b border-gray-800 last:border-0">Inverse3</Link>
+                                            <Link href="/minverse" className="px-6 py-3 text-[14px] transition-colors border-b border-gray-800 last:border-0">MinVerse</Link>
                                             <Link href="/einscan-h2-human-body-bodyparts-3d-scanner" className="px-6 py-3 text-[14px] transition-colors border-b border-gray-800 last:border-0">Einscan H2</Link>
                                             <Link href="/phantom-premium-haptic-device" className="px-6 py-3 text-[14px] transition-colors border-b border-gray-800 last:border-0">Phantom Premium</Link>
+                                            <Link href="/medical-image-segmentation" className="px-6 py-3 text-[14px] transition-colors border-b border-gray-800 last:border-0">Medical Image Segmentation</Link>
+                                            <Link href="/regraft-custom-implants" className="px-6 py-3 text-[14px] transition-colors border-b border-gray-800 last:border-0">Regraft Custom Implants</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -436,7 +446,7 @@ const Navbar = () => {
                     </div>
 
                     {/* 3D Service Dropdown */}
-                    <div className={`group relative cursor-pointer h-full flex items-center gap-1 hover:text-primary transition-colors py-4 ${isActive('/medical-3d-printing-service') || isActive('/medical-image-segmentation-service') || isActive('/bio-cad-modeling-service') ? 'text-primary' : 'text-black'}`}>
+                    <div className={`group relative cursor-pointer h-full flex items-center gap-1 hover:text-primary transition-colors py-4 ${isActive('/medical-3d-printing-service') || isActive('/medical-image-segmentation') || isActive('/bio-cad-modeling-service') ? 'text-primary' : 'text-black'}`}>
                         <Link href="/medical-3d-printing-service" className="hover:text-primary transition-colors">
                             3D Service
                         </Link>
@@ -445,7 +455,7 @@ const Navbar = () => {
                         {/* Dropdown Menu */}
                         <div className="hidden group-hover:block absolute top-full left-0 bg-white shadow-lg border-t-2 border-primary min-w-[200px] z-50 animate-fade-in-up">
                             <div className="py-2 flex flex-col">
-                                <Link href="/medical-image-segmentation-service" className="px-4 py-2 hover:bg-gray-50 text-sm text-black hover:text-primary transition-colors">Medical Image Segmentation </Link>
+                                <Link href="/medical-image-segmentation" className="px-4 py-2 hover:bg-gray-50 text-sm text-black hover:text-primary transition-colors">Medical Image Segmentation</Link>
                                 <Link href="/bio-cad-modeling-service" className="px-4 py-2 hover:bg-gray-50 text-sm text-black hover:text-primary transition-colors">Graft3D Bio CAD Modeling</Link>
                             </div>
                         </div>
