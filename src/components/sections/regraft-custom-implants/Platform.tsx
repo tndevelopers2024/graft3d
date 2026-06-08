@@ -5,14 +5,14 @@ import Link from "next/link";
 import { Upload, Check } from "lucide-react";
 
 const PIPELINE_STEPS = [
-    { label: "Scan Uploaded",       img: "/images/regraft-custom-implants/scan-to-implant/1.png" },
-    { label: "In Progress",         img: "/images/regraft-custom-implants/scan-to-implant/2.png" },
-    { label: "Segmentation Review", img: "/images/regraft-custom-implants/scan-to-implant/3.png" },
-    { label: "Quotation",           img: "/images/regraft-custom-implants/scan-to-implant/4.png" },
-    { label: "Payment",             img: "/images/regraft-custom-implants/scan-to-implant/5.png" },
-    { label: "3D In Progress",      img: "/images/regraft-custom-implants/scan-to-implant/6.png" },
-    { label: "3D Review",           img: "/images/regraft-custom-implants/scan-to-implant/7.png" },
-    { label: "3D Model Approved",   img: "/images/regraft-custom-implants/scan-to-implant/8.png" },
+    { label: "Scan Uploaded",       img: "/images/regraft-custom-implants/Rectangle 44.png" },
+    { label: "In Progress",         img: "/images/regraft-custom-implants/scan-to-implant/1.png" },
+    { label: "Segmentation Review", img: "/images/regraft-custom-implants/scan-to-implant/2.png" },
+    { label: "Quotation",           img: "/images/regraft-custom-implants/scan-to-implant/3.png" },
+    { label: "Payment",             img: "/images/regraft-custom-implants/scan-to-implant/4.png" },
+    { label: "3D In Progress",      img: "/images/regraft-custom-implants/scan-to-implant/5.png" },
+    { label: "3D Review",           img: "/images/regraft-custom-implants/scan-to-implant/6.png" },
+    { label: "3D Model Approved",   img: "/images/regraft-custom-implants/scan-to-implant/7.png" },
     { label: "Complete",            img: "/images/regraft-custom-implants/scan-to-implant/8.png" },
 ];
 
@@ -53,11 +53,10 @@ const Platform = () => {
                                     <button
                                         key={step.label}
                                         onClick={() => setActiveStep(i)}
-                                        className={`text-left px-3 py-2.5 rounded-lg text-[13px] font-bold transition-all ${
-                                            i === activeStep
+                                        className={`text-left px-3 py-2.5 rounded-lg text-[13px] font-bold transition-all ${i === activeStep
                                                 ? "bg-white text-[#1b6db1] shadow-sm"
                                                 : "text-[#3a3a3a] hover:bg-white/60"
-                                        }`}
+                                            }`}
                                     >
                                         {step.label}
                                     </button>
