@@ -11,19 +11,19 @@ const CERTS = [
 
 const Hero = () => {
     return (
-        <section 
+        <section
             className="relative w-full overflow-hidden bg-cover bg-center pt-10 sm:pt-14 lg:pt-16 pb-0 flex flex-col justify-between"
             style={{ backgroundImage: "url('/images/regraft-custom-implants/hero-bg.png')" }}
         >
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-20">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
-                    
+
                     {/* Left Column: Content */}
                     <div className="flex flex-col lg:col-span-7 justify-center pb-8 sm:pb-12 lg:pb-20 z-20">
                         {/* ReGraft logo */}
                         <div className="mb-6">
                             <Image
-                                src="/images/regraft-custom-implants/regraft-logo.png"
+                                src="/images/regraft-custom-implants/logo.png"
                                 alt="ReGraft"
                                 width={500}
                                 height={150}
@@ -69,12 +69,12 @@ const Hero = () => {
                                 {CERTS.map((c, idx) => (
                                     <div key={idx} className="flex flex-col items-center text-center gap-1 w-[100px]">
                                         <div className="relative w-[50px] h-[50px] flex items-center justify-center">
-                                            <Image 
-                                                src={c.logo} 
-                                                alt={c.text.join(" ")} 
-                                                fill 
-                                                sizes="50px" 
-                                                className="object-contain" 
+                                            <Image
+                                                src={c.logo}
+                                                alt={c.text.join(" ")}
+                                                fill
+                                                sizes="50px"
+                                                className="object-contain"
                                             />
                                         </div>
                                         <div className="text-[#292929] text-[12px] font-bold leading-tight mt-1">
@@ -89,7 +89,7 @@ const Hero = () => {
                     </div>
 
                     {/* Right Column: Contact Details */}
-                    <div className="relative lg:col-span-5 w-full flex flex-col justify-start items-start lg:items-end z-20 pb-[320px] sm:pb-[420px] lg:pb-0 pt-0 lg:pt-4">
+                    <div className="relative lg:col-span-5 w-full flex flex-col justify-start items-start z-20 pb-[320px] sm:pb-[420px] lg:pb-0 pt-0 lg:pt-4">
                         {/* Contact details stack */}
                         <div className="flex flex-col gap-4 max-w-[280px]">
                             {/* Call Us */}
@@ -106,7 +106,7 @@ const Hero = () => {
                                     </p>
                                 </div>
                             </div>
-                            
+
                             {/* Email Us */}
                             <div className="flex items-center gap-3">
                                 <span className="flex items-center justify-center w-11 h-11 rounded-full bg-[#1b6db1] text-white shrink-0 shadow-md">
@@ -114,8 +114,8 @@ const Hero = () => {
                                 </span>
                                 <div>
                                     <p className="text-[#1364a8] font-bold text-[14px] leading-tight">Email Us</p>
-                                    <a 
-                                        href="mailto:Sales@graft3d.com" 
+                                    <a
+                                        href="mailto:Sales@graft3d.com"
                                         className="text-[#000000] text-[13px] font-bold hover:underline block mt-0.5"
                                     >
                                         Sales@graft3d.com
@@ -129,15 +129,28 @@ const Hero = () => {
             </div>
 
             {/* Absolute Composite Surgeon/Skull Image sitting directly on the bottom border */}
-            <div className="absolute -bottom-6 lg:-bottom-12 right-0 w-full lg:w-[48%] h-[320px] sm:h-[420px] lg:h-[96%] z-10 pointer-events-none select-none">
-                <Image
-                    src="/images/regraft-custom-implants/hero-product.png"
-                    alt="Custom PEEK implant — ArtiBone patient-specific artificial bone"
-                    fill
-                    priority
-                    sizes="(max-width: 1024px) 100vw, 50vw"
-                    className="object-contain object-bottom"
-                />
+            <div className="absolute -bottom-6 lg:-bottom-12 right-0 w-full lg:w-[48%] h-[320px] sm:h-[420px] lg:h-[96%] z-10 pointer-events-none select-none flex items-end justify-end">
+                {/* Aspect-ratio locked wrapper based on hero-product.png (1122x1402) */}
+                <div className="relative w-auto h-full aspect-[1122/1402] max-w-full max-h-full">
+                    {/* Skull Image (1.png) positioned to the left and behind the surgeon/tablet */}
+                    <div className="absolute left-[-15%] bottom-[4%] w-[55%] h-[55%] z-0">
+                        <Image
+                            src="/images/regraft-custom-implants/1.png"
+                            alt="Anatomical skull model with custom PEEK implant"
+                            fill
+                            className="object-contain object-bottom"
+                        />
+                    </div>
+                    {/* Surgeon Image */}
+                    <Image
+                        src="/images/regraft-custom-implants/hero-product.png"
+                        alt="Custom PEEK implant — ArtiBone patient-specific artificial bone"
+                        fill
+                        priority
+                        sizes="(max-width: 1024px) 100vw, 50vw"
+                        className="object-contain object-bottom relative z-10"
+                    />
+                </div>
             </div>
         </section>
     );

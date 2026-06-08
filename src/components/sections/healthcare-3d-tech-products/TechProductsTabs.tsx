@@ -42,6 +42,27 @@ const items = [
         image: '/images/healthcare-3d-tech-products/phantom-premium.jpg',
         link: '/phantom-premium-haptic-device',
     },
+    {
+        category: 'Haptic Devices',
+        title: 'Haptic Device',
+        subtitle: 'Inverse3',
+        image: '/images/inverse3/device.png',
+        link: '/inverse3',
+    },
+    {
+        category: 'Haptic Devices',
+        title: 'Custom Implants',
+        subtitle: 'ReGraft Custom Implants',
+        image: '/images/regraft-custom-implants/hero-product.png',
+        link: '/regraft-custom-implants',
+    },
+    {
+        category: 'Haptic Devices',
+        title: 'Haptic Device',
+        subtitle: 'mInverse',
+        image: '/images/minverse/hero-device.png',
+        link: '/minverse',
+    },
 ];
 
 const TechProductsTabs = () => {
