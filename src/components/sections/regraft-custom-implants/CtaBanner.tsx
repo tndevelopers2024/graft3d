@@ -97,11 +97,11 @@ const CtaBanner = () => {
 
                         <div className="flex flex-wrap gap-4 mt-2">
                             <Link
-                                href="/upload-bio-data"
+                                href="https://approval.graft3d.com/auth/login"
                                 className="inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3 font-bold shadow transition-colors hover:bg-[#e8f4ff]"
                                 style={{ color: "#0076e0" }}
                             >
-                                Upload Scan Data
+                                Register Now
                             </Link>
                             <Link
                                 href="/contact-us"

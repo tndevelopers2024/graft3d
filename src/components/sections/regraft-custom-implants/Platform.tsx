@@ -113,10 +113,10 @@ const Platform = () => {
                         </ul>
 
                         <Link
-                            href="/upload-bio-data"
+                            href="https://approval.graft3d.com/auth/login"
                             className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#1b6db1] px-5 py-2.5 text-white text-[13px] font-bold shadow-md hover:bg-[#155fa0] transition-colors w-full sm:w-fit mt-1"
                         >
-                            <Upload className="w-4 h-4" /> Upload Scan Data
+                            <Upload className="w-4 h-4" /> Register Now
                         </Link>
                     </div>
 

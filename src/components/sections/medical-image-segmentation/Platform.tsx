@@ -4,13 +4,12 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 const STATES = [
-    { name: "Scan Uploaded", img: "/images/medical-image-segmentation/platform-scan-uploaded.png" },
-    { name: "In Progress", img: "/images/medical-image-segmentation/platform-in-progress.png" },
-    { name: "Segmentation Review", img: "/images/medical-image-segmentation/platform-segmentation-review.png" },
-    { name: "Quotation", img: "/images/medical-image-segmentation/platform-quotation.png" },
-    { name: "Payment", img: "/images/medical-image-segmentation/platform-payment.png" },
-    { name: "Segmented Files", img: "/images/medical-image-segmentation/platform-segmented-files.png" },
-    { name: "Delivered", img: "/images/medical-image-segmentation/platform-delivered.png" },
+    { name: "Scan Uploaded",  img: "/images/medical-image-segmentation/images/1.png" },
+    { name: "In Progress",    img: "/images/medical-image-segmentation/images/2.png" },
+    { name: "Quotation",      img: "/images/medical-image-segmentation/images/3.png" },
+    { name: "Payment",        img: "/images/medical-image-segmentation/images/4.png" },
+    { name: "Segmented Files", img: "/images/medical-image-segmentation/images/5.png" },
+    { name: "Delivered",      img: "/images/medical-image-segmentation/images/6.png" },
 ];
 
 const Platform = () => {

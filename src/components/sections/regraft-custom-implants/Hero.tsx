@@ -47,10 +47,10 @@ const Hero = () => {
                         {/* CTA Buttons */}
                         <div className="mt-6 flex flex-wrap gap-4">
                             <Link
-                                href="/upload-bio-data"
+                                href="https://approval.graft3d.com/auth/login"
                                 className="inline-flex items-center justify-center rounded bg-[#1b6db1] px-7 py-3.5 text-white text-[15px] font-bold shadow-md hover:bg-[#155fa0] transition-colors"
                             >
-                                Upload Scan Data
+                                Register Now
                             </Link>
                             <Link
                                 href="/book-demo"
