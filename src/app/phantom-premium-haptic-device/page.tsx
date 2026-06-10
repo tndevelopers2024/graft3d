@@ -166,6 +166,7 @@ export default function PhantomPremiumPage() {
                     <div className="container mx-auto px-4 lg:px-24">
                         <div className="max-w-2xl">
                             {/* Note: The image already contains "Phantom Premium" text */}
+                            <h1 className="sr-only">Phantom Premium</h1>
                             <div>
                                 <Link href="/get-quote" className="rounded-md bg-[#336699] px-8 py-3 text-lg font-bold text-white transition-all hover:bg-[#285580] hover:shadow-lg active:scale-95">
                                     Enquire Now

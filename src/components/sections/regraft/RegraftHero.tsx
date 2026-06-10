@@ -24,6 +24,7 @@ const RegraftHero = () => {
         <div className="max-w-4xl grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="flex flex-col items-start space-y-8">
             {/* ReGraft Logo/Text Image */}
+            <h1 className="sr-only">Regraft</h1>
             <div className="relative w-[300px] h-[80px] lg:w-[400px] lg:h-[100px]">
               <Image
                 src="/images/regraft/regraft-text.png"
