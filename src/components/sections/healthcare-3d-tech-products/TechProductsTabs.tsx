@@ -52,9 +52,9 @@ const items = [
     {
         category: 'Haptic Devices',
         title: 'Custom Implants',
-        subtitle: 'ReGraft Custom Implants',
+        subtitle: 'PEEK Implant',
         image: '/images/regraft-custom-implants/hero-product.png',
-        link: '/regraft-custom-implants',
+        link: '/peek-implant',
     },
     {
         category: 'Haptic Devices',

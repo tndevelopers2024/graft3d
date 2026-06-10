@@ -174,12 +174,11 @@ const Navbar = () => {
                                                         <Link href="/regraft-customised-plates" className="text-sm text-gray-500 hover:text-primary transition-colors italic" onClick={() => setIsMobileMenuOpen(false)}>Regraft Customised Plates</Link>
                                                         <Link href="/regraft-artileg" className="text-sm text-gray-500 hover:text-primary transition-colors italic" onClick={() => setIsMobileMenuOpen(false)}>Regraft ArtiLeg</Link>
                                                         <Link href="/regraft-arti-nose-arti-ear" className="text-sm text-gray-500 hover:text-primary transition-colors italic" onClick={() => setIsMobileMenuOpen(false)}>Regraft Arti nose & Arti ear</Link>
-                                                        <Link href="/regraft-custom-implants" className="text-sm text-gray-500 hover:text-primary transition-colors italic" onClick={() => setIsMobileMenuOpen(false)}>Regraft Custom Implants</Link>
                                                         <Link href="/regraft-digilumin" className="text-sm text-gray-500 hover:text-primary transition-colors italic" onClick={() => setIsMobileMenuOpen(false)}>Regraft Digilumin</Link>
                                                         <Link href="/regraft-digiprun" className="text-sm text-gray-500 hover:text-primary transition-colors italic" onClick={() => setIsMobileMenuOpen(false)}>Regraft Digiprun</Link>
                                                     </div>
                                                 )}
-                                                <Link href="/3d-printed-patient-specific-implant" className="transition-colors border-b border-gray-800 pb-1" onClick={() => setIsMobileMenuOpen(false)}>Patient Specific Implant</Link>
+                                                <Link href="/peek-implant" className="transition-colors border-b border-gray-800 pb-1" onClick={() => setIsMobileMenuOpen(false)}>PEEK Implant</Link>
                                             </div>
                                         )}
                                     </div>
@@ -207,7 +206,6 @@ const Navbar = () => {
                                                 <Link href="/einscan-h2-human-body-bodyparts-3d-scanner" className="text-sm text-gray-500 hover:text-primary transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Einscan H2</Link>
                                                 <Link href="/phantom-premium-haptic-device" className="text-sm text-gray-500 hover:text-primary transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Phantom Premium</Link>
                                                 <Link href="/medical-image-segmentation" className="text-sm text-gray-500 hover:text-primary transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Medical Image Segmentation</Link>
-                                                <Link href="/regraft-custom-implants" className="text-sm text-gray-500 hover:text-primary transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Regraft Custom Implants</Link>
                                             </div>
                                         )}
                                     </div>
@@ -335,7 +333,7 @@ const Navbar = () => {
                         <svg className="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
 
                         {/* Dropdown Menu */}
-                        <div className="hidden group-hover:block absolute top-full left-0 bg-white font-bold shadow-xl border-t-2  border-primary min-w-[280px] z-50 animate-fade-in-up">
+                        <div className="hidden group-hover:block absolute top-full left-0 bg-white font-bold shadow-xl border-t-2  border-primary min-w-[280px] z-50">
                             <div className="py-2 flex flex-col">
                                 {/* 3D Printed Products */}
                                 <div className="group/sub font-bold relative border-b border-gray-800 last:border-0">
@@ -343,28 +341,27 @@ const Navbar = () => {
                                         <span className='font-bold'>3D Printed Products</span>
                                         <svg className="w-4 h-4 -rotate-90 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
                                     </Link>
-                                    <div className="hidden group-hover/sub:block absolute left-full top-0 bg-white shadow-xl border-l border-gray-800 min-w-[250px] animate-fade-in-right">
+                                    <div className="hidden group-hover/sub:block absolute left-full top-0 bg-white shadow-xl border-l border-gray-800 min-w-[250px]">
                                         <div className="py-2 flex flex-col">
                                             <div className="group/sub2 relative">
                                                 <Link href="/regraft" className="flex items-center justify-between px-6 py-4  text-[14px]   transition-colors border-b border-gray-800">
                                                     <span>Regraft</span>
                                                     <svg className="w-3 h-3 -rotate-90 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
                                                 </Link>
-                                                <div className="hidden group-hover/sub2:block absolute left-full bg-white top-0 shadow-xl  border-gray-800 min-w-[240px] animate-fade-in-right">
+                                                <div className="hidden group-hover/sub2:block absolute left-full bg-white top-0 shadow-xl  border-gray-800 min-w-[240px]">
                                                     <div className="py-2 flex flex-col max-h-[400px] overflow-y-auto custom-scrollbar">
                                                         <Link href="/regraft-artibone" className="px-6 py-3  text-[13px]   transition-colors border-b border-gray-800">Regraft Artibone</Link>
                                                         <Link href="/regraft-bonerip" className="px-6 py-3  text-[13px]  transition-colors border-b border-gray-800">Regraft Bonerip</Link>
                                                         <Link href="/regraft-customised-plates" className="px-6 py-3  text-[13px]   transition-colors border-b border-gray-800">Regraft Customised Plates</Link>
                                                         <Link href="/regraft-artileg" className="px-6 py-3 text-[13px] transition-colors border-b border-gray-800">Regraft ArtiLeg</Link>
                                                         <Link href="/regraft-arti-nose-arti-ear" className="px-6 py-3 text-[13px]  transition-colors border-b border-gray-800">Regraft Arti nose & Arti ear</Link>
-                                                        <Link href="/regraft-custom-implants" className="px-6 py-3 text-[13px]  transition-colors border-b border-gray-800">Regraft Custom Implants</Link>
                                                         <Link href="/regraft-digilumin" className="px-6 py-3  text-[13px]   transition-colors border-b border-gray-800">Regraft Digilumin</Link>
                                                         <Link href="/regraft-digiprun" className="px-6 py-3  text-[13px]   transition-colors border-b border-gray-800">Regraft Digiprun</Link>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <Link href="/3d-printed-patient-specific-implant" className="px-6 py-4 text-[14px]  transition-colors">
-                                                Patient specific implant
+                                            <Link href="/peek-implant" className="px-6 py-4 text-[14px]  transition-colors">
+                                                PEEK Implant
                                             </Link>
                                         </div>
                                     </div>
@@ -376,7 +373,7 @@ const Navbar = () => {
                                         <span className='font-bold'>3D Tech Products</span>
                                         <svg className="w-4 h-4 -rotate-90 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
                                     </Link>
-                                    <div className="hidden group-hover/sub:block absolute left-full top-0 bg-white shadow-xl border-l border-gray-800 min-w-[200px] animate-fade-in-right">
+                                    <div className="hidden group-hover/sub:block absolute left-full top-0 bg-white shadow-xl border-l border-gray-800 min-w-[200px]">
                                         <div className="py-2 flex flex-col">
                                             <Link href="/elucis" className="px-6 py-3  text-[14px] transition-colors border-b border-gray-800 last:border-0 italic font-bold">Elucis</Link>
                                             <Link href="/einscan-medixa" className="px-6 py-3  text-[14px] transition-colors border-b border-gray-800 last:border-0">Einscan-medixa</Link>
@@ -389,7 +386,6 @@ const Navbar = () => {
                                             <Link href="/einscan-h2-human-body-bodyparts-3d-scanner" className="px-6 py-3 text-[14px] transition-colors border-b border-gray-800 last:border-0">Einscan H2</Link>
                                             <Link href="/phantom-premium-haptic-device" className="px-6 py-3 text-[14px] transition-colors border-b border-gray-800 last:border-0">Phantom Premium</Link>
                                             <Link href="/medical-image-segmentation" className="px-6 py-3 text-[14px] transition-colors border-b border-gray-800 last:border-0">Medical Image Segmentation</Link>
-                                            <Link href="/regraft-custom-implants" className="px-6 py-3 text-[14px] transition-colors border-b border-gray-800 last:border-0">Regraft Custom Implants</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -400,7 +396,7 @@ const Navbar = () => {
                                         <span className='font-bold'>Medical Filaments</span>
                                         <svg className="w-4 h-4 -rotate-90 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
                                     </Link>
-                                    <div className="hidden group-hover/sub:block absolute left-full top-0 bg-white shadow-xl border-l border-gray-800 min-w-[200px] animate-fade-in-right">
+                                    <div className="hidden group-hover/sub:block absolute left-full top-0 bg-white shadow-xl border-l border-gray-800 min-w-[200px]">
                                         <div className="py-2 flex flex-col">
                                             <Link href="/polyetheretherketone-peek" className="px-6 py-3 text-[14px] transition-colors border-b border-gray-800 last:border-0">Polyetheretherketone (PEEK)</Link>
                                             <Link href="/polymethyl-methacrylate-pmma" className="px-6 py-3 text-[14px] transition-colors border-b border-gray-800 last:border-0">Polymethyl Methacrylate (PMMA)</Link>
@@ -424,7 +420,7 @@ const Navbar = () => {
                        <Link href="/geomagic-freeform"><span>Resources</span></Link>
                         <svg className="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
                         {/* Dropdown Menu */}
-                        <div className="hidden group-hover:block absolute top-full left-0 bg-white shadow-lg border-t-2 border-primary min-w-[240px] z-50 animate-fade-in-up">
+                        <div className="hidden group-hover:block absolute top-full left-0 bg-white shadow-lg border-t-2 border-primary min-w-[240px] z-50">
                             <div className="py-2 flex flex-col">
                                 <div className="group/blogs relative">
                                     <Link href="/artificial-nasal-prosthesis-case-study" className="flex items-center justify-between px-4 py-2 hover:bg-gray-50 text-sm text-black hover:text-primary transition-colors">
@@ -433,7 +429,7 @@ const Navbar = () => {
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
                                         </svg>
                                     </Link>
-                                    <div className="hidden group-hover/blogs:block absolute left-full top-0 bg-white shadow-xl border-l border-gray-200 min-w-[320px] animate-fade-in-right">
+                                    <div className="hidden group-hover/blogs:block absolute left-full top-0 bg-white shadow-xl border-l border-gray-200 min-w-[320px]">
                                         <div className="py-2 flex flex-col">
                                             <Link href="/artificial-nasal-prosthesis-case-study" className="px-4 py-2 hover:bg-gray-50 text-sm text-black hover:text-primary transition-colors">Nasal Prosthesis</Link>
                                             <Link href="/virtual-surgical-planning-mandibular-reconstruction" className="px-4 py-2 hover:bg-gray-50 text-sm text-black hover:text-primary transition-colors">Virtual Surgical Planning for Mandibular Reconstruction</Link>
@@ -453,7 +449,7 @@ const Navbar = () => {
                         <svg className="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
 
                         {/* Dropdown Menu */}
-                        <div className="hidden group-hover:block absolute top-full left-0 bg-white shadow-lg border-t-2 border-primary min-w-[200px] z-50 animate-fade-in-up">
+                        <div className="hidden group-hover:block absolute top-full left-0 bg-white shadow-lg border-t-2 border-primary min-w-[200px] z-50">
                             <div className="py-2 flex flex-col">
                                 <Link href="/medical-image-segmentation" className="px-4 py-2 hover:bg-gray-50 text-sm text-black hover:text-primary transition-colors">Medical Image Segmentation</Link>
                                 <Link href="/bio-cad-modeling-service" className="px-4 py-2 hover:bg-gray-50 text-sm text-black hover:text-primary transition-colors">Graft3D Bio CAD Modeling</Link>

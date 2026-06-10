@@ -12,12 +12,12 @@ export const metadata: Metadata = {
     title: "ArtiBone — Custom PEEK Implants | Regraft3D by Graft3D",
     description:
         "Patient-specific PEEK implants designed from your CT/CBCT scan data. Regraft3D delivers precision-engineered ArtiBone implants for cranial, maxillofacial, orthopedic and oncology reconstruction.",
-    alternates: { canonical: "/regraft-custom-implants" },
+    alternates: { canonical: "/peek-implant" },
     openGraph: {
         title: "ArtiBone — Custom PEEK Implants | Regraft3D",
         description:
             "From scan to sterilised implant — Regraft3D manufactures patient-specific PEEK implants with surgeon-approved Bio-CAD designs.",
-        url: "https://graft3d.com/regraft-custom-implants",
+        url: "https://graft3d.com/peek-implant",
         images: [{ url: "/opengraph-image.png", width: 1200, height: 630, alt: "ArtiBone Custom PEEK Implants" }],
     },
 };
@@ -34,7 +34,7 @@ export default function RegraftCustomImplantsPage() {
             name: "Graft3D",
             url: "https://graft3d.com",
         },
-        url: "https://graft3d.com/regraft-custom-implants",
+        url: "https://graft3d.com/peek-implant",
     };
 
     return (
