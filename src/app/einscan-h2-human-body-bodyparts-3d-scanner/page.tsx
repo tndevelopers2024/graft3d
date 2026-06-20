@@ -9,6 +9,9 @@ import RelatedProducts from '@/components/sections/einscan-h2-human-body-bodypar
 import DownloadBrochure from '@/components/sections/einscan-h2-human-body-bodyparts-3d-scanner/DownloadBrochure';
 
 export const metadata = {
+  alternates: {
+    canonical: '/einscan-h2-human-body-bodyparts-3d-scanner',
+  },
     title: 'Einscan H2 - Human Body & Body Parts 3D Scanner | Graft3D',
     description: 'Exclusive HumanBody 3D scanner with advanced algorithm for body scan. Hybrid LED and Infrared VCSEL Light Source for high-quality human body 3D scanning.',
 };

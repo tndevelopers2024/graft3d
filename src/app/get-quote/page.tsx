@@ -4,6 +4,9 @@ import EnquirySection from "@/components/sections/get-quote/EnquirySection";
 export const metadata = {
   title: "Get quote - Graft 3D",
   description: "For any information please Call us at +91 98404 78347 | +91 63744 10703",
+  alternates: {
+    canonical: '/get-quote',
+  },
 };
 
 export default function GetQuotePage() {

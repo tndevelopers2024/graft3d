@@ -6,6 +6,9 @@ import ProductTabs from '@/components/sections/healthcare-3d-products/ProductTab
 import Products3DFaqSection from '@/components/sections/healthcare-3d-products/Products3DFaqSection';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/healthcare-3d-products',
+  },
     title: 'Healthcare 3D Products | Medical 3D Scanners, Printers & Software | Graft3D',
     description: 'Explore our comprehensive range of healthcare 3D products including medical 3D scanners, 3D printers, and specialized software for hospitals and medical professionals.',
     openGraph: {

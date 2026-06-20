@@ -12,6 +12,9 @@ import RelatedProducts from '@/components/sections/human-body-parts-3d-scanner/R
 import FaqSection from '@/components/sections/human-body-parts-3d-scanner/FaqSection';
 
 export const metadata = {
+  alternates: {
+    canonical: '/human-body-parts-3d-scanner',
+  },
     title: 'Einscan Human - Human Body and Body Parts 3D Scanner | Graft3D',
     description: 'The EinScan H / HX series pioneers a hybrid light source technology, integrating LED and invisible infrared light for high-quality human body 3D scanning.',
 };

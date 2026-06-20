@@ -6,6 +6,9 @@ import BlogsSection from "@/components/sections/asthi-bone-like-3d-printed-train
 import FaqSection from "@/components/sections/asthi-bone-like-3d-printed-training-models/FaqSection";
 
 export const metadata = {
+  alternates: {
+    canonical: '/asthi-bone-like-3d-printed-training-models',
+  },
   title: "Asthi - Bone-Like 3D Printed Training Models - Graft 3D",
   description: "Asthi- 3D Printed Anatomical Models Plan .Train .Visualize.",
 };

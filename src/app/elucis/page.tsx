@@ -10,6 +10,9 @@ import Benefits from "@/components/sections/elucis/Benefits";
  * Metadata for Elucis XR Platform Page
  */
 export const metadata = {
+  alternates: {
+    canonical: '/elucis',
+  },
   title: "Elucis - Advanced Medical XR Platform | Graft 3D",
   description: "Elucis transforms how medical professionals interact with patient anatomy. Immersive 3D visualization, surgical planning, and clinical guidance.",
   openGraph: {

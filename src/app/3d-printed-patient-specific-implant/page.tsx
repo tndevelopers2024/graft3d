@@ -8,6 +8,9 @@ import PsiFaqSection from '@/components/sections/3d-printed-patient-specific-imp
 import PsiServiceStepsSection from '@/components/sections/3d-printed-patient-specific-implant/PsiServiceStepsSection';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/3d-printed-patient-specific-implant',
+  },
     title: 'Get Advanced 3D Printed Patient Specific Implants in India | Graft3D',
     description:
         'Graft3D offers titanium and PEEK 3D printed patient-specific implants with surgeon collaboration, digital planning, and fast delivery workflows.',

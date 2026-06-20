@@ -5,6 +5,9 @@ export const metadata: Metadata = {
     title: 'Terms & Conditions | Graft3D',
     description:
         'Read the Terms and Conditions for using the Graft3D website, materials, and services.',
+    alternates: {
+        canonical: '/terms-conditions',
+    },
     openGraph: {
         title: 'Terms & Conditions | Graft3D',
         description:

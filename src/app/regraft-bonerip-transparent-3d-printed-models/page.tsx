@@ -6,6 +6,9 @@ import BlogsSection from "@/components/sections/regraft-bonerip-transparent-3d-p
 import FaqSection from "@/components/sections/regraft-bonerip-transparent-3d-printed-models/FaqSection";
 
 export const metadata = {
+  alternates: {
+    canonical: '/regraft-bonerip-transparent-3d-printed-models',
+  },
   title: "ReGraft Bonerip - Transparent 3D Printed Models - Graft 3D",
   description: "ReGraft Bonerip- Transparent 3D Printed Anatomical Models Plan .Train .Visualize.",
 };

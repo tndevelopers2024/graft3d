@@ -7,6 +7,9 @@ import PackagesFaq from '@/components/sections/3d-packages/PackagesFaq';
 export const metadata: Metadata = {
     title: '3D Packages - Medical 3D Printing Solutions | Graft3D',
     description: 'Explore our comprehensive 3D printing packages for healthcare including Digital Dentistry, PSI, Orthotic Devices, HD Prosthesis, Anatomical Models, and Surgical Planning solutions.',
+    alternates: {
+        canonical: '/3d-packages',
+    },
     openGraph: {
         title: '3D Packages - Medical 3D Printing Solutions | Graft3D',
         description: 'Comprehensive 3D printing packages for hospitals and surgeons with end-to-end digital workflow solutions.',

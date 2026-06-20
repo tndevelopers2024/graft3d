@@ -6,6 +6,9 @@ import NasalCaseProcessSection from '@/components/sections/artificial-nasal-pros
 import NasalCaseRelatedSection from '@/components/sections/artificial-nasal-prosthesis-case-study/NasalCaseRelatedSection';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/artificial-nasal-prosthesis-case-study',
+  },
     title: 'Case Study on replacing Cancer infected Nose with Artificial Nose Prosthesis | Graft3D',
     description:
         'Case study of a patient-specific artificial nasal prosthesis created with advanced 3D technology and medical-grade silicone.',

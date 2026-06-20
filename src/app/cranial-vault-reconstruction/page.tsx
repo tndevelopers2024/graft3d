@@ -8,6 +8,9 @@ import CranialCta from '@/components/sections/cranial-vault-reconstruction/Crani
 import CranialFaqs from '@/components/sections/cranial-vault-reconstruction/CranialFaqs';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/cranial-vault-reconstruction',
+  },
     title: 'Cranial Vault Reconstruction with Custom 3D Implants | Graft3D',
     description: 'Advanced cranial vault reconstruction using custom 3D-printed implants and planning. Improve surgical precision and outcomes.',
 };

@@ -4,6 +4,9 @@ import DigitalImageConversionPageContent from '@/components/sections/digital-ima
 import DigitalImageConversionFaq from '@/components/sections/digital-image-conversion/DigitalImageConversionFaq';
 
 export const metadata = {
+  alternates: {
+    canonical: '/digital-image-conversion-service',
+  },
     title: 'Digital Image Conversion Service | Graft3D',
     description: 'Are you looking for a DICOM image conversion service for your medical practice? Try Graft3DH 3D service today! Create 3D Models From Medical Scans online.',
 };

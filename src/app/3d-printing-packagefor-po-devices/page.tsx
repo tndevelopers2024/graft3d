@@ -10,6 +10,9 @@ import BlogsSection from '@/components/sections/3d-printing-packagefor-po-device
 import GallerySection from '@/components/sections/3d-printing-packagefor-po-devices/GallerySection';
 
 export const metadata = {
+  alternates: {
+    canonical: '/3d-printing-packagefor-po-devices',
+  },
     title: '3D Printing Package for P&O Devices | Graft3D Healthcare',
     description: 'Graft3D offers a comprehensive 3D printing package for hospitals to fabricate personalized Prosthetics & Orthotics (P&O) devices using precise body scans and streamlined design workflows.',
 };

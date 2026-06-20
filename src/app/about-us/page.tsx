@@ -11,6 +11,9 @@ import AboutPackageGrid from '@/components/sections/about-us/AboutPackageGrid';
 export const metadata: Metadata = {
     title: "About Us | Graft 3D Healthcare Solutions",
     description: "Learn more about Graft 3D Healthcare Solutions, our vision, mission, and the innovative 3D healthcare solutions we provide.",
+    alternates: {
+        canonical: '/about-us',
+    },
 };
 
 export default function AboutUsPage() {

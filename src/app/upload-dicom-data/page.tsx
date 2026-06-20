@@ -4,6 +4,9 @@ import DicomWorkflowBanner from '@/components/sections/upload-dicom-data/DicomWo
 import DicomUploadSection from '@/components/sections/upload-dicom-data/DicomUploadSection';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/upload-dicom-data',
+  },
     title: 'Upload DICOM Data | Secure 3D Model Delivery | Graft3D',
     description: 'Upload your DICOM imaging files securely up to 5 GB. Fast and secure delivery of 3D bio models from your CT/MRI scans. Send as email or share via cloud link.',
 };

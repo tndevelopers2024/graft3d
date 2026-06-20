@@ -7,6 +7,9 @@ import ContactLocations from '@/components/sections/contact-us/ContactLocations'
 export const metadata: Metadata = {
   title: "Contact Us | Graft 3D Healthcare Solutions",
   description: "Get in touch with Graft 3D Healthcare Solutions. Reach out for sales inquiries, collaborations, or to meet us live online.",
+  alternates: {
+    canonical: '/contact-us',
+  },
 };
 
 const ContactUsPage = () => {

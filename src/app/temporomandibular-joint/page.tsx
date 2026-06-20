@@ -9,6 +9,9 @@ import FaqSection from "@/components/sections/temporomandibular-joint/FaqSection
 import BottomCta from "@/components/sections/reconstruction-of-the-maxilla-and-mandible/BottomCta";
 
 export const metadata = {
+  alternates: {
+    canonical: '/temporomandibular-joint',
+  },
     title: "TMJ Reconstruction with 3D Printed Prosthesis | Graft3D",
     description:
         "Advanced TMJ reconstruction using custom 3D-printed prosthesis for precision, durability, and improved patient outcomes.",

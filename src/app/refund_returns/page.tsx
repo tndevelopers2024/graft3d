@@ -5,6 +5,9 @@ export const metadata: Metadata = {
     title: 'Refund and Returns Policy | Graft3D',
     description:
         'Read Graft3D refund and returns policy, eligibility conditions, and refund processing timelines.',
+    alternates: {
+        canonical: '/refund_returns',
+    },
     openGraph: {
         title: 'Refund and Returns Policy | Graft3D',
         description:

@@ -6,6 +6,9 @@ import BlogsSection from "@/components/sections/regraft-bonerip-bone-like-printe
 import FaqSection from "@/components/sections/regraft-bonerip-bone-like-printed-training-models/FaqSection";
 
 export const metadata = {
+  alternates: {
+    canonical: '/regraft-bonerip-bone-like-printed-training-models',
+  },
   title: "ReGraft Bonerip - Bone-Like 3D Printed Training Models - Graft 3D",
   description: "ReGraft Bonerip- 3D Printed Anatomical Models Plan .Train .Visualize.",
 };

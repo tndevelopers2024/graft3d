@@ -5,6 +5,9 @@ import VspMandibularIntroSection from '@/components/sections/virtual-surgical-pl
 import VspMandibularRelatedSection from '@/components/sections/virtual-surgical-planning-mandibular-reconstruction/VspMandibularRelatedSection';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/virtual-surgical-planning-mandibular-reconstruction',
+  },
     title: 'Virtual Surgical Planning for Mandibular Reconstruction | Graft3D',
     description:
         'Case study on virtual surgical planning for mandibular reconstruction with patient-specific implants and resection guides.',

@@ -6,6 +6,9 @@ import BlogsSection from "@/components/sections/regraft-bonerip-coloured-3d-prin
 import FaqSection from "@/components/sections/regraft-bonerip-coloured-3d-printed-material/FaqSection";
 
 export const metadata = {
+  alternates: {
+    canonical: '/regraft-bonerip-coloured-3d-printed-material',
+  },
   title: "ReGraft Bonerip - Coloured 3D Printed Material - Graft 3D",
   description: "ReGraft Bonerip- Coloured 3D Printed Anatomical Models Plan .Train .Visualize.",
 };

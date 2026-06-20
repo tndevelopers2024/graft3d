@@ -6,6 +6,9 @@ import PatientSpecificImplantHowItWorks from '@/components/sections/patient-spec
 import PatientSpecificImplantCTA from '@/components/sections/patient-specific-implant-design/PatientSpecificImplantCTA';
 
 export const metadata = {
+  alternates: {
+    canonical: '/patient-specific-implant-design',
+  },
     title: 'Patient-Specific Implant Design | Graft3D',
     description: 'Patient-Specific Implant Design Made Faster and Easier. A centralized digital platform that transforms medical imaging into high precision patient specific implant designs.',
 };
