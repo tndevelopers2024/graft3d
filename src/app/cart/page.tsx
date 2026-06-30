@@ -1,6 +1,19 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
 import { Info, ChevronLeft } from 'lucide-react';
+
+export const metadata: Metadata = {
+    title: 'Shopping Cart | Graft3D',
+    description: 'View the items in your shopping cart at Graft3D Healthcare Solutions.',
+    robots: {
+        index: false,
+        follow: true,
+    },
+    alternates: {
+        canonical: '/cart',
+    },
+};
 
 export default function CartPage() {
     return (

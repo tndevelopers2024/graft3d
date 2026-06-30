@@ -20,10 +20,7 @@ export const metadata: Metadata = {
             }
         ]
     }
-
 }
-
-
 
 export default function ShippingPolicyPage() {
     return (
