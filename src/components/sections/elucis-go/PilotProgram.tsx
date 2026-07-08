@@ -29,16 +29,8 @@ const PilotProgram = () => {
         setStatus("loading");
         setErrorMessage("");
 
-        const message = `
-Company Name: ${formData.company || "Not provided"}
-Industry/Business Type: ${formData.industry || "Not provided"}
-Existing business/services: ${formData.existingBusiness || "Not provided"}
-Interested Product Category: ${formData.productCategory || "Not provided"}
-Investment Budget Range: ${formData.budgetRange || "Not provided"}
-        `.trim();
-
         try {
-            const response = await fetch("/api/contact", {
+            const response = await fetch("/api/extended-contact", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
@@ -46,8 +38,12 @@ Investment Budget Range: ${formData.budgetRange || "Not provided"}
                     email: formData.email,
                     phone: formData.phone,
                     city: formData.city,
+                    company: formData.company,
+                    industry: formData.industry,
+                    existingBusiness: formData.existingBusiness,
+                    productCategory: formData.productCategory,
+                    budgetRange: formData.budgetRange,
                     subject: "Elucis Go - Pilot Program Request",
-                    message,
                 }),
             });
 
