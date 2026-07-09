@@ -1,36 +1,40 @@
-import React from "react";
+import { Mail, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { Phone, Mail } from "lucide-react";
 
 const BENEFITS = [
     { title: "Secure & HIPAA", subtitle: "Compliant" },
     { title: "24–48 Hour", subtitle: "Turnaround" },
-    { title: "Expert + AI", subtitle: "Accuracy" }
+    { title: "Expert + AI", subtitle: "Accuracy" },
 ];
 
 const HomeHero = () => {
     return (
-        <section className="relative w-full overflow-hidden bg-gradient-to-b from-[#F4FAFD] to-white">
+        <section className="relative w-full overflow-hidden bg-linear-to-b from-[#F4FAFD] to-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 lg:pt-14 pb-12 lg:pb-16">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
-
                     {/* Left Side: Copy and CTAs */}
                     <div className="flex flex-col order-2 lg:order-1">
                         <h1 className="text-[34px] sm:text-5xl lg:text-[56px] lg:leading-[1.1] font-bold tracking-tight text-[#2A2A2A]">
                             Convert Medical Scans into{" "}
-                            <span className="text-[#1B6DB1] block sm:inline">Accurate 3D Models</span>
+                            <span className="text-[#1B6DB1] block sm:inline">
+                                Accurate 3D Models
+                            </span>
                         </h1>
 
                         <p className="mt-5 max-w-xl text-[#2A2A2A]/90 text-[15px] lg:text-base leading-relaxed">
-                            Upload your CT, MRI or CBCT scans. We segment, process and deliver
-                            ready-to-use 3D models for surgical planning, implant design and research.
+                            Upload your CT, MRI or CBCT scans. We segment,
+                            process and deliver ready-to-use 3D models for
+                            surgical planning, implant design and research.
                         </p>
 
                         {/* 3-Column Benefits */}
                         <div className="mt-8 grid grid-cols-3 gap-4 max-w-lg">
                             {BENEFITS.map((benefit, index) => (
-                                <div key={index} className="flex flex-col text-left">
+                                <div
+                                    key={index}
+                                    className="flex flex-col text-left"
+                                >
                                     <span className="text-[14px] lg:text-[16px] font-semibold text-[#2A2A2A]">
                                         {benefit.title}
                                     </span>
@@ -64,7 +68,10 @@ const HomeHero = () => {
                                     LIMITED TIME OFFER
                                 </span>
                                 <span className="text-[#2A2A2A] text-[11px] lg:text-xs font-semibold px-3.5 py-2">
-                                    Get Your First Case at <span className="text-[#D92D20] font-bold">50% OFF!</span>
+                                    Get Your First Case at{" "}
+                                    <span className="text-[#D92D20] font-bold">
+                                        50% OFF!
+                                    </span>
                                 </span>
                             </div>
                         </div>
@@ -80,11 +87,23 @@ const HomeHero = () => {
                                     <Phone className="w-5 h-5" />
                                 </span>
                                 <div>
-                                    <p className="text-[#1B6DB1] font-bold text-sm leading-tight">Call us</p>
+                                    <p className="text-[#1B6DB1] font-bold text-sm leading-tight">
+                                        Call us
+                                    </p>
                                     <p className="text-[#2A2A2A] text-[13px] font-medium mt-0.5">
-                                        <a href="tel:+916374410703" className="hover:text-[#1B6DB1] transition-colors">+91 6374410703</a>
+                                        <a
+                                            href="tel:+916374410703"
+                                            className="hover:text-[#1B6DB1] transition-colors"
+                                        >
+                                            +91 6374410703
+                                        </a>
                                         {" | "}
-                                        <a href="tel:+919840478347" className="hover:text-[#1B6DB1] transition-colors">+91 98404 78347</a>
+                                        <a
+                                            href="tel:+919840478347"
+                                            className="hover:text-[#1B6DB1] transition-colors"
+                                        >
+                                            +91 98404 78347
+                                        </a>
                                     </p>
                                 </div>
                             </div>
@@ -94,9 +113,16 @@ const HomeHero = () => {
                                     <Mail className="w-5 h-5" />
                                 </span>
                                 <div>
-                                    <p className="text-[#1B6DB1] font-bold text-sm leading-tight">Email Us</p>
+                                    <p className="text-[#1B6DB1] font-bold text-sm leading-tight">
+                                        Email Us
+                                    </p>
                                     <p className="text-[#2A2A2A] text-[13px] font-medium mt-0.5">
-                                        <a href="mailto:sales@graft3d.com" className="hover:text-[#1B6DB1] transition-colors">Sales@graft3d.com</a>
+                                        <a
+                                            href="mailto:sales@graft3d.com"
+                                            className="hover:text-[#1B6DB1] transition-colors"
+                                        >
+                                            Sales@graft3d.com
+                                        </a>
                                     </p>
                                 </div>
                             </div>
@@ -118,9 +144,9 @@ const HomeHero = () => {
 
                             {/* Vertical Small Images Column */}
                             <div className="flex flex-col justify-center gap-2 sm:gap-3 lg:gap-4 w-[75px] sm:w-[110px] lg:w-[140px] shrink-0">
-                                <div 
+                                <div
                                     className="group relative w-full rounded-lg overflow-hidden border border-slate-200/80 bg-slate-950 shadow-sm hover:scale-105 hover:shadow-md hover:border-[#166AAF]/40 transition-all duration-300 cursor-pointer"
-                                    style={{ aspectRatio: '150/104' }}
+                                    style={{ aspectRatio: "150/104" }}
                                 >
                                     <Image
                                         src="/images/medical-image-segmentation/banner-small-imgs/image 9977-Photoroom 4.png"
@@ -130,9 +156,9 @@ const HomeHero = () => {
                                         className="object-cover"
                                     />
                                 </div>
-                                <div 
+                                <div
                                     className="group relative w-full rounded-lg overflow-hidden border border-slate-200/80 bg-slate-950 shadow-sm hover:scale-105 hover:shadow-md hover:border-[#166AAF]/40 transition-all duration-300 cursor-pointer"
-                                    style={{ aspectRatio: '150/104' }}
+                                    style={{ aspectRatio: "150/104" }}
                                 >
                                     <Image
                                         src="/images/medical-image-segmentation/banner-small-imgs/image 9977-Photoroom 3.png"
@@ -142,9 +168,9 @@ const HomeHero = () => {
                                         className="object-cover"
                                     />
                                 </div>
-                                <div 
+                                <div
                                     className="group relative w-full rounded-lg overflow-hidden border border-slate-200/80 bg-slate-950 shadow-sm hover:scale-105 hover:shadow-md hover:border-[#166AAF]/40 transition-all duration-300 cursor-pointer"
-                                    style={{ aspectRatio: '150/104' }}
+                                    style={{ aspectRatio: "150/104" }}
                                 >
                                     <Image
                                         src="/images/medical-image-segmentation/banner-small-imgs/image 9977-Photoroom 2.png"
@@ -157,7 +183,6 @@ const HomeHero = () => {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
