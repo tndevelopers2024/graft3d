@@ -1,0 +1,105 @@
+◇ injected env (2) from .env.development // tip: ⌁ auth for agents [www.vestauth.com]
+Found Target Node: Elucis Family (FRAME)
+Found 34 top-level sections.
+
+--- Section 1: Header → Section ---
+Texts: Contact : +91-98404 78347 | Email: sales@graft3d.com | Meet us Live Online | Work Hours : Mon to Sat : 09:30- 18:30 | 0 | Home | 3D Products |  | 3D Packages | Resources |  | 3D Service |  | Contact Us | Search | 
+
+--- Section 2: Footer ---
+Texts: Graft3D is a healthcare solution provider helping hospitals with disruptive & unique technologies. We do this by collaborating with global technology firms to make technology products for hospitals, surgeons & end patients. We believe user friendly technology is the key to success in planning & executing complex surgeries. |  |  |  |  | More About Us |  | Quick Links | 3D Printed Products | 3D Tech Products | 3D Packages | 3D Services | Explore DICOM to 3D | Events | Collaborate with Us | Blogs | Important Links | About us | Shop | Privacy Policy | Shipping policy | Terms & Conditions | Refund Policy | Contact Us |  | Sales: +91 98404 78347 | +91 73959 72777 |  | Email : sales@graft3d.com |  | Reach Us | Graft3D Health Care Solutions Pvt. Ltd. | 4/261, 1st Floor, Rajas Towers Medavakkam Main Road, Kovilambakkam Chennai - 600129, Tamil Nadu, India. | Meet us live online | © 2025. All Rights Reserved. Graft3D Health Care Solutions Pvt. Ltd. | Disclaimer | Terms & Conditions
+
+--- Section 3: Rectangle 8 ---
+Texts: 
+
+--- Section 4: One Platform. Three Ways to Deploy Value. ---
+Texts: One Platform. Three Ways to Deploy Value.
+
+--- Section 5: From Imaging to Insight in 6 Simple Steps. ---
+Texts: From Imaging to Insight in 6 Simple Steps.
+
+--- Section 6: Frame 1410136976 ---
+Texts: Headset-First Experience | Explore Elucis Go | Untethered immersive visualization and planning designed for rapid clinical adoption and consultation. | ELUCIS GO
+
+--- Section 7: Frame 1410136979 ---
+Texts: Explore All Specialties
+
+--- Section 8: Frame 1410136977 ---
+Texts: Explore Elucis Next | Research & Education Edition | Advanced immersive DICOM workflow for research, training, education and methodology development. | ELUCIS NEXT
+
+--- Section 9: Group 7 ---
+Texts: Import DICOM Data | 1 | Create Patient-Specific Anatomy | 2 | Explore Anatomy in VR | 3 | Measure & Analyze | 4 | Collaborate Across Teams | 5 | Prepare for Procedure | 6
+
+--- Section 10: Elucis Helps Hospitals Achieve Better Outcomes. ---
+Texts: Elucis Helps Hospitals Achieve Better Outcomes.
+
+--- Section 11: Frame 1410136958 ---
+Texts: Enhanced 3D Visualization | See anatomy as never before with true-to-life immersive models.
+
+--- Section 12: Frame 1410136960 ---
+Texts: Improved Surgical Planning | Analyse, measure and plan with greater precision and confidence.
+
+--- Section 13: Frame 1410136962 ---
+Texts: Enterprise-Grade Security | Your data stays secure with on-premise deployment and zero data sharing.
+
+--- Section 14: Frame 1410136978 ---
+Texts: Scalable Across Departments | Seamless workflow for single departments to enterprise-wide adoption.
+
+--- Section 15: Frame 1410136959 ---
+Texts: Better Team Collaboration | Enable real-time and asynchronous collaboration across specialities.
+
+--- Section 16: Frame 1410136961 ---
+Texts: Stronger Patient Engagement | Explain conditions and procedures clearly to patients and families.
+
+--- Section 17: Designed for Real-World Clinical Use ---
+Texts: Designed for Real-World Clinical Use
+
+--- Section 18: Trusted by Leading Healthcare Institutions. ---
+Texts: Trusted by Leading Healthcare Institutions.
+
+--- Section 19: Why Hospital Leadership Teams Invest in Elucis ---
+Texts: Why Hospital Leadership Teams Invest in Elucis
+
+--- Section 20: Group 10 ---
+Texts: Improve Case Planning | Enhance accuracy and confidence for complex cases | Enhance Patient Communication | Build trust through clear visual explanations. | Support Innovation Initiatives | Position your hospital as a leader in digital healthcare. | Enable Advanced Surgical Programs | Support complex and high-value surgical services. | Improve Clinical Collaboration | Break silos and enable better multidisciplinary decisions. | Scalable Enterprise Deployment | Deploy across sites with centralized control and governance.
+
+--- Section 21: Image ---
+Texts: Enterprise-ready Security & Deployment. | On-Premise Deployment | Role-Based Access Control | Internal Data Custody | Encrypted Data in Transit & At Rest | Zero Data Sharing or External Access | Audit Logs & Compliance Ready
+
+--- Section 22: Group 14 ---
+Texts: 
+
+--- Section 23: Frame 1410136946 ---
+Texts: Cardiac Surgery
+
+--- Section 24: Frame 1410136952 ---
+Texts: Maxillofacial Surgery
+
+--- Section 25: Frame 1410136953 ---
+Texts: Radiology
+
+--- Section 26: Frame 1410136954 ---
+Texts: Gynecology
+
+--- Section 27: Frame 1410136949 ---
+Texts: Oncology
+
+--- Section 28: Frame 1410136955 ---
+Texts: Biomedical Engineering
+
+--- Section 29: Frame 1410136950 ---
+Texts: Orthopedics
+
+--- Section 30: Frame 1410136951 ---
+Texts: ENT
+
+--- Section 31: Group 13 ---
+Texts: Your Local Partner For Success | Local Clinical Support | Pilot Programs | Implementation Excellence | Long-Term Partnership | Training & Workshops
+
+--- Section 32: Group 15 ---
+Texts: What Clinicians Are Saying | Dr. Arvind Rao | A | Consultant Cardiovascular Surgeon, Bengaluru Elucis NEXT has transformed our pre-operative planning workflow. The immersive 3D visualization and segmentation tools provide anatomical clarity that is difficult to achieve on conventional screens. | Dr. Sandeep Iyer | S | Neurosurgeon, Chennai The collaborative VR sessions in Elucis NEXT have improved communication across our multidisciplinary team. Reviewing surgical plans together in an immersive environment has been extremely valuable. | Dr. Priya Menon | P | Consultant Oncosurgeon, Kochi Using Elucis GO during patient consultations has significantly improved patient understanding. Visualizing their anatomy in 3D helps build confidence before surgery.
+
+--- Section 33: Section ---
+Texts: ADVANCED 3D VR SURGICAL PLANNING PLATFORM | Advanced 3D VR Surgical Planning Platform for Hospitals in India | Transform DICOM imaging into immersive patient-specific anatomy for surgical planning, multidisciplinary collaboration, patient engagement and procedural confidence. | Book a Live Demo | Take to Graft 3D India
+
+--- Section 34: Frame 1410136989 ---
+Texts: 50+ | Institutions Globally | 2,000+ | Procedures Annually | 100+ | Clinical Users | Empowering better decisions through immersive 3D technology
