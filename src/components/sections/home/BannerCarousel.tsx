@@ -185,11 +185,11 @@ const BannerCarousel = () => {
 
                     {BANNER_SLIDES.map((slide) => (
                         <SwiperSlide key={slide.id}>
-                            <div className="max-w-[1400px] mx-auto w-full h-full group">
-                                <div className="w-full flex flex-col lg:block min-h-[500px] lg:h-[600px] relative overflow-hidden">
+                            <div className="max-w-350 mx-auto w-full h-full group">
+                                <div className="w-full flex flex-col lg:block min-h-125 lg:h-150 relative overflow-hidden">
                                     {/* Content Container */}
                                     <div
-                                        className={`w-full lg:absolute lg:inset-0 z-20 max-w-[1400px] mx-auto px-4 flex flex-col items-start justify-center lg:items-start lg:justify-center py-12 lg:py-0 h-full`}
+                                        className={`w-full lg:absolute lg:inset-0 z-20 max-w-350 mx-auto px-4 flex flex-col items-start justify-center lg:items-start lg:justify-center py-12 lg:py-0 h-full`}
                                     >
                                         <div className="max-w-2xl text-left">
                                             {slide.subtitle &&
@@ -222,7 +222,7 @@ const BannerCarousel = () => {
 
                                     {/* Image Container */}
                                     <div
-                                        className={`w-full lg:absolute lg:inset-y-0 lg:right-0 h-[400px] lg:h-full z-10 ${slide.imageRight ? "lg:w-[45%] lg:p-1" : "lg:w-1/2"}`}
+                                        className={`w-full lg:absolute lg:inset-y-0 lg:right-0 h-100 lg:h-full z-10 ${slide.imageRight ? "lg:w-[45%] lg:p-1" : "lg:w-1/2"}`}
                                     >
                                         <div className="hidden lg:block w-full h-full relative">
                                             <Image
