@@ -129,7 +129,7 @@ const HomeHero = () => {
                         </div>
 
                         {/* Monitor & Visual Graphic */}
-                        <div className="flex items-center justify-between gap-4 lg:gap-6 w-full h-[280px] sm:h-[360px] lg:h-[400px]">
+                        <div className="flex items-center justify-between gap-4 lg:gap-6 w-full h-70 sm:h-90 lg:h-100">
                             {/* Monitor Image */}
                             <div className="relative flex-1 h-full">
                                 <Image
@@ -143,7 +143,7 @@ const HomeHero = () => {
                             </div>
 
                             {/* Vertical Small Images Column */}
-                            <div className="flex flex-col justify-center gap-2 sm:gap-3 lg:gap-4 w-[75px] sm:w-[110px] lg:w-[140px] shrink-0">
+                            <div className="flex flex-col justify-center gap-2 sm:gap-3 lg:gap-4 w-18.75 sm:w-27.5 lg:w-35 shrink-0">
                                 <div
                                     className="group relative w-full rounded-lg overflow-hidden border border-slate-200/80 bg-slate-950 shadow-sm hover:scale-105 hover:shadow-md hover:border-[#166AAF]/40 transition-all duration-300 cursor-pointer"
                                     style={{ aspectRatio: "150/104" }}
