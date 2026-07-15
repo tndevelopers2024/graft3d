@@ -4,33 +4,39 @@ const Outcomes = () => {
     const outcomes = [
         {
             title: "Enhanced 3D Visualization",
-            description: "See anatomy as never before with true-to-life immersive models.",
-            icon: "/images/elucis-family/outcome-1.svg",
+            description:
+                "See anatomy as never before with true-to-life immersive models.",
+            icon: "/images/elucis-in-india/outcome-1.svg",
         },
         {
             title: "Better Team Collaboration",
-            description: "Enable real-time and asynchronous collaboration across specialities.",
-            icon: "/images/elucis-family/outcome-2.svg",
+            description:
+                "Enable real-time and asynchronous collaboration across specialities.",
+            icon: "/images/elucis-in-india/outcome-2.svg",
         },
         {
             title: "Improved Surgical Planning",
-            description: "Analyse, measure and plan with greater precision and confidence.",
-            icon: "/images/elucis-family/outcome-3.svg",
+            description:
+                "Analyse, measure and plan with greater precision and confidence.",
+            icon: "/images/elucis-in-india/outcome-3.svg",
         },
         {
             title: "Stronger Patient Engagement",
-            description: "Explain conditions and procedures clearly to patients and families.",
-            icon: "/images/elucis-family/outcome-4.svg",
+            description:
+                "Explain conditions and procedures clearly to patients and families.",
+            icon: "/images/elucis-in-india/outcome-4.svg",
         },
         {
             title: "Enterprise-Grade Security",
-            description: "Your data stays secure with on-premise deployment and zero data sharing.",
-            icon: "/images/elucis-family/outcome-5.svg",
+            description:
+                "Your data stays secure with on-premise deployment and zero data sharing.",
+            icon: "/images/elucis-in-india/outcome-5.svg",
         },
         {
             title: "Scalable Across Departments",
-            description: "Seamless workflow for single departments to enterprise-wide adoption.",
-            icon: "/images/elucis-family/outcome-6.svg",
+            description:
+                "Seamless workflow for single departments to enterprise-wide adoption.",
+            icon: "/images/elucis-in-india/outcome-6.svg",
         },
     ];
 

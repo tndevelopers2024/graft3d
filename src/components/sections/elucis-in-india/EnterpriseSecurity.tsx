@@ -4,27 +4,27 @@ const EnterpriseSecurity = () => {
     const features = [
         {
             title: "On-Premises or Cloud Deployment",
-            icon: "/images/elucis-family/enterprise-1.svg",
+            icon: "/images/elucis-in-india/enterprise-1.svg",
         },
         {
             title: "Internal Data Custody",
-            icon: "/images/elucis-family/enterprise-2.svg",
+            icon: "/images/elucis-in-india/enterprise-2.svg",
         },
         {
             title: "Zero Data Sharing or External Access",
-            icon: "/images/elucis-family/enterprise-3.svg",
+            icon: "/images/elucis-in-india/enterprise-3.svg",
         },
         {
             title: "Role-Based Access Control",
-            icon: "/images/elucis-family/enterprise-4.svg",
+            icon: "/images/elucis-in-india/enterprise-4.svg",
         },
         {
             title: "Encrypted Data in Transit & At Rest",
-            icon: "/images/elucis-family/enterprise-5.svg",
+            icon: "/images/elucis-in-india/enterprise-5.svg",
         },
         {
             title: "Audit Logs & Compliance Ready",
-            icon: "/images/elucis-family/enterprise-6.svg",
+            icon: "/images/elucis-in-india/enterprise-6.svg",
         },
     ];
 
@@ -63,7 +63,7 @@ const EnterpriseSecurity = () => {
                     {/* Right side */}
                     <div className="w-full lg:w-1/2 relative min-h-75 lg:min-h-auto">
                         <Image
-                            src="/images/elucis-family/enterprise-ready-bg.png"
+                            src="/images/elucis-in-india/enterprise-ready-bg.png"
                             alt="Enterprise Security"
                             fill
                             className="object-cover"

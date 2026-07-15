@@ -2,13 +2,13 @@ import Image from "next/image";
 
 const TrustBadges = () => {
     const institutions = [
-        "/images/elucis-family/institution-1.png",
-        "/images/elucis-family/institution-2.png",
-        "/images/elucis-family/institution-3.png",
-        "/images/elucis-family/institution-4.png",
-        "/images/elucis-family/institution-5.png",
-        "/images/elucis-family/institution-6.png",
-        "/images/elucis-family/institution-7.png",
+        "/images/elucis-in-india/institution-1.png",
+        "/images/elucis-in-india/institution-2.png",
+        "/images/elucis-in-india/institution-3.png",
+        "/images/elucis-in-india/institution-4.png",
+        "/images/elucis-in-india/institution-5.png",
+        "/images/elucis-in-india/institution-6.png",
+        "/images/elucis-in-india/institution-7.png",
     ];
 
     return (

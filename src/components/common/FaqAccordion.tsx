@@ -37,7 +37,7 @@ const FaqAccordion: React.FC<FaqAccordionProps> = ({ items }) => {
 
                     {/* Content */}
                     <div
-                        className={`transition-all duration-300 ease-in-out overflow-hidden ${activeIndex === index ? 'max-h-[800px] opacity-100 pb-5' : 'max-h-0 opacity-0'
+                        className={`transition-all duration-300 ease-in-out overflow-hidden ${activeIndex === index ? 'max-h-200 opacity-100 pb-5' : 'max-h-0 opacity-0'
                             }`}
                     >
                         <div className="text-gray-600 text-sm lg:text-base leading-relaxed pr-8">

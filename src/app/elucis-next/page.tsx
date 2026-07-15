@@ -7,6 +7,7 @@ import TrustBadges from "@/components/sections/elucis-next/TrustBadges";
 import Testimonials from "@/components/sections/elucis-next/Testimonials";
 import AcademicLicensing from "@/components/sections/elucis-next/AcademicLicensing";
 import localFont from "next/font/local";
+import ElucisNextFaq from "@/components/sections/elucis-next/ElucisNextFaq";
 
 export const metadata = {
     title: "Elucis Next - Research & Education Edition | Graft3D",
@@ -30,6 +31,7 @@ export default function ElucisNextPage() {
             <Benefits />
             <Testimonials />
             <AcademicLicensing />
+            <ElucisNextFaq />
         </main>
     );
 }

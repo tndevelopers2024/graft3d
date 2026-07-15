@@ -1,28 +1,34 @@
+import { MoveRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { MoveRight } from "lucide-react";
 
 const Specialties = () => {
     const specialtiesList = [
         {
             name: "Cardiac Surgery",
-            img: "/images/elucis-family/specialities-1.png",
+            img: "/images/elucis-in-india/specialities-1.png",
         },
-        { name: "Oncology", img: "/images/elucis-family/specialities-2.png" },
+        { name: "Oncology", img: "/images/elucis-in-india/specialities-2.png" },
         {
             name: "Orthopedics",
-            img: "/images/elucis-family/specialities-3.png",
+            img: "/images/elucis-in-india/specialities-3.png",
         },
-        { name: "ENT", img: "/images/elucis-family/specialities-4.png" },
+        { name: "ENT", img: "/images/elucis-in-india/specialities-4.png" },
         {
             name: "Maxillofacial Surgery",
-            img: "/images/elucis-family/specialities-5.png",
+            img: "/images/elucis-in-india/specialities-5.png",
         },
-        { name: "Radiology", img: "/images/elucis-family/specialities-6.png" },
-        { name: "Gynecology", img: "/images/elucis-family/specialities-7.png" },
+        {
+            name: "Radiology",
+            img: "/images/elucis-in-india/specialities-6.png",
+        },
+        {
+            name: "Gynecology",
+            img: "/images/elucis-in-india/specialities-7.png",
+        },
         {
             name: "Biomedical Engineering",
-            img: "/images/elucis-family/specialities-8.png",
+            img: "/images/elucis-in-india/specialities-8.png",
         },
     ];
 

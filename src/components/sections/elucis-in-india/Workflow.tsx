@@ -4,27 +4,27 @@ const Workflow = () => {
     const steps = [
         {
             title: "Import DICOM Data",
-            image: "/images/elucis-family/insight-1.png",
+            image: "/images/elucis-in-india/insight-1.png",
         },
         {
             title: "Create Patient-Specific Anatomy",
-            image: "/images/elucis-family/insight-2.png",
+            image: "/images/elucis-in-india/insight-2.png",
         },
         {
             title: "Explore Anatomy in VR",
-            image: "/images/elucis-family/insight-3.png",
+            image: "/images/elucis-in-india/insight-3.png",
         },
         {
             title: "Measure & Analyze",
-            image: "/images/elucis-family/insight-4.png",
+            image: "/images/elucis-in-india/insight-4.png",
         },
         {
             title: "Collaborate Across Teams",
-            image: "/images/elucis-family/insight-5.png",
+            image: "/images/elucis-in-india/insight-5.png",
         },
         {
             title: "Prepare for Procedure",
-            image: "/images/elucis-family/insight-6.png",
+            image: "/images/elucis-in-india/insight-6.png",
         },
     ];
 
