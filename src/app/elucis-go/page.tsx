@@ -7,6 +7,7 @@ import Specialties from "@/components/sections/elucis-go/Specialties";
 import About from "@/components/sections/elucis-go/About";
 import Testimonials from "@/components/sections/elucis-go/Testimonials";
 import PilotProgram from "@/components/sections/elucis-go/PilotProgram";
+import ElucisGoFaq from "@/components/sections/elucis-go/ElucisGoFaq";
 
 export const metadata = {
     title: "Elucis Go - VR Surgical Planning Without Complex Infrastructure",
@@ -31,6 +32,7 @@ export default function ElucisGoPage() {
             <About />
             <Testimonials />
             <PilotProgram />
+            <ElucisGoFaq />
         </main>
     );
 }

@@ -2,11 +2,26 @@ import Image from "next/image";
 
 const LocalPartner = () => {
     const points = [
-        { title: "Local Clinical Support", icon: "/images/elucis-family/partner-1.svg" },
-        { title: "Pilot Programs", icon: "/images/elucis-family/partner-2.svg" },
-        { title: "Implementation Excellence", icon: "/images/elucis-family/partner-3.svg" },
-        { title: "Long-Term Partnership", icon: "/images/elucis-family/partner-4.svg" },
-        { title: "Training & Workshops", icon: "/images/elucis-family/partner-5.svg" },
+        {
+            title: "Local Clinical Support",
+            icon: "/images/elucis-in-india/partner-1.svg",
+        },
+        {
+            title: "Pilot Programs",
+            icon: "/images/elucis-in-india/partner-2.svg",
+        },
+        {
+            title: "Implementation Excellence",
+            icon: "/images/elucis-in-india/partner-3.svg",
+        },
+        {
+            title: "Long-Term Partnership",
+            icon: "/images/elucis-in-india/partner-4.svg",
+        },
+        {
+            title: "Training & Workshops",
+            icon: "/images/elucis-in-india/partner-5.svg",
+        },
     ];
 
     return (
@@ -46,7 +61,7 @@ const LocalPartner = () => {
                     <div className="w-full lg:w-1/2">
                         <div className="relative w-full aspect-square md:aspect-16/5 flex items-center justify-center">
                             <Image
-                                src="/images/elucis-family/india-map.png"
+                                src="/images/elucis-in-india/india-map.png"
                                 alt="India Map"
                                 fill
                                 className="object-contain"

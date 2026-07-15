@@ -5,32 +5,35 @@ const WhyInvest = () => {
         {
             title: "Improve Case Planning",
             description: "Enhance accuracy and confidence for complex cases",
-            image: "/images/elucis-family/why-1.png",
+            image: "/images/elucis-in-india/why-1.png",
         },
         {
             title: "Enhance Patient Communication",
             description: "Build trust through clear visual explanations.",
-            image: "/images/elucis-family/why-2.png",
+            image: "/images/elucis-in-india/why-2.png",
         },
         {
             title: "Support Innovation Initiatives",
-            description: "Position your hospital as a leader in digital healthcare.",
-            image: "/images/elucis-family/why-3.png",
+            description:
+                "Position your hospital as a leader in digital healthcare.",
+            image: "/images/elucis-in-india/why-3.png",
         },
         {
             title: "Enable Advanced Surgical Programs",
             description: "Support complex and high-value surgical services.",
-            image: "/images/elucis-family/why-4.png",
+            image: "/images/elucis-in-india/why-4.png",
         },
         {
             title: "Improve Clinical Collaboration",
-            description: "Break silos and enable better multidisciplinary decisions.",
-            image: "/images/elucis-family/why-5.png",
+            description:
+                "Break silos and enable better multidisciplinary decisions.",
+            image: "/images/elucis-in-india/why-5.png",
         },
         {
             title: "Scalable Enterprise Deployment",
-            description: "Deploy across sites with centralized control and governance.",
-            image: "/images/elucis-family/why-6.png",
+            description:
+                "Deploy across sites with centralized control and governance.",
+            image: "/images/elucis-in-india/why-6.png",
         },
     ];
 

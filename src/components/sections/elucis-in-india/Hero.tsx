@@ -1,6 +1,6 @@
+import { CirclePlay, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { Phone, CirclePlay } from "lucide-react";
 
 const Hero = () => {
     return (
@@ -8,7 +8,7 @@ const Hero = () => {
             {/* Background Image Panel */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/images/elucis-family/hero-bg.png"
+                    src="/images/elucis-in-india/hero-bg.png"
                     alt="Elucis Family Background"
                     fill
                     className="object-cover md:object-contain object-center opacity-80"

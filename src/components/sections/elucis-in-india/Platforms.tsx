@@ -1,6 +1,6 @@
+import { MoveRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { MoveRight } from "lucide-react";
 
 const Platforms = () => {
     const platforms = [
@@ -9,7 +9,7 @@ const Platforms = () => {
             subtitle: "Headset-First Experience",
             description:
                 "Untethered immersive visualization and planning designed for rapid clinical adoption and consultation.",
-            image: "/images/elucis-family/platform-1-bg.png",
+            image: "/images/elucis-in-india/platform-1-bg.png",
             link: "/elucis-go",
             cta: "Explore Elucis Go",
         },
@@ -18,7 +18,7 @@ const Platforms = () => {
             subtitle: "Research & Education Edition",
             description:
                 "Advanced immersive DICOM workflow for research, training, education and methodology development.",
-            image: "/images/elucis-family/platform-2-bg.png",
+            image: "/images/elucis-in-india/platform-2-bg.png",
             link: "/elucis-next",
             cta: "Explore Elucis Next",
         },
