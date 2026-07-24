@@ -52,8 +52,25 @@ const FAQS = [
 const Faq = () => {
     const [open, setOpen] = useState<number | null>(null);
 
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": FAQS.map(faq => ({
+            "@type": "Question",
+            "name": faq.q,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.a
+            }
+        }))
+    };
+
     return (
         <section className="w-full bg-white py-14 lg:py-20">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-[28px] sm:text-[32px] font-bold text-[#1a1b23] mb-10 text-center">
                     Frequently Asked Questions
