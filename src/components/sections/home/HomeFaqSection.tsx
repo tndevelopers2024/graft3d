@@ -29,25 +29,8 @@ const faqItems = [
 ];
 
 const HomeFaqSection = () => {
-    const faqSchema = {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": faqItems.map(item => ({
-            "@type": "Question",
-            "name": item.question,
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": item.answer
-            }
-        }))
-    };
-
     return (
         <section className="w-full py-16 bg-white">
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-            />
             <div className="max-w-[1400px] mx-auto px-4 max-w-4xl">
                 <h2 className="text-3xl lg:text-4xl font-bold text-center text-primary mb-12">
                     FAQ

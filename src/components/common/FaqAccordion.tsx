@@ -18,8 +18,25 @@ const FaqAccordion: React.FC<FaqAccordionProps> = ({ items }) => {
         setActiveIndex(activeIndex === index ? null : index);
     };
 
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": items.map(item => ({
+            "@type": "Question",
+            "name": item.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": typeof item.answer === 'string' ? item.answer : "Please see our website for the full answer."
+            }
+        }))
+    };
+
     return (
         <div className="w-full flex flex-col">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+            />
             {items.map((item, index) => (
                 <div key={index} className="border-b border-gray-200">
                     {/* Header */}
