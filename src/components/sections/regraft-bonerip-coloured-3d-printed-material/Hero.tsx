@@ -20,7 +20,7 @@ const Hero = () => {
                             className="mb-4 object-contain"
                         />
                         <h1 className="text-[28px] font-bold text-black">
-                            ReGraft Bonerip- Coloured 3D Printed Material
+                            Bonerip- Coloured 3D Printed Material
                         </h1>
                         <p className="mt-4 text-[24px] text-black">
                             Plan .Train .Visualize.
