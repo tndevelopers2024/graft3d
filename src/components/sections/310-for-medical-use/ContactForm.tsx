@@ -131,17 +131,17 @@ export default function ContactForm() {
                                     </span>
                                     <div className="text-[1rem] font-bold text-black">
                                         <a
-                                            href="tel:+916374406179"
-                                            className="transition-colors hover:text-[#166AAF]"
-                                        >
-                                            +91 63744 10703
-                                        </a>
-                                        <span className="mx-2">|</span>
-                                        <a
                                             href="tel:+919840478347"
                                             className="transition-colors hover:text-[#166AAF]"
                                         >
                                             +91 98404 78347
+                                        </a>
+                                        <span className="mx-2">|</span>
+                                        <a
+                                            href="tel:+916374406179"
+                                            className="transition-colors hover:text-[#166AAF]"
+                                        >
+                                            +91 63744 06179
                                         </a>
                                     </div>
                                 </div>
@@ -161,14 +161,14 @@ export default function ContactForm() {
                                     </span>
                                     <div className="text-[1rem] font-bold text-black">
                                         <a
-                                            href="mailto:sm@precise3dm.com"
+                                            href="mailto:sm@graft3d.com"
                                             className="transition-colors hover:text-[#166AAF]"
                                         >
-                                            sm@precise3dm.com
+                                            sm@graft3d.com
                                         </a>
                                         <span className="mx-2">|</span>
                                         <a
-                                            href="mailto:sales@precise3dm.com"
+                                            href="mailto:sales@graft3d.com"
                                             className="transition-colors hover:text-[#166AAF]"
                                         >
                                             sales@graft3d.com
