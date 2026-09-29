@@ -141,7 +141,7 @@ export default function ContactForm() {
                                             href="tel:+916374406179"
                                             className="transition-colors hover:text-[#166AAF]"
                                         >
-                                            +91 63744 06179
+                                            +91 63744 10703
                                         </a>
                                     </div>
                                 </div>
