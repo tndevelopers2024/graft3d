@@ -12,11 +12,9 @@ const ArtiboneHero = () => {
                     src="/images/regraft-artibone/reg-arti-bg.png"
                     alt="Artibone Background"
                     fill
-                    className="object-cover opacity-15"
+                    className="object-cover object-right md:object-center opacity-30 md:opacity-100"
                     priority
                 />
-                {/* Optional overlay gradient to ensure text readability if needed */}
-                <div className="absolute inset-0 bg-white/70 md:bg-white/40 xl:bg-transparent"></div>
             </div>
 
             <div className="container relative z-10 mx-auto px-4 md:px-8 max-w-7xl">
