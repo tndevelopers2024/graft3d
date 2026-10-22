@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import React from "react";
+
 import { Button } from "../ui/Button";
 
 const Navbar = () => {
@@ -12,7 +13,7 @@ const Navbar = () => {
     const [searchTerm, setSearchTerm] = React.useState("");
     const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
     const [activeDropdown, setActiveDropdown] = React.useState<string | null>(
-        null,
+        null
     );
     const [activeSubDropdown, setActiveSubDropdown] = React.useState<
         string | null
@@ -25,7 +26,7 @@ const Navbar = () => {
         if (e) e.preventDefault();
         if (searchTerm.trim()) {
             router.push(
-                `/contact-us?search=${encodeURIComponent(searchTerm.trim())}`,
+                `/contact-us?search=${encodeURIComponent(searchTerm.trim())}`
             );
             setSearchTerm("");
             setIsMobileMenuOpen(false);
@@ -72,13 +73,13 @@ const Navbar = () => {
         isActive("/virtual-surgical-planning-mandibular-reconstruction");
 
     return (
-        <div className="w-full bg-white shadow-sm sticky top-0 z-50">
-            <div className="max-w-350 mx-auto px-4 py-1 flex flex-col lg:flex-row items-center justify-between gap-4 relative">
-                <div className="w-full lg:w-auto flex items-center justify-between">
+        <div className="sticky top-0 z-50 w-full bg-white shadow-sm">
+            <div className="relative mx-auto flex max-w-350 flex-col items-center justify-between gap-4 px-4 py-1 lg:flex-row">
+                <div className="flex w-full items-center justify-between lg:w-auto">
                     {/* Logo Section */}
                     <div className="shrink-0">
                         <Link href="/" className="flex items-center gap-2">
-                            <div className="relative w-45 h-12.5">
+                            <div className="relative h-12.5 w-45">
                                 <Image
                                     src="/images/logo/logo.png"
                                     alt="Graft Logo Horizontal"
@@ -94,30 +95,30 @@ const Navbar = () => {
                     <Button
                         variant="ghost"
                         size="icon"
-                        className="lg:hidden text-primary focus:outline-none p-2 w-10 h-10 flex flex-col justify-center items-center gap-1.5 hover:bg-transparent"
+                        className="text-primary flex h-10 w-10 flex-col items-center justify-center gap-1.5 p-2 hover:bg-transparent focus:outline-none lg:hidden"
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                         aria-label="Toggle menu"
                     >
                         <span
-                            className={`block w-6 h-0.5 bg-current transition-all duration-300 ease-in-out ${isMobileMenuOpen ? "rotate-45 translate-y-2" : ""}`}
+                            className={`block h-0.5 w-6 bg-current transition-all duration-300 ease-in-out ${isMobileMenuOpen ? "translate-y-2 rotate-45" : ""}`}
                         ></span>
                         <span
-                            className={`block w-6 h-0.5 bg-current transition-all duration-300 ease-in-out ${isMobileMenuOpen ? "opacity-0" : "opacity-100"}`}
+                            className={`block h-0.5 w-6 bg-current transition-all duration-300 ease-in-out ${isMobileMenuOpen ? "opacity-0" : "opacity-100"}`}
                         ></span>
                         <span
-                            className={`block w-6 h-0.5 bg-current transition-all duration-300 ease-in-out ${isMobileMenuOpen ? "-rotate-45 -translate-y-2" : ""}`}
+                            className={`block h-0.5 w-6 bg-current transition-all duration-300 ease-in-out ${isMobileMenuOpen ? "-translate-y-2 -rotate-45" : ""}`}
                         ></span>
                     </Button>
                 </div>
 
                 {/* Mobile Menu Overlay */}
                 <div
-                    className={`${isMobileMenuOpen ? "block" : "hidden"} lg:hidden w-full absolute top-full left-0 bg-white shadow-lg border-t border-gray-100 py-4 px-4 flex flex-col gap-4 z-40`}
+                    className={`${isMobileMenuOpen ? "block" : "hidden"} absolute top-full left-0 z-40 flex w-full flex-col gap-4 border-t border-gray-100 bg-white px-4 py-4 shadow-lg lg:hidden`}
                 >
                     {/* Mobile Search Bar */}
                     <form
                         onSubmit={handleSearch}
-                        className="flex items-center w-full mb-2 animate-fade-in-up"
+                        className="animate-fade-in-up mb-2 flex w-full items-center"
                         style={{ animationDelay: "100ms" }}
                     >
                         <div className="relative w-full">
@@ -126,14 +127,14 @@ const Navbar = () => {
                                 placeholder="SEARCH"
                                 value={searchTerm}
                                 onChange={(e) => setSearchTerm(e.target.value)}
-                                className="border border-gray-200 rounded-l px-4 py-2 text-sm w-full focus:outline-none focus:border-primary text-black placeholder-gray-400"
+                                className="focus:border-primary w-full rounded-l border border-gray-200 px-4 py-2 text-sm text-black placeholder-gray-400 focus:outline-none"
                             />
                             <Button
                                 type="submit"
-                                className="absolute right-0 top-0 h-full bg-primary text-white px-3 rounded-r rounded-l-none hover:bg-primary/80 transition-colors flex items-center justify-center w-auto"
+                                className="bg-primary hover:bg-primary/80 absolute top-0 right-0 flex h-full w-auto items-center justify-center rounded-l-none rounded-r px-3 text-white transition-colors"
                             >
                                 <svg
-                                    className="w-4 h-4"
+                                    className="h-4 w-4"
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
@@ -163,7 +164,7 @@ const Navbar = () => {
                         className="animate-fade-in-up"
                         style={{ animationDelay: "200ms" }}
                     >
-                        <div className="flex items-center justify-between w-full font-bold">
+                        <div className="flex w-full items-center justify-between font-bold">
                             <Link
                                 href="/healthcare-3d-products"
                                 className={`grow ${isActive("/healthcare-3d-products") ? "text-primary" : "text-black"}`}
@@ -176,7 +177,7 @@ const Navbar = () => {
                                 className={`p-2 ${isActive("/products") || isActive("/healthcare-3d-products") ? "text-primary" : "text-black"}`}
                             >
                                 <svg
-                                    className={`w-4 h-4 transition-transform ${activeDropdown === "products" ? "rotate-180" : ""}`}
+                                    className={`h-4 w-4 transition-transform ${activeDropdown === "products" ? "rotate-180" : ""}`}
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
@@ -191,14 +192,14 @@ const Navbar = () => {
                             </button>
                         </div>
                         {activeDropdown === "products" && (
-                            <div className="pl-4 mt-2 flex flex-col gap-2 border-l-2 border-primary/20  p-4">
+                            <div className="border-primary/20 mt-2 flex flex-col gap-2 border-l-2 p-4 pl-4">
                                 <div className="flex flex-col gap-4">
                                     {/* 3D Printed Products Section */}
                                     <div>
-                                        <div className="flex items-center justify-between w-full border-b border-gray-800 pb-2">
+                                        <div className="flex w-full items-center justify-between border-b border-gray-800 pb-2">
                                             <Link
                                                 href="/healthcare-3d-printed-products"
-                                                className=" font-bold "
+                                                className="font-bold"
                                                 onClick={() =>
                                                     setIsMobileMenuOpen(false)
                                                 }
@@ -212,7 +213,7 @@ const Navbar = () => {
                                                 className="p-2"
                                             >
                                                 <svg
-                                                    className={`w-3 h-3 transition-transform ${activeSubDropdown === "printed" ? "rotate-180" : ""}`}
+                                                    className={`h-3 w-3 transition-transform ${activeSubDropdown === "printed" ? "rotate-180" : ""}`}
                                                     fill="none"
                                                     stroke="currentColor"
                                                     viewBox="0 0 24 24"
@@ -227,14 +228,14 @@ const Navbar = () => {
                                             </button>
                                         </div>
                                         {activeSubDropdown === "printed" && (
-                                            <div className="pl-4 flex flex-col gap-2 pt-1">
-                                                <div className="flex items-center justify-between w-full border-b border-gray-800 pb-1">
+                                            <div className="flex flex-col gap-2 pt-1 pl-4">
+                                                <div className="flex w-full items-center justify-between border-b border-gray-800 pb-1">
                                                     <Link
                                                         href="/regraft"
                                                         className="transition-colors"
                                                         onClick={() =>
                                                             setIsMobileMenuOpen(
-                                                                false,
+                                                                false
                                                             )
                                                         }
                                                     >
@@ -243,13 +244,13 @@ const Navbar = () => {
                                                     <button
                                                         onClick={() =>
                                                             toggleSubSubDropdown(
-                                                                "regraft",
+                                                                "regraft"
                                                             )
                                                         }
                                                         className="p-1"
                                                     >
                                                         <svg
-                                                            className={`w-3 h-3 transition-transform ${activeSubSubDropdown === "regraft" ? "rotate-180" : ""}`}
+                                                            className={`h-3 w-3 transition-transform ${activeSubSubDropdown === "regraft" ? "rotate-180" : ""}`}
                                                             fill="none"
                                                             stroke="currentColor"
                                                             viewBox="0 0 24 24"
@@ -265,13 +266,13 @@ const Navbar = () => {
                                                 </div>
                                                 {activeSubSubDropdown ===
                                                     "regraft" && (
-                                                    <div className="pl-4 flex flex-col gap-2 pt-1 border-l border-gray-200">
+                                                    <div className="flex flex-col gap-2 border-l border-gray-200 pt-1 pl-4">
                                                         <Link
                                                             href="/regraft-artibone"
-                                                            className="text-sm text-gray-500 hover:text-primary transition-colors italic"
+                                                            className="hover:text-primary text-sm text-gray-500 italic transition-colors"
                                                             onClick={() =>
                                                                 setIsMobileMenuOpen(
-                                                                    false,
+                                                                    false
                                                                 )
                                                             }
                                                         >
@@ -279,10 +280,10 @@ const Navbar = () => {
                                                         </Link>
                                                         <Link
                                                             href="/regraft-bonerip"
-                                                            className="text-sm text-gray-500 hover:text-primary transition-colors italic"
+                                                            className="hover:text-primary text-sm text-gray-500 italic transition-colors"
                                                             onClick={() =>
                                                                 setIsMobileMenuOpen(
-                                                                    false,
+                                                                    false
                                                                 )
                                                             }
                                                         >
@@ -290,10 +291,10 @@ const Navbar = () => {
                                                         </Link>
                                                         <Link
                                                             href="/regraft-customised-plates"
-                                                            className="text-sm text-gray-500 hover:text-primary transition-colors italic"
+                                                            className="hover:text-primary text-sm text-gray-500 italic transition-colors"
                                                             onClick={() =>
                                                                 setIsMobileMenuOpen(
-                                                                    false,
+                                                                    false
                                                                 )
                                                             }
                                                         >
@@ -302,10 +303,10 @@ const Navbar = () => {
                                                         </Link>
                                                         <Link
                                                             href="/regraft-artileg"
-                                                            className="text-sm text-gray-500 hover:text-primary transition-colors italic"
+                                                            className="hover:text-primary text-sm text-gray-500 italic transition-colors"
                                                             onClick={() =>
                                                                 setIsMobileMenuOpen(
-                                                                    false,
+                                                                    false
                                                                 )
                                                             }
                                                         >
@@ -313,10 +314,10 @@ const Navbar = () => {
                                                         </Link>
                                                         <Link
                                                             href="/regraft-arti-nose-arti-ear"
-                                                            className="text-sm text-gray-500 hover:text-primary transition-colors italic"
+                                                            className="hover:text-primary text-sm text-gray-500 italic transition-colors"
                                                             onClick={() =>
                                                                 setIsMobileMenuOpen(
-                                                                    false,
+                                                                    false
                                                                 )
                                                             }
                                                         >
@@ -325,10 +326,10 @@ const Navbar = () => {
                                                         </Link>
                                                         <Link
                                                             href="/regraft-digilumin"
-                                                            className="text-sm text-gray-500 hover:text-primary transition-colors italic"
+                                                            className="hover:text-primary text-sm text-gray-500 italic transition-colors"
                                                             onClick={() =>
                                                                 setIsMobileMenuOpen(
-                                                                    false,
+                                                                    false
                                                                 )
                                                             }
                                                         >
@@ -336,10 +337,10 @@ const Navbar = () => {
                                                         </Link>
                                                         <Link
                                                             href="/regraft-digiprun"
-                                                            className="text-sm text-gray-500 hover:text-primary transition-colors italic"
+                                                            className="hover:text-primary text-sm text-gray-500 italic transition-colors"
                                                             onClick={() =>
                                                                 setIsMobileMenuOpen(
-                                                                    false,
+                                                                    false
                                                                 )
                                                             }
                                                         >
@@ -349,10 +350,10 @@ const Navbar = () => {
                                                 )}
                                                 <Link
                                                     href="/peek-implant"
-                                                    className="transition-colors border-b border-gray-800 pb-1"
+                                                    className="border-b border-gray-800 pb-1 transition-colors"
                                                     onClick={() =>
                                                         setIsMobileMenuOpen(
-                                                            false,
+                                                            false
                                                         )
                                                     }
                                                 >
@@ -360,10 +361,10 @@ const Navbar = () => {
                                                 </Link>
                                                 <Link
                                                     href="/medical-image-segmentation"
-                                                    className="transition-colors border-b border-gray-800 pb-1"
+                                                    className="border-b border-gray-800 pb-1 transition-colors"
                                                     onClick={() =>
                                                         setIsMobileMenuOpen(
-                                                            false,
+                                                            false
                                                         )
                                                     }
                                                 >
@@ -375,10 +376,10 @@ const Navbar = () => {
 
                                     {/* 3D Tech Products Section */}
                                     <div>
-                                        <div className="flex items-center justify-between w-full border-b border-gray-800 pb-2">
+                                        <div className="flex w-full items-center justify-between border-b border-gray-800 pb-2">
                                             <Link
                                                 href="/healthcare-3d-tech-products"
-                                                className=" font-bold  transition-colors"
+                                                className="font-bold transition-colors"
                                                 onClick={() =>
                                                     setIsMobileMenuOpen(false)
                                                 }
@@ -392,7 +393,7 @@ const Navbar = () => {
                                                 className="p-2"
                                             >
                                                 <svg
-                                                    className={`w-3 h-3 transition-transform ${activeSubDropdown === "tech" ? "rotate-180" : ""}`}
+                                                    className={`h-3 w-3 transition-transform ${activeSubDropdown === "tech" ? "rotate-180" : ""}`}
                                                     fill="none"
                                                     stroke="currentColor"
                                                     viewBox="0 0 24 24"
@@ -407,14 +408,14 @@ const Navbar = () => {
                                             </button>
                                         </div>
                                         {activeSubDropdown === "tech" && (
-                                            <div className="pl-4 flex flex-col gap-2 pt-2 border-l border-gray-200">
-                                                <div className="flex items-center justify-between w-full border-b border-gray-800 pb-1">
+                                            <div className="flex flex-col gap-2 border-l border-gray-200 pt-2 pl-4">
+                                                <div className="flex w-full items-center justify-between border-b border-gray-800 pb-1">
                                                     <Link
                                                         href="/elucis-in-india"
-                                                        className="text-sm text-gray-500 hover:text-primary transition-colors italic font-bold"
+                                                        className="hover:text-primary text-sm font-bold text-gray-500 italic transition-colors"
                                                         onClick={() =>
                                                             setIsMobileMenuOpen(
-                                                                false,
+                                                                false
                                                             )
                                                         }
                                                     >
@@ -423,13 +424,13 @@ const Navbar = () => {
                                                     <button
                                                         onClick={() =>
                                                             toggleSubSubDropdown(
-                                                                "elucis",
+                                                                "elucis"
                                                             )
                                                         }
                                                         className="p-1"
                                                     >
                                                         <svg
-                                                            className={`w-3 h-3 transition-transform ${activeSubSubDropdown === "elucis" ? "rotate-180" : ""}`}
+                                                            className={`h-3 w-3 transition-transform ${activeSubSubDropdown === "elucis" ? "rotate-180" : ""}`}
                                                             fill="none"
                                                             stroke="currentColor"
                                                             viewBox="0 0 24 24"
@@ -445,13 +446,13 @@ const Navbar = () => {
                                                 </div>
                                                 {activeSubSubDropdown ===
                                                     "elucis" && (
-                                                    <div className="pl-4 flex flex-col gap-2 pt-1 border-l border-gray-200">
+                                                    <div className="flex flex-col gap-2 border-l border-gray-200 pt-1 pl-4">
                                                         <Link
                                                             href="/elucis-go"
-                                                            className="text-sm text-gray-500 hover:text-primary transition-colors font-medium"
+                                                            className="hover:text-primary text-sm font-medium text-gray-500 transition-colors"
                                                             onClick={() =>
                                                                 setIsMobileMenuOpen(
-                                                                    false,
+                                                                    false
                                                                 )
                                                             }
                                                         >
@@ -459,10 +460,10 @@ const Navbar = () => {
                                                         </Link>
                                                         <Link
                                                             href="/elucis-next"
-                                                            className="text-sm text-gray-500 hover:text-primary transition-colors font-medium"
+                                                            className="hover:text-primary text-sm font-medium text-gray-500 transition-colors"
                                                             onClick={() =>
                                                                 setIsMobileMenuOpen(
-                                                                    false,
+                                                                    false
                                                                 )
                                                             }
                                                         >
@@ -472,10 +473,10 @@ const Navbar = () => {
                                                 )}
                                                 <Link
                                                     href="/einscan-medixa"
-                                                    className="text-sm text-gray-500 hover:text-primary transition-colors"
+                                                    className="hover:text-primary text-sm text-gray-500 transition-colors"
                                                     onClick={() =>
                                                         setIsMobileMenuOpen(
-                                                            false,
+                                                            false
                                                         )
                                                     }
                                                 >
@@ -483,21 +484,43 @@ const Navbar = () => {
                                                 </Link>
                                                 <Link
                                                     href="/funmat-pro-410"
-                                                    className="text-sm text-gray-500 hover:text-primary transition-colors"
+                                                    className="hover:text-primary text-sm text-gray-500 transition-colors"
                                                     onClick={() =>
                                                         setIsMobileMenuOpen(
-                                                            false,
+                                                            false
                                                         )
                                                     }
                                                 >
                                                     Funmat pro 410
                                                 </Link>
                                                 <Link
-                                                    href="/geomagic-freeform"
-                                                    className="text-sm text-gray-500 hover:text-primary transition-colors"
+                                                    href="/funmat-ht"
+                                                    className="hover:text-primary text-sm text-gray-500 transition-colors"
                                                     onClick={() =>
                                                         setIsMobileMenuOpen(
-                                                            false,
+                                                            false
+                                                        )
+                                                    }
+                                                >
+                                                    Funmat HT
+                                                </Link>
+                                                <Link
+                                                    href="/310-for-medical-use"
+                                                    className="hover:text-primary text-sm text-gray-500 transition-colors"
+                                                    onClick={() =>
+                                                        setIsMobileMenuOpen(
+                                                            false
+                                                        )
+                                                    }
+                                                >
+                                                    310 Medical use
+                                                </Link>
+                                                <Link
+                                                    href="/geomagic-freeform"
+                                                    className="hover:text-primary text-sm text-gray-500 transition-colors"
+                                                    onClick={() =>
+                                                        setIsMobileMenuOpen(
+                                                            false
                                                         )
                                                     }
                                                 >
@@ -505,10 +528,10 @@ const Navbar = () => {
                                                 </Link>
                                                 <Link
                                                     href="/dicom-to-3d-model-conversion-software"
-                                                    className="text-sm text-gray-500 hover:text-primary transition-colors"
+                                                    className="hover:text-primary text-sm text-gray-500 transition-colors"
                                                     onClick={() =>
                                                         setIsMobileMenuOpen(
-                                                            false,
+                                                            false
                                                         )
                                                     }
                                                 >
@@ -516,10 +539,10 @@ const Navbar = () => {
                                                 </Link>
                                                 <Link
                                                     href="/geomagic-touch-x-haptic-device"
-                                                    className="text-sm text-gray-500 hover:text-primary transition-colors"
+                                                    className="hover:text-primary text-sm text-gray-500 transition-colors"
                                                     onClick={() =>
                                                         setIsMobileMenuOpen(
-                                                            false,
+                                                            false
                                                         )
                                                     }
                                                 >
@@ -527,10 +550,10 @@ const Navbar = () => {
                                                 </Link>
                                                 <Link
                                                     href="/inverse3"
-                                                    className="text-sm text-gray-500 hover:text-primary transition-colors"
+                                                    className="hover:text-primary text-sm text-gray-500 transition-colors"
                                                     onClick={() =>
                                                         setIsMobileMenuOpen(
-                                                            false,
+                                                            false
                                                         )
                                                     }
                                                 >
@@ -538,10 +561,10 @@ const Navbar = () => {
                                                 </Link>
                                                 <Link
                                                     href="/minverse"
-                                                    className="text-sm text-gray-500 hover:text-primary transition-colors"
+                                                    className="hover:text-primary text-sm text-gray-500 transition-colors"
                                                     onClick={() =>
                                                         setIsMobileMenuOpen(
-                                                            false,
+                                                            false
                                                         )
                                                     }
                                                 >
@@ -549,10 +572,10 @@ const Navbar = () => {
                                                 </Link>
                                                 <Link
                                                     href="/einscan-h2-human-body-bodyparts-3d-scanner"
-                                                    className="text-sm text-gray-500 hover:text-primary transition-colors"
+                                                    className="hover:text-primary text-sm text-gray-500 transition-colors"
                                                     onClick={() =>
                                                         setIsMobileMenuOpen(
-                                                            false,
+                                                            false
                                                         )
                                                     }
                                                 >
@@ -560,10 +583,10 @@ const Navbar = () => {
                                                 </Link>
                                                 <Link
                                                     href="/phantom-premium-haptic-device"
-                                                    className="text-sm text-gray-500 hover:text-primary transition-colors"
+                                                    className="hover:text-primary text-sm text-gray-500 transition-colors"
                                                     onClick={() =>
                                                         setIsMobileMenuOpen(
-                                                            false,
+                                                            false
                                                         )
                                                     }
                                                 >
@@ -575,10 +598,10 @@ const Navbar = () => {
 
                                     {/* Medical Filaments Section */}
                                     <div>
-                                        <div className="flex items-center justify-between w-full border-b border-gray-800 pb-2">
+                                        <div className="flex w-full items-center justify-between border-b border-gray-800 pb-2">
                                             <Link
                                                 href="/advanced-3d-printing-filaments-for-medical-3d-printing"
-                                                className=" font-bold transition-colors"
+                                                className="font-bold transition-colors"
                                                 onClick={() =>
                                                     setIsMobileMenuOpen(false)
                                                 }
@@ -588,13 +611,13 @@ const Navbar = () => {
                                             <button
                                                 onClick={() =>
                                                     toggleSubDropdown(
-                                                        "filaments",
+                                                        "filaments"
                                                     )
                                                 }
                                                 className="p-2"
                                             >
                                                 <svg
-                                                    className={`w-3 h-3 transition-transform ${activeSubDropdown === "filaments" ? "rotate-180" : ""}`}
+                                                    className={`h-3 w-3 transition-transform ${activeSubDropdown === "filaments" ? "rotate-180" : ""}`}
                                                     fill="none"
                                                     stroke="currentColor"
                                                     viewBox="0 0 24 24"
@@ -609,13 +632,13 @@ const Navbar = () => {
                                             </button>
                                         </div>
                                         {activeSubDropdown === "filaments" && (
-                                            <div className="pl-4 flex flex-col gap-2 pt-2 border-l border-gray-200">
+                                            <div className="flex flex-col gap-2 border-l border-gray-200 pt-2 pl-4">
                                                 <Link
                                                     href="/polyetheretherketone-peek"
-                                                    className="text-sm text-gray-500 hover:text-primary transition-colors"
+                                                    className="hover:text-primary text-sm text-gray-500 transition-colors"
                                                     onClick={() =>
                                                         setIsMobileMenuOpen(
-                                                            false,
+                                                            false
                                                         )
                                                     }
                                                 >
@@ -623,10 +646,10 @@ const Navbar = () => {
                                                 </Link>
                                                 <Link
                                                     href="/polymethyl-methacrylate-pmma"
-                                                    className="text-sm text-gray-500 hover:text-primary transition-colors"
+                                                    className="hover:text-primary text-sm text-gray-500 transition-colors"
                                                     onClick={() =>
                                                         setIsMobileMenuOpen(
-                                                            false,
+                                                            false
                                                         )
                                                     }
                                                 >
@@ -635,10 +658,10 @@ const Navbar = () => {
                                                 </Link>
                                                 <Link
                                                     href="/polycarbonate-pc"
-                                                    className="text-sm text-gray-500 hover:text-primary transition-colors"
+                                                    className="hover:text-primary text-sm text-gray-500 transition-colors"
                                                     onClick={() =>
                                                         setIsMobileMenuOpen(
-                                                            false,
+                                                            false
                                                         )
                                                     }
                                                 >
@@ -653,7 +676,7 @@ const Navbar = () => {
                     </div>
 
                     <Link
-                        href="/3d-packages"
+                        href="/complete-end-to-end-medical-3d-printing-solutions"
                         className={`font-bold ${isActive("/3d-packages") ? "text-primary" : "text-black"} animate-fade-in-up`}
                         style={{ animationDelay: "250ms" }}
                         onClick={() => setIsMobileMenuOpen(false)}
@@ -668,13 +691,13 @@ const Navbar = () => {
                     >
                         <button
                             onClick={() => toggleDropdown("resources")}
-                            className={`flex items-center justify-between w-full font-bold ${isResourcesActive ? "text-primary" : "text-black"}`}
+                            className={`flex w-full items-center justify-between font-bold ${isResourcesActive ? "text-primary" : "text-black"}`}
                         >
                             <Link href="/geomagic-freeform">
                                 <span>Resources</span>
                             </Link>
                             <svg
-                                className={`w-4 h-4 transition-transform ${activeDropdown === "resources" ? "rotate-180" : ""}`}
+                                className={`h-4 w-4 transition-transform ${activeDropdown === "resources" ? "rotate-180" : ""}`}
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
@@ -688,11 +711,11 @@ const Navbar = () => {
                             </svg>
                         </button>
                         {activeDropdown === "resources" && (
-                            <div className="pl-4 mt-2 flex flex-col gap-2 border-l-2 border-primary/20">
-                                <div className="flex items-center justify-between w-full">
+                            <div className="border-primary/20 mt-2 flex flex-col gap-2 border-l-2 pl-4">
+                                <div className="flex w-full items-center justify-between">
                                     <Link
                                         href="/artificial-nasal-prosthesis-case-study"
-                                        className="px-4 py-2 hover:bg-gray-50 text-sm text-black hover:text-primary transition-colors"
+                                        className="hover:text-primary px-4 py-2 text-sm text-black transition-colors hover:bg-gray-50"
                                         onClick={() =>
                                             setIsMobileMenuOpen(false)
                                         }
@@ -706,7 +729,7 @@ const Navbar = () => {
                                         className="p-2 text-black"
                                     >
                                         <svg
-                                            className={`w-3 h-3 transition-transform ${activeSubDropdown === "blogs" ? "rotate-180" : ""}`}
+                                            className={`h-3 w-3 transition-transform ${activeSubDropdown === "blogs" ? "rotate-180" : ""}`}
                                             fill="none"
                                             stroke="currentColor"
                                             viewBox="0 0 24 24"
@@ -721,10 +744,10 @@ const Navbar = () => {
                                     </button>
                                 </div>
                                 {activeSubDropdown === "blogs" && (
-                                    <div className="pl-6 flex flex-col gap-1">
+                                    <div className="flex flex-col gap-1 pl-6">
                                         <Link
                                             href="/artificial-nasal-prosthesis-case-study"
-                                            className="px-4 py-2 hover:bg-gray-50 text-sm text-black hover:text-primary transition-colors"
+                                            className="hover:text-primary px-4 py-2 text-sm text-black transition-colors hover:bg-gray-50"
                                             onClick={() =>
                                                 setIsMobileMenuOpen(false)
                                             }
@@ -733,7 +756,7 @@ const Navbar = () => {
                                         </Link>
                                         <Link
                                             href="/virtual-surgical-planning-mandibular-reconstruction"
-                                            className="px-4 py-2 hover:bg-gray-50 text-sm text-black hover:text-primary transition-colors"
+                                            className="hover:text-primary px-4 py-2 text-sm text-black transition-colors hover:bg-gray-50"
                                             onClick={() =>
                                                 setIsMobileMenuOpen(false)
                                             }
@@ -745,7 +768,7 @@ const Navbar = () => {
                                 )}
                                 <Link
                                     href="/about-us"
-                                    className="px-4 py-2 hover:bg-gray-50 text-sm text-black hover:text-primary transition-colors"
+                                    className="hover:text-primary px-4 py-2 text-sm text-black transition-colors hover:bg-gray-50"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >
                                     About Us
@@ -759,7 +782,7 @@ const Navbar = () => {
                         className="animate-fade-in-up"
                         style={{ animationDelay: "350ms" }}
                     >
-                        <div className="flex items-center justify-between w-full font-bold">
+                        <div className="flex w-full items-center justify-between font-bold">
                             <Link
                                 href="/medical-3d-printing-service"
                                 className={`grow ${isActive("/medical-3d-printing-service") || isActive("/medical-image-segmentation") || isActive("/bio-cad-modeling-service") ? "text-primary" : "text-black"}`}
@@ -772,7 +795,7 @@ const Navbar = () => {
                                 className={`p-2 ${isActive("/medical-3d-printing-service") || isActive("/medical-image-segmentation") || isActive("/bio-cad-modeling-service") ? "text-primary" : "text-black"}`}
                             >
                                 <svg
-                                    className={`w-4 h-4 transition-transform ${activeDropdown === "services" ? "rotate-180" : ""}`}
+                                    className={`h-4 w-4 transition-transform ${activeDropdown === "services" ? "rotate-180" : ""}`}
                                     fill="none"
                                     stroke="currentColor"
                                     viewBox="0 0 24 24"
@@ -787,17 +810,17 @@ const Navbar = () => {
                             </button>
                         </div>
                         {activeDropdown === "services" && (
-                            <div className="pl-4 mt-2 flex flex-col gap-2 border-l-2 border-primary/20">
+                            <div className="border-primary/20 mt-2 flex flex-col gap-2 border-l-2 pl-4">
                                 <Link
                                     href="/medical-image-segmentation"
-                                    className="text-sm text-gray-600 hover:text-primary"
+                                    className="hover:text-primary text-sm text-gray-600"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >
                                     Medical Image Segmentation
                                 </Link>
                                 <Link
                                     href="/bio-cad-modeling-service"
-                                    className="text-sm text-gray-600 hover:text-primary"
+                                    className="hover:text-primary text-sm text-gray-600"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >
                                     Graft3D Bio CAD Modeling
@@ -817,7 +840,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Navigation Links */}
-                <nav className="hidden lg:flex items-center gap-8 font-bold text-[15px]">
+                <nav className="hidden items-center gap-8 text-[15px] font-bold lg:flex">
                     <Link
                         href="/"
                         className={`hover:text-primary transition-colors ${isActive("/") ? "text-primary" : "text-black"}`}
@@ -827,16 +850,16 @@ const Navbar = () => {
 
                     {/* 3D Products Dropdown */}
                     <div
-                        className={`group relative cursor-pointer h-full  flex items-center gap-1 hover:text-primary transition-colors py-4 ${isActive("/products") || isActive("/healthcare-3d-products") ? "text-primary" : "text-black"}`}
+                        className={`group hover:text-primary relative flex h-full cursor-pointer items-center gap-1 py-4 transition-colors ${isActive("/products") || isActive("/healthcare-3d-products") ? "text-primary" : "text-black"}`}
                     >
                         <Link
                             href="/healthcare-3d-products"
-                            className=" transition-colors"
+                            className="transition-colors"
                         >
                             3D Products
                         </Link>
                         <svg
-                            className="w-4 h-4 transition-transform group-hover:rotate-180"
+                            className="h-4 w-4 transition-transform group-hover:rotate-180"
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
@@ -850,19 +873,19 @@ const Navbar = () => {
                         </svg>
 
                         {/* Dropdown Menu */}
-                        <div className="hidden group-hover:block absolute top-full left-0 bg-white font-bold shadow-xl border-t-2  border-primary min-w-70 z-50">
-                            <div className="py-2 flex flex-col">
+                        <div className="border-primary absolute top-full left-0 z-50 hidden min-w-70 border-t-2 bg-white font-bold shadow-xl group-hover:block">
+                            <div className="flex flex-col py-2">
                                 {/* 3D Printed Products */}
-                                <div className="group/sub font-bold relative border-b border-gray-800 last:border-0">
+                                <div className="group/sub relative border-b border-gray-800 font-bold last:border-0">
                                     <Link
                                         href="/healthcare-3d-printed-products"
-                                        className="flex  items-center justify-between px-6 py-4  text-[15px] font-medium transition-colors"
+                                        className="flex items-center justify-between px-6 py-4 text-[15px] font-medium transition-colors"
                                     >
                                         <span className="font-bold">
                                             3D Printed Products
                                         </span>
                                         <svg
-                                            className="w-4 h-4 -rotate-90 text-gray-500"
+                                            className="h-4 w-4 -rotate-90 text-gray-500"
                                             fill="none"
                                             stroke="currentColor"
                                             viewBox="0 0 24 24"
@@ -875,16 +898,16 @@ const Navbar = () => {
                                             ></path>
                                         </svg>
                                     </Link>
-                                    <div className="hidden group-hover/sub:block absolute left-full top-0 bg-white shadow-xl border-l border-gray-800 min-w-62.5">
-                                        <div className="py-2 flex flex-col">
+                                    <div className="absolute top-0 left-full hidden min-w-62.5 border-l border-gray-800 bg-white shadow-xl group-hover/sub:block">
+                                        <div className="flex flex-col py-2">
                                             <div className="group/sub2 relative">
                                                 <Link
                                                     href="/regraft"
-                                                    className="flex items-center justify-between px-6 py-4  text-[14px]   transition-colors border-b border-gray-800"
+                                                    className="flex items-center justify-between border-b border-gray-800 px-6 py-4 text-[14px] transition-colors"
                                                 >
                                                     <span>Regraft</span>
                                                     <svg
-                                                        className="w-3 h-3 -rotate-90 text-gray-500"
+                                                        className="h-3 w-3 -rotate-90 text-gray-500"
                                                         fill="none"
                                                         stroke="currentColor"
                                                         viewBox="0 0 24 24"
@@ -897,49 +920,49 @@ const Navbar = () => {
                                                         ></path>
                                                     </svg>
                                                 </Link>
-                                                <div className="hidden group-hover/sub2:block absolute left-full bg-white top-0 shadow-xl  border-gray-800 min-w-60">
-                                                    <div className="py-2 flex flex-col max-h-100 overflow-y-auto custom-scrollbar">
+                                                <div className="absolute top-0 left-full hidden min-w-60 border-gray-800 bg-white shadow-xl group-hover/sub2:block">
+                                                    <div className="custom-scrollbar flex max-h-100 flex-col overflow-y-auto py-2">
                                                         <Link
                                                             href="/regraft-artibone"
-                                                            className="px-6 py-3  text-[13px]   transition-colors border-b border-gray-800"
+                                                            className="border-b border-gray-800 px-6 py-3 text-[13px] transition-colors"
                                                         >
                                                             Regraft Artibone
                                                         </Link>
                                                         <Link
                                                             href="/regraft-bonerip"
-                                                            className="px-6 py-3  text-[13px]  transition-colors border-b border-gray-800"
+                                                            className="border-b border-gray-800 px-6 py-3 text-[13px] transition-colors"
                                                         >
                                                             Regraft Bonerip
                                                         </Link>
                                                         <Link
                                                             href="/regraft-customised-plates"
-                                                            className="px-6 py-3  text-[13px]   transition-colors border-b border-gray-800"
+                                                            className="border-b border-gray-800 px-6 py-3 text-[13px] transition-colors"
                                                         >
                                                             Regraft Customised
                                                             Plates
                                                         </Link>
                                                         <Link
                                                             href="/regraft-artileg"
-                                                            className="px-6 py-3 text-[13px] transition-colors border-b border-gray-800"
+                                                            className="border-b border-gray-800 px-6 py-3 text-[13px] transition-colors"
                                                         >
                                                             Regraft ArtiLeg
                                                         </Link>
                                                         <Link
                                                             href="/regraft-arti-nose-arti-ear"
-                                                            className="px-6 py-3 text-[13px]  transition-colors border-b border-gray-800"
+                                                            className="border-b border-gray-800 px-6 py-3 text-[13px] transition-colors"
                                                         >
                                                             Regraft Arti nose &
                                                             Arti ear
                                                         </Link>
                                                         <Link
                                                             href="/regraft-digilumin"
-                                                            className="px-6 py-3  text-[13px]   transition-colors border-b border-gray-800"
+                                                            className="border-b border-gray-800 px-6 py-3 text-[13px] transition-colors"
                                                         >
                                                             Regraft Digilumin
                                                         </Link>
                                                         <Link
                                                             href="/regraft-digiprun"
-                                                            className="px-6 py-3  text-[13px]   transition-colors border-b border-gray-800"
+                                                            className="border-b border-gray-800 px-6 py-3 text-[13px] transition-colors"
                                                         >
                                                             Regraft Digiprun
                                                         </Link>
@@ -948,13 +971,13 @@ const Navbar = () => {
                                             </div>
                                             <Link
                                                 href="/peek-implant"
-                                                className="px-6 py-4 text-[14px]  transition-colors border-b border-gray-800"
+                                                className="border-b border-gray-800 px-6 py-4 text-[14px] transition-colors"
                                             >
                                                 PEEK Implant
                                             </Link>
                                             <Link
                                                 href="/medical-image-segmentation"
-                                                className="px-6 py-4 text-[14px]  transition-colors"
+                                                className="px-6 py-4 text-[14px] transition-colors"
                                             >
                                                 Medical Image Segmentation
                                             </Link>
@@ -963,16 +986,16 @@ const Navbar = () => {
                                 </div>
 
                                 {/* 3D Tech Products */}
-                                <div className="group/sub relative border-b border-gray-800 last:border-0 bg-white">
+                                <div className="group/sub relative border-b border-gray-800 bg-white last:border-0">
                                     <Link
                                         href="/healthcare-3d-tech-products"
-                                        className="flex items-center justify-between px-6 py-4 text-[15px] font-medium  transition-colors"
+                                        className="flex items-center justify-between px-6 py-4 text-[15px] font-medium transition-colors"
                                     >
                                         <span className="font-bold">
                                             3D Tech Products
                                         </span>
                                         <svg
-                                            className="w-4 h-4 -rotate-90 text-gray-500"
+                                            className="h-4 w-4 -rotate-90 text-gray-500"
                                             fill="none"
                                             stroke="currentColor"
                                             viewBox="0 0 24 24"
@@ -985,16 +1008,16 @@ const Navbar = () => {
                                             ></path>
                                         </svg>
                                     </Link>
-                                    <div className="hidden group-hover/sub:block absolute left-full top-0 bg-white shadow-xl border-l border-gray-800 min-w-50">
-                                        <div className="py-2 flex flex-col">
+                                    <div className="absolute top-0 left-full hidden min-w-50 border-l border-gray-800 bg-white shadow-xl group-hover/sub:block">
+                                        <div className="flex flex-col py-2">
                                             <div className="group/elucis relative">
                                                 <Link
                                                     href="/elucis-in-india"
-                                                    className="flex items-center justify-between px-6 py-3 text-[14px] transition-colors border-b border-gray-800 font-bold"
+                                                    className="flex items-center justify-between border-b border-gray-800 px-6 py-3 text-[14px] font-bold transition-colors"
                                                 >
                                                     <span>Elucis</span>
                                                     <svg
-                                                        className="w-3 h-3 -rotate-90 text-gray-500"
+                                                        className="h-3 w-3 -rotate-90 text-gray-500"
                                                         fill="none"
                                                         stroke="currentColor"
                                                         viewBox="0 0 24 24"
@@ -1007,17 +1030,17 @@ const Navbar = () => {
                                                         ></path>
                                                     </svg>
                                                 </Link>
-                                                <div className="hidden group-hover/elucis:block absolute left-full bg-white top-0 shadow-xl border-l border-gray-800 min-w-50">
-                                                    <div className="py-2 flex flex-col">
+                                                <div className="absolute top-0 left-full hidden min-w-50 border-l border-gray-800 bg-white shadow-xl group-hover/elucis:block">
+                                                    <div className="flex flex-col py-2">
                                                         <Link
                                                             href="/elucis-go"
-                                                            className="px-6 py-3 text-[14px] transition-colors border-b border-gray-800 last:border-0 font-bold"
+                                                            className="border-b border-gray-800 px-6 py-3 text-[14px] font-bold transition-colors last:border-0"
                                                         >
                                                             Elucis Go
                                                         </Link>
                                                         <Link
                                                             href="/elucis-next"
-                                                            className="px-6 py-3 text-[14px] transition-colors border-b border-gray-800 last:border-0 font-bold"
+                                                            className="border-b border-gray-800 px-6 py-3 text-[14px] font-bold transition-colors last:border-0"
                                                         >
                                                             Elucis Next
                                                         </Link>
@@ -1026,55 +1049,67 @@ const Navbar = () => {
                                             </div>
                                             <Link
                                                 href="/einscan-medixa"
-                                                className="px-6 py-3  text-[14px] transition-colors border-b border-gray-800 last:border-0"
+                                                className="border-b border-gray-800 px-6 py-3 text-[14px] transition-colors last:border-0"
                                             >
                                                 Einscan-medixa
                                             </Link>
                                             <Link
                                                 href="/funmat-pro-410"
-                                                className="px-6 py-3 text-[14px] transition-colors border-b border-gray-800 last:border-0"
+                                                className="border-b border-gray-800 px-6 py-3 text-[14px] transition-colors last:border-0"
                                             >
                                                 Funmat pro 410
                                             </Link>
                                             <Link
+                                                href="/funmat-ht"
+                                                className="border-b border-gray-800 px-6 py-3 text-[14px] transition-colors last:border-0"
+                                            >
+                                                Funmat HT
+                                            </Link>
+                                            <Link
+                                                href="/310-for-medical-use"
+                                                className="border-b border-gray-800 px-6 py-3 text-[14px] transition-colors last:border-0"
+                                            >
+                                                310 Medical use
+                                            </Link>
+                                            <Link
                                                 href="/geomagic-freeform"
-                                                className="px-6 py-3 text-[14px] transition-colors border-b border-gray-800 last:border-0"
+                                                className="border-b border-gray-800 px-6 py-3 text-[14px] transition-colors last:border-0"
                                             >
                                                 Geomagic Freeform
                                             </Link>
                                             <Link
                                                 href="/dicom-to-3d-model-conversion-software"
-                                                className="px-6 py-3 text-[14px] transition-colors border-b border-gray-800 last:border-0"
+                                                className="border-b border-gray-800 px-6 py-3 text-[14px] transition-colors last:border-0"
                                             >
                                                 D2P
                                             </Link>
                                             <Link
                                                 href="/geomagic-touch-x-haptic-device"
-                                                className="px-6 py-3 text-[14px] transition-colors border-b border-gray-800 last:border-0"
+                                                className="border-b border-gray-800 px-6 py-3 text-[14px] transition-colors last:border-0"
                                             >
                                                 Geomagic Touch & Touch X
                                             </Link>
                                             <Link
                                                 href="/inverse3"
-                                                className="px-6 py-3 text-[14px] transition-colors border-b border-gray-800 last:border-0"
+                                                className="border-b border-gray-800 px-6 py-3 text-[14px] transition-colors last:border-0"
                                             >
                                                 Inverse3
                                             </Link>
                                             <Link
                                                 href="/minverse"
-                                                className="px-6 py-3 text-[14px] transition-colors border-b border-gray-800 last:border-0"
+                                                className="border-b border-gray-800 px-6 py-3 text-[14px] transition-colors last:border-0"
                                             >
                                                 MinVerse
                                             </Link>
                                             <Link
                                                 href="/einscan-h2-human-body-bodyparts-3d-scanner"
-                                                className="px-6 py-3 text-[14px] transition-colors border-b border-gray-800 last:border-0"
+                                                className="border-b border-gray-800 px-6 py-3 text-[14px] transition-colors last:border-0"
                                             >
                                                 Einscan H2
                                             </Link>
                                             <Link
                                                 href="/phantom-premium-haptic-device"
-                                                className="px-6 py-3 text-[14px] transition-colors border-b border-gray-800 last:border-0"
+                                                className="border-b border-gray-800 px-6 py-3 text-[14px] transition-colors last:border-0"
                                             >
                                                 Phantom Premium
                                             </Link>
@@ -1083,16 +1118,16 @@ const Navbar = () => {
                                 </div>
 
                                 {/* Medical Filaments */}
-                                <div className="group/sub relative border-b border-gray-800 last:border-0 bg-white">
+                                <div className="group/sub relative border-b border-gray-800 bg-white last:border-0">
                                     <Link
                                         href="/advanced-3d-printing-filaments-for-medical-3d-printing"
-                                        className="flex items-center justify-between px-6 py-4 text-[15px] font-medium  transition-colors"
+                                        className="flex items-center justify-between px-6 py-4 text-[15px] font-medium transition-colors"
                                     >
                                         <span className="font-bold">
                                             Medical Filaments
                                         </span>
                                         <svg
-                                            className="w-4 h-4 -rotate-90 text-gray-500"
+                                            className="h-4 w-4 -rotate-90 text-gray-500"
                                             fill="none"
                                             stroke="currentColor"
                                             viewBox="0 0 24 24"
@@ -1105,23 +1140,23 @@ const Navbar = () => {
                                             ></path>
                                         </svg>
                                     </Link>
-                                    <div className="hidden group-hover/sub:block absolute left-full top-0 bg-white shadow-xl border-l border-gray-800 min-w-50">
-                                        <div className="py-2 flex flex-col">
+                                    <div className="absolute top-0 left-full hidden min-w-50 border-l border-gray-800 bg-white shadow-xl group-hover/sub:block">
+                                        <div className="flex flex-col py-2">
                                             <Link
                                                 href="/polyetheretherketone-peek"
-                                                className="px-6 py-3 text-[14px] transition-colors border-b border-gray-800 last:border-0"
+                                                className="border-b border-gray-800 px-6 py-3 text-[14px] transition-colors last:border-0"
                                             >
                                                 Polyetheretherketone (PEEK)
                                             </Link>
                                             <Link
                                                 href="/polymethyl-methacrylate-pmma"
-                                                className="px-6 py-3 text-[14px] transition-colors border-b border-gray-800 last:border-0"
+                                                className="border-b border-gray-800 px-6 py-3 text-[14px] transition-colors last:border-0"
                                             >
                                                 Polymethyl Methacrylate (PMMA)
                                             </Link>
                                             <Link
                                                 href="/polycarbonate-pc"
-                                                className="px-6 py-3 text-[14px] transition-colors border-b border-gray-800 last:border-0"
+                                                className="border-b border-gray-800 px-6 py-3 text-[14px] transition-colors last:border-0"
                                             >
                                                 Polycarbonate (PC)
                                             </Link>
@@ -1133,7 +1168,7 @@ const Navbar = () => {
                     </div>
 
                     <Link
-                        href="/3d-packages"
+                        href="/complete-end-to-end-medical-3d-printing-solutions"
                         className={`hover:text-primary transition-colors ${isActive("/3d-packages") ? "text-primary" : "text-black"}`}
                     >
                         3D Packages
@@ -1141,13 +1176,13 @@ const Navbar = () => {
 
                     {/* Resources Dropdown */}
                     <div
-                        className={`group relative cursor-pointer h-full flex items-center gap-1 hover:text-primary transition-colors py-4 ${isResourcesActive ? "text-primary" : "text-black"}`}
+                        className={`group hover:text-primary relative flex h-full cursor-pointer items-center gap-1 py-4 transition-colors ${isResourcesActive ? "text-primary" : "text-black"}`}
                     >
                         <Link href="/geomagic-freeform">
                             <span>Resources</span>
                         </Link>
                         <svg
-                            className="w-4 h-4 transition-transform group-hover:rotate-180"
+                            className="h-4 w-4 transition-transform group-hover:rotate-180"
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
@@ -1160,16 +1195,16 @@ const Navbar = () => {
                             ></path>
                         </svg>
                         {/* Dropdown Menu */}
-                        <div className="hidden group-hover:block absolute top-full left-0 bg-white shadow-lg border-t-2 border-primary min-w-60 z-50">
-                            <div className="py-2 flex flex-col">
+                        <div className="border-primary absolute top-full left-0 z-50 hidden min-w-60 border-t-2 bg-white shadow-lg group-hover:block">
+                            <div className="flex flex-col py-2">
                                 <div className="group/blogs relative">
                                     <Link
                                         href="/artificial-nasal-prosthesis-case-study"
-                                        className="flex items-center justify-between px-4 py-2 hover:bg-gray-50 text-sm text-black hover:text-primary transition-colors"
+                                        className="hover:text-primary flex items-center justify-between px-4 py-2 text-sm text-black transition-colors hover:bg-gray-50"
                                     >
                                         <span>Blogs</span>
                                         <svg
-                                            className="w-3 h-3 -rotate-90 text-gray-500"
+                                            className="h-3 w-3 -rotate-90 text-gray-500"
                                             fill="none"
                                             stroke="currentColor"
                                             viewBox="0 0 24 24"
@@ -1182,17 +1217,17 @@ const Navbar = () => {
                                             ></path>
                                         </svg>
                                     </Link>
-                                    <div className="hidden group-hover/blogs:block absolute left-full top-0 bg-white shadow-xl border-l border-gray-200 min-w-[320px]">
-                                        <div className="py-2 flex flex-col">
+                                    <div className="absolute top-0 left-full hidden min-w-[320px] border-l border-gray-200 bg-white shadow-xl group-hover/blogs:block">
+                                        <div className="flex flex-col py-2">
                                             <Link
                                                 href="/artificial-nasal-prosthesis-case-study"
-                                                className="px-4 py-2 hover:bg-gray-50 text-sm text-black hover:text-primary transition-colors"
+                                                className="hover:text-primary px-4 py-2 text-sm text-black transition-colors hover:bg-gray-50"
                                             >
                                                 Nasal Prosthesis
                                             </Link>
                                             <Link
                                                 href="/virtual-surgical-planning-mandibular-reconstruction"
-                                                className="px-4 py-2 hover:bg-gray-50 text-sm text-black hover:text-primary transition-colors"
+                                                className="hover:text-primary px-4 py-2 text-sm text-black transition-colors hover:bg-gray-50"
                                             >
                                                 Virtual Surgical Planning for
                                                 Mandibular Reconstruction
@@ -1202,7 +1237,7 @@ const Navbar = () => {
                                 </div>
                                 <Link
                                     href="/about-us"
-                                    className="px-4 py-2 hover:bg-gray-50 text-sm text-black hover:text-primary transition-colors"
+                                    className="hover:text-primary px-4 py-2 text-sm text-black transition-colors hover:bg-gray-50"
                                 >
                                     About Us
                                 </Link>
@@ -1212,7 +1247,7 @@ const Navbar = () => {
 
                     {/* 3D Service Dropdown */}
                     <div
-                        className={`group relative cursor-pointer h-full flex items-center gap-1 hover:text-primary transition-colors py-4 ${isActive("/medical-3d-printing-service") || isActive("/medical-image-segmentation") || isActive("/bio-cad-modeling-service") ? "text-primary" : "text-black"}`}
+                        className={`group hover:text-primary relative flex h-full cursor-pointer items-center gap-1 py-4 transition-colors ${isActive("/medical-3d-printing-service") || isActive("/medical-image-segmentation") || isActive("/bio-cad-modeling-service") ? "text-primary" : "text-black"}`}
                     >
                         <Link
                             href="/medical-3d-printing-service"
@@ -1221,7 +1256,7 @@ const Navbar = () => {
                             3D Service
                         </Link>
                         <svg
-                            className="w-4 h-4 transition-transform group-hover:rotate-180"
+                            className="h-4 w-4 transition-transform group-hover:rotate-180"
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
@@ -1235,17 +1270,17 @@ const Navbar = () => {
                         </svg>
 
                         {/* Dropdown Menu */}
-                        <div className="hidden group-hover:block absolute top-full left-0 bg-white shadow-lg border-t-2 border-primary min-w-50 z-50">
-                            <div className="py-2 flex flex-col">
+                        <div className="border-primary absolute top-full left-0 z-50 hidden min-w-50 border-t-2 bg-white shadow-lg group-hover:block">
+                            <div className="flex flex-col py-2">
                                 <Link
                                     href="/medical-image-segmentation"
-                                    className="px-4 py-2 hover:bg-gray-50 text-sm text-black hover:text-primary transition-colors"
+                                    className="hover:text-primary px-4 py-2 text-sm text-black transition-colors hover:bg-gray-50"
                                 >
                                     Medical Image Segmentation
                                 </Link>
                                 <Link
                                     href="/bio-cad-modeling-service"
-                                    className="px-4 py-2 hover:bg-gray-50 text-sm text-black hover:text-primary transition-colors"
+                                    className="hover:text-primary px-4 py-2 text-sm text-black transition-colors hover:bg-gray-50"
                                 >
                                     Graft3D Bio CAD Modeling
                                 </Link>
@@ -1262,21 +1297,21 @@ const Navbar = () => {
                 </nav>
 
                 {/* Search Bar */}
-                <div className="hidden lg:flex items-center">
+                <div className="hidden items-center lg:flex">
                     <form onSubmit={handleSearch} className="relative">
                         <input
                             type="text"
                             placeholder="SEARCH"
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
-                            className="border border-gray-200 rounded-l px-4 py-2 text-sm w-50 focus:outline-none focus:border-primary text-black placeholder-gray-400"
+                            className="focus:border-primary w-50 rounded-l border border-gray-200 px-4 py-2 text-sm text-black placeholder-gray-400 focus:outline-none"
                         />
                         <Button
                             type="submit"
-                            className="absolute right-0 top-0 h-full bg-primary text-white px-3 rounded-r rounded-l-none hover:bg-primary/80 transition-colors flex items-center justify-center w-auto"
+                            className="bg-primary hover:bg-primary/80 absolute top-0 right-0 flex h-full w-auto items-center justify-center rounded-l-none rounded-r px-3 text-white transition-colors"
                         >
                             <svg
-                                className="w-4 h-4"
+                                className="h-4 w-4"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
