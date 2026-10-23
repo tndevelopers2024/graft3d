@@ -96,7 +96,7 @@ export default function ContactSection() {
                             Book a Live Demo
                         </Link>
                         <Link
-                            href="/contact-us"
+                            href="https://us02web.zoom.us/j/5903189768?pwd=T3VucDArMUY1NGxNRU1NMnJMYnVuQT09"
                             className="flex w-full items-center justify-center gap-3 rounded-lg bg-[#1F88DD] py-4 text-[1.25rem] font-bold text-white transition-colors hover:bg-[#1970b5]"
                         >
                             <Phone fill="white" size={24} />

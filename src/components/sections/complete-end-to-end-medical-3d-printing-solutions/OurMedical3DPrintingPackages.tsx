@@ -58,7 +58,7 @@ const packages = [
     },
     {
         img: "package-6.png",
-        title: "Medical Education Package",
+        title: "Anatomical Model Package",
         list: [
             "Anatomical model creation",
             "Surgical simulation",
