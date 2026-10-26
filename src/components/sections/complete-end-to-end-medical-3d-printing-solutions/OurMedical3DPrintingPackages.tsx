@@ -59,6 +59,7 @@ const packages = [
     {
         img: "package-6.png",
         title: "Anatomical Model Package",
+        link: "/transform-medical-imaging-into-3d-anatomical-models",
         list: [
             "Anatomical model creation",
             "Surgical simulation",
