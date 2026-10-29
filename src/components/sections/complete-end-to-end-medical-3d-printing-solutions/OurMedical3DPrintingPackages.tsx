@@ -27,7 +27,7 @@ const packages = [
     {
         img: "package-3.png",
         title: "Prosthetics Package",
-        link: "/transform-medical-imaging-into-3d-anatomical-models",
+        link: "/complete-package-for-patient-specific-prosthetic-design-and-manufacturing",
         list: [
             "Upper limb prosthetics",
             "Lower limb prosthetics",
