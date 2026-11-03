@@ -49,6 +49,7 @@ const packages = [
     {
         img: "package-5.png",
         title: "Facial Prosthesis Package",
+        link: "/facial-prosthetic-design-and-manufacturing",
         list: [
             "Ear prosthesis",
             "Nose prosthesis",
