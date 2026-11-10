@@ -31,12 +31,8 @@ export default function Hero() {
                     {/* Left Column */}
                     <div className="flex w-full flex-col lg:col-span-7 xl:col-span-6">
                         <h1 className="text-[2.25rem] leading-[1.15] font-bold text-[#73BFFD] md:text-[3rem] lg:text-[3.5rem] xl:text-[4rem]">
-                            A Complete Package for
-                            <br className="hidden md:block" /> Patient-Specific
-                            Facial
-                            <br className="hidden md:block" /> Prosthesis Design
-                            <br className="hidden md:block" /> &amp;
-                            Manufacturing
+                            A Complete Package for Patient-Specific Facial
+                            Prosthesis Design &amp; Manufacturing
                         </h1>
 
                         <p className="mt-8 max-w-390 text-[1rem] leading-relaxed font-normal text-white lg:text-[1.2rem]">
