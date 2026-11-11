@@ -321,8 +321,8 @@ const Navbar = () => {
                                                                 )
                                                             }
                                                         >
-                                                            Regraft Arti nose &
-                                                            Arti ear
+                                                            Regraft Arti nose
+                                                            &amp; Arti ear
                                                         </Link>
                                                         <Link
                                                             href="/regraft-digilumin"
@@ -951,8 +951,8 @@ const Navbar = () => {
                                                             href="/regraft-arti-nose-arti-ear"
                                                             className="border-b border-gray-800 px-6 py-3 text-[13px] transition-colors"
                                                         >
-                                                            Regraft Arti nose &
-                                                            Arti ear
+                                                            Regraft Arti nose
+                                                            &amp; Arti ear
                                                         </Link>
                                                         <Link
                                                             href="/regraft-digilumin"

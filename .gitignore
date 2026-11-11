@@ -42,4 +42,5 @@ next-env.d.ts
 .claude/
 .env.development
 *.md 
-
+graphify-out
+.graphifyignore
